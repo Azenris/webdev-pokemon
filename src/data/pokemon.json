@@ -1,0 +1,1512 @@
+[
+  {
+      "id": 1,
+      "name": "Bulbasaur",
+      "species": "Seed",
+      "height": "2′04″",
+      "weight": "15.0 lb",
+      "desc": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON.",
+      "types": ["Grass", "Poison"],
+      "imgGBC": "/imgs/pokemon_001_bulbasaur.png"
+  },
+  {
+    "id": 2,
+    "name": "Ivysaur",
+    "species": "Seed",
+    "height": "3′03″",
+    "weight": "29.0 lb",
+    "desc": "When the blub on its back grows large, it appears to lose the ability to stand on its hind legs.",
+    "types": ["Grass", "Poison"],
+    "imgGBC": "/imgs/pokemon_002_ivysaur.png"
+  },
+  {
+    "id": 3,
+    "name": "Venusaur",
+    "species": "Seed",
+    "height": "6′07″",
+    "weight": "221.0 lb",
+    "desc": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
+    "types": ["Grass", "Poison"],
+    "imgGBC": "/imgs/pokemon_003_venusaur.png"
+  },
+  {
+    "id": 4,
+    "name": "Charmander",
+    "species": "Lizard",
+    "height": "2′00″",
+    "weight": "19.0 lb",
+    "desc": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.",
+    "types": ["Fire", ""],
+    "imgGBC": "/imgs/pokemon_004_charmander.png"
+  },
+  {
+    "id": 5,
+    "name": "Charmeleon",
+    "species": "Flame",
+    "height": "3′07″",
+    "weight": "42.0 lb",
+    "desc": "When it swings its burning tail, it elevates the temperature to unbearably high levels.",
+    "types": ["Fire", ""],
+    "imgGBC": "/imgs/pokemon_005_charmeleon.png"
+  },
+  {
+    "id": 6,
+    "name": "Charizard",
+    "species": "Flame",
+    "height": "5′07″",
+    "weight": "200.0 lb",
+    "desc": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+    "types": ["Fire", "Flying"],
+    "imgGBC": "/imgs/pokemon_006_charizard.png"
+  },
+  {
+    "id": 7,
+    "name": "Squirtle",
+    "species": "Tiny Turtle",
+    "height": "1′08″",
+    "weight": "20.0 lb",
+    "desc": "After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth.",
+    "types": ["Water", ""],
+    "imgGBC": "/imgs/pokemon_007_squirtle.png"
+  },
+  {
+    "id": 8,
+    "name": "Wartortle",
+    "species": "Turtle",
+    "height": "3′03″",
+    "weight": "50.0 lb",
+    "desc": "Often Hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance.",
+    "types": ["Water", ""],
+    "imgGBC": "/imgs/pokemon_008_wartortle.png"
+  },
+  {
+    "id": 9,
+    "name": "Blastoise",
+    "species": "Shellfish",
+    "height": "5′03″",
+    "weight": "189.0 lb",
+    "desc": "A brutal POKéMON with pressurized water jets on its shell. They are used for high speed tackles.",
+    "types": ["Water", ""],
+    "imgGBC": "/imgs/pokemon_009_blastoise.png"
+  },
+  {
+    "id": 10,
+    "name": "Caterpie",
+    "species": "Worm",
+    "height": "1′00″",
+    "weight": "6.0 lb",
+    "desc": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.",
+    "types": ["Bug", ""],
+    "imgGBC": "/imgs/pokemon_010_caterpie.png"
+  },
+  {
+    "id": 11,
+    "name": "Metapod",
+    "species": "Cacoon",
+    "height": "2′04″",
+    "weight": "22.0 lb",
+    "desc": "This POKéMON is vulnerable to attack while its shell is soft, exposing its weak and tender body.",
+    "types": ["Bug", ""],
+    "imgGBC": "/imgs/pokemon_011_metapod.png"
+  },
+  {
+    "id": 12,
+    "name": "Butterfree",
+    "species": "Butterfly",
+    "height": "3′07″",
+    "weight": "71.0 lb",
+    "desc": "In battle, it flaps its wings at high speed to release highly toxic dust into the air.",
+    "types": ["Bug", "Flying"],
+    "imgGBC": "/imgs/pokemon_012_butterfree.png"
+  },
+  {
+    "id": 13,
+    "name": "Weedle",
+    "species": "Hairy Bug",
+    "height": "1′00″",
+    "weight": "7.0 lb",
+    "desc": "Often found in forests, rating leaves. It has a sharp venomous stinger on its head.",
+    "types": ["Bug", "Poison"],
+    "imgGBC": "/imgs/pokemon_013_weedle.png"
+  },
+  {
+    "id": 14,
+    "name": "Kakuna",
+    "species": "Cacoon",
+    "height": "2′00″",
+    "weight": "22.0 lb",
+    "desc": "Almost incapable of moving, this POKéMON can only harden its shell to protect itself from predators.",
+    "types": ["Bug", "Poison"],
+    "imgGBC": "/imgs/pokemon_014_kakuna.png"
+  },
+  {
+    "id": 15,
+    "name": "Beedrill",
+    "species": "Poison Bee",
+    "height": "3′03″",
+    "weight": "65.0 lb",
+    "desc": "Flies at high speed and attacks using its large venomous stingers on its forelegs and tail.",
+    "types": ["Bug", "Poison"],
+    "imgGBC": "/imgs/pokemon_015_beedrill.png"
+  },
+  {
+    "id": 16,
+    "name": "Pidgey",
+    "species": "Tiny Bird",
+    "height": "1′00″",
+    "weight": "4.0 lb",
+    "desc": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.",
+    "types": ["Normal", "Flying"],
+    "imgGBC": "/imgs/pokemon_016_pidgey.png"
+  },
+  {
+    "id": 17,
+    "name": "Pidgeotto",
+    "species": "Bird",
+    "height": "3′07″",
+    "weight": "66.0 lb",
+    "desc": "Very protective of its sprawling territorial area, this POKéMON will fiercely peck at any intruder.",
+    "types": ["Normal", "Flying"],
+    "imgGBC": "/imgs/pokemon_017_pidgeotto.png"
+  },
+  {
+    "id": 18,
+    "name": "Pidgeot",
+    "species": "Bird",
+    "height": "4′11″",
+    "weight": "87.0 lb",
+    "desc": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP.",
+    "types": ["Normal", "Flying"],
+    "imgGBC": "/imgs/pokemon_018_pidgeot.png"
+  },
+  {
+    "id": 19,
+    "name": "Rattata",
+    "species": "Rat",
+    "height": "1′00″",
+    "weight": "8.0 lb",
+    "desc": "Bites anything when it attacks. Small and very quick, it is a common sight in many places.",
+    "types": ["Normal", ""],
+    "imgGBC": "/imgs/pokemon_019_rattata.png"
+  },
+  {
+    "id": 20,
+    "name": "Raticate",
+    "species": "Rat",
+    "height": "2′04″",
+    "weight": "41.0 lb",
+    "desc": "It uses its whiskers to maintain its balance. It apparently slows down if they are cut off.",
+    "types": ["Normal", ""],
+    "imgGBC": "/imgs/pokemon_020_raticate.png"
+  },
+  {
+    "id": 21,
+    "name": "Spearow",
+    "species": "Tiny Bird",
+    "height": "1′00″",
+    "weight": "4.0 lb",
+    "desc": "Eats bugs in grassy areas. It has to flap its short wings at high speed to stay airborne.",
+    "types": ["Normal", "Flying"],
+    "imgGBC": "/imgs/pokemon_021_spearow.png"
+  },
+  {
+    "id": 22,
+    "name": "Fearow",
+    "species": "Beak",
+    "height": "3′11″",
+    "weight": "84.0 lb",
+    "desc": "With its huge and magnificent wings, it can keep aloft without ever having to land for rest.",
+    "types": ["Normal", "Flying"],
+    "imgGBC": "/imgs/pokemon_022_fearow.png"
+  },
+  {
+    "id": 23,
+    "name": "Ekans",
+    "species": "Snake",
+    "height": "6′07″",
+    "weight": "15.0 lb",
+    "desc": "Moves silently and stealthily. Eats the eggs of birds, such as PIDGEY and SPEAROW, whole.",
+    "types": ["Poison", ""],
+    "imgGBC": "/imgs/pokemon_023_ekans.png"
+  },
+  {
+    "id": 24,
+    "name": "Arbok",
+    "species": "Cobra",
+    "height": "11′06″",
+    "weight": "143.0 lb",
+    "desc": "It is rumored that the ferocious warning markings on its belly differ from area to area.",
+    "types": ["Poison", ""],
+    "imgGBC": "/imgs/pokemon_024_arbok.png"
+  },
+  {
+    "id": 25,
+    "name": "Pikachu",
+    "species": "Mouse",
+    "height": "1′04″",
+    "weight": "13.0 lb",
+    "desc": "When several of these POKéMON gather, their electricity could build and cause lightning storms.",
+    "types": ["Electric", ""],
+    "imgGBC": "/imgs/pokemon_025_pikachu.png"
+  },
+  {
+    "id": 26,
+    "name": "Raichu",
+    "species": "Mouse",
+    "height": "2′07″",
+    "weight": "66.0 lb",
+    "desc": "Its long tail serves as a ground to protect itself from its own high voltage power.",
+    "types": ["Electric", ""],
+    "imgGBC": "/imgs/pokemon_026_raichu.png"
+  },
+  {
+    "id": 27,
+    "name": "Sandshrew",
+    "species": "Mouse",
+    "height": "2′00″",
+    "weight": "26.0 lb",
+    "desc": "Burrows deep underground in arid locations far from water. It only emerges to hunt for food.",
+    "types": ["Ground", ""],
+    "imgGBC": "/imgs/pokemon_027_sandshrew.png"
+  },
+  {
+    "id": 28,
+    "name": "Sandslash",
+    "species": "Mouse",
+    "height": "3′03″",
+    "weight": "65.0 lb",
+    "desc": "Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.",
+    "types": ["Ground", ""],
+    "imgGBC": "/imgs/pokemon_028_sandslash.png"
+  },
+  {
+    "id": 29,
+    "name": "Nidoran♀",
+    "species": "Poison Pin",
+    "height": "1′04″",
+    "weight": "15.0 lb",
+    "desc": "Although small, its venomous barbs render this POKéMON dangerous. The female has smaller horns.",
+    "types": ["Poison", ""],
+    "imgGBC": "/imgs/pokemon_029_nidoran.png"
+  },
+  {
+    "id": 30,
+    "name": "Nidorina",
+    "species": "Poison Pin",
+    "height": "2′07″",
+    "weight": "44.0 lb",
+    "desc": "The female's horn develops slowly. Prefers physical attacks such as clawing and biting.",
+    "types": ["Poison", ""],
+    "imgGBC": "/imgs/pokemon_030_nidorina.png"
+  },
+  {
+    "id": 31,
+    "name": "Nidoqueen",
+    "species": "Drill",
+    "height": "4′03″",
+    "weight": "132.0 lb",
+    "desc": "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves.",
+    "types": ["Poison", "Ground"],
+    "imgGBC": "/imgs/pokemon_031_nidoqueen.png"
+  },
+  {
+    "id": 32,
+    "name": "Nidoran♂",
+    "species": "Poison Pin",
+    "height": "1′08″",
+    "weight": "20.0 lb",
+    "desc": "Stiffens its ears to sense danger. The larger its horns, the more powerful its secreted venom.",
+    "types": ["Poison", ""],
+    "imgGBC": "/imgs/pokemon_032_nidoran.png"
+  },
+  {
+    "id": 33,
+    "name": "Nidorino",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Poison", ""],
+    "imgGBC": "/imgs/pokemon_033_nidorino.png"
+  },
+  {
+    "id": 34,
+    "name": "Nidoking",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Poison", "Ground"],
+    "imgGBC": "/imgs/pokemon_034_nidoking.png"
+  },
+  {
+    "id": 35,
+    "name": "Clefairy",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Normal", ""],
+    "imgGBC": "/imgs/pokemon_035_clefairy.png"
+  },
+  {
+    "id": 36,
+    "name": "Clefable",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Normal", ""],
+    "imgGBC": "/imgs/pokemon_036_clefable.png"
+  },
+  {
+    "id": 37,
+    "name": "Vulpix",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Fire", ""],
+    "imgGBC": "/imgs/pokemon_037_vulpix.png"
+  },
+  {
+    "id": 38,
+    "name": "Ninetales",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Fire", ""],
+    "imgGBC": "/imgs/pokemon_038_ninetales.png"
+  },
+  {
+    "id": 39,
+    "name": "Jigglypuff",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Normal", ""],
+    "imgGBC": "/imgs/pokemon_039_jigglypuff.png"
+  },
+  {
+    "id": 40,
+    "name": "Wigglytuff",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Normal", ""],
+    "imgGBC": "/imgs/pokemon_040_wigglytuff.png"
+  },
+  {
+    "id": 41,
+    "name": "Zubat",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Poison", "Flying"],
+    "imgGBC": "/imgs/pokemon_041_zubat.png"
+  },
+  {
+    "id": 42,
+    "name": "Golbat",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Poison", "Flying"],
+    "imgGBC": "/imgs/pokemon_042_golbat.png"
+  },
+  {
+    "id": 43,
+    "name": "Oddish",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Grass", "Poison"],
+    "imgGBC": "/imgs/pokemon_043_oddish.png"
+  },
+  {
+    "id": 44,
+    "name": "Gloom",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Grass", "Poison"],
+    "imgGBC": "/imgs/pokemon_044_gloom.png"
+  },
+  {
+    "id": 45,
+    "name": "Vileplume",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Grass", "Poison"],
+    "imgGBC": "/imgs/pokemon_045_vileplume.png"
+  },
+  {
+    "id": 46,
+    "name": "Paras",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Bug", "Grass"],
+    "imgGBC": "/imgs/pokemon_046_paras.png"
+  },
+  {
+    "id": 47,
+    "name": "Parasect",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Bug", "Grass"],
+    "imgGBC": "/imgs/pokemon_047_parasect.png"
+  },
+  {
+    "id": 48,
+    "name": "Venonat",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Bug", "Poison"],
+    "imgGBC": "/imgs/pokemon_048_venonat.png"
+  },
+  {
+    "id": 49,
+    "name": "Venomoth",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Bug", "Poison"],
+    "imgGBC": "/imgs/pokemon_049_venomoth.png"
+  },
+  {
+    "id": 50,
+    "name": "Diglett",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Ground", ""],
+    "imgGBC": "/imgs/pokemon_50_diglett.png"
+  },
+  {
+    "id": 51,
+    "name": "Dugtrio",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Ground", ""],
+    "imgGBC": "/imgs/pokemon_051_dugtrio.png"
+  },
+  {
+    "id": 52,
+    "name": "Meowth",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Normal", ""],
+    "imgGBC": "/imgs/pokemon_052_meowth.png"
+  },
+  {
+    "id": 53,
+    "name": "Persian",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Normal", ""],
+    "imgGBC": "/imgs/pokemon_053_persian.png"
+  },
+  {
+    "id": 54,
+    "name": "Psyduck",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", ""],
+    "imgGBC": "/imgs/pokemon_054_psyduck.png"
+  },
+  {
+    "id": 55,
+    "name": "Golduck",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", ""],
+    "imgGBC": "/imgs/pokemon_055_golduck.png"
+  },
+  {
+    "id": 56,
+    "name": "Mankey",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Fighting", ""],
+    "imgGBC": "/imgs/pokemon_056_mankey.png"
+  },
+  {
+    "id": 57,
+    "name": "Primeape",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Fighting", ""],
+    "imgGBC": "/imgs/pokemon_057_primeape.png"
+  },
+  {
+    "id": 58,
+    "name": "Growlithe",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Fire", ""],
+    "imgGBC": "/imgs/pokemon_058_growlithe.png"
+  },
+  {
+    "id": 59,
+    "name": "Arcanine",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Fire", ""],
+    "imgGBC": "/imgs/pokemon_059_arcanine.png"
+  },
+  {
+    "id": 60,
+    "name": "Poliwag",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", ""],
+    "imgGBC": "/imgs/pokemon_060_poliwag.png"
+  },
+  {
+    "id": 61,
+    "name": "Poliwhirl",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", ""],
+    "imgGBC": "/imgs/pokemon_061_poliwhirl.png"
+  },
+  {
+    "id": 62,
+    "name": "Poliwrath",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", "Fighting"],
+    "imgGBC": "/imgs/pokemon_062_poliwrath.png"
+  },
+  {
+    "id": 63,
+    "name": "Abra",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Psychic", ""],
+    "imgGBC": "/imgs/pokemon_063_abra.png"
+  },
+  {
+    "id": 64,
+    "name": "Kadabra",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Psychic", ""],
+    "imgGBC": "/imgs/pokemon_064_kadabra.png"
+  },
+  {
+    "id": 65,
+    "name": "Alakazam",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Psychic", ""],
+    "imgGBC": "/imgs/pokemon_065_alakazam.png"
+  },
+  {
+    "id": 66,
+    "name": "Machop",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Fighting", ""],
+    "imgGBC": "/imgs/pokemon_066_machop.png"
+  },
+  {
+    "id": 67,
+    "name": "Machoke",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Fighting", ""],
+    "imgGBC": "/imgs/pokemon_067_machoke.png"
+  },
+  {
+    "id": 68,
+    "name": "Machamp",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Fighting", ""],
+    "imgGBC": "/imgs/pokemon_068_machamp.png"
+  },
+  {
+    "id": 69,
+    "name": "Bellsprout",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Grass", "Poison"],
+    "imgGBC": "/imgs/pokemon_069_bellsprout.png"
+  },
+  {
+    "id": 70,
+    "name": "Weepinbell",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Grass", "Poison"],
+    "imgGBC": "/imgs/pokemon_70_weepinbell.png"
+  },
+  {
+    "id": 71,
+    "name": "Victreebel",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Grass", "Poison"],
+    "imgGBC": "/imgs/pokemon_071_victreebel.png"
+  },
+  {
+    "id": 72,
+    "name": "Tentacool",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", "Poison"],
+    "imgGBC": "/imgs/pokemon_072_tentacool.png"
+  },
+  {
+    "id": 73,
+    "name": "Tentacruel",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", "Poison"],
+    "imgGBC": "/imgs/pokemon_073_tentacruel.png"
+  },
+  {
+    "id": 74,
+    "name": "Geodude",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Rock", "Ground"],
+    "imgGBC": "/imgs/pokemon_074_geodude.png"
+  },
+  {
+    "id": 75,
+    "name": "Graveler",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Rock", "Ground"],
+    "imgGBC": "/imgs/pokemon_075_graveler.png"
+  },
+  {
+    "id": 76,
+    "name": "Golem",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Rock", "Ground"],
+    "imgGBC": "/imgs/pokemon_076_golem.png"
+  },
+  {
+    "id": 77,
+    "name": "Ponyta",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "Fire",
+    "types": ["", ""],
+    "imgGBC": "/imgs/pokemon_077_ponyta.png"
+  },
+  {
+    "id": 78,
+    "name": "Rapidash",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "Fire",
+    "types": ["", ""],
+    "imgGBC": "/imgs/pokemon_078_rapidash.png"
+  },
+  {
+    "id": 79,
+    "name": "Slowpoke",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", "Psychic"],
+    "imgGBC": "/imgs/pokemon_079_slowpoke.png"
+  },
+  {
+    "id": 80,
+    "name": "Slowbro",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", "Psychic"],
+    "imgGBC": "/imgs/pokemon_080_slowbro.png"
+  },
+  {
+    "id": 81,
+    "name": "Magnemite",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Electric", ""],
+    "imgGBC": "/imgs/pokemon_081_magnemite.png"
+  },
+  {
+    "id": 82,
+    "name": "Magneton",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Electric", ""],
+    "imgGBC": "/imgs/pokemon_082_magneton.png"
+  },
+  {
+    "id": 83,
+    "name": "Farfetch'd",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Normal", "Flying"],
+    "imgGBC": "/imgs/pokemon_083_farfetchd.png"
+  },
+  {
+    "id": 84,
+    "name": "Doduo",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Normal", "Flying"],
+    "imgGBC": "/imgs/pokemon_084_doduo.png"
+  },
+  {
+    "id": 85,
+    "name": "Dodrio",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Normal", "Flying"],
+    "imgGBC": "/imgs/pokemon_085_dodrio.png"
+  },
+  {
+    "id": 86,
+    "name": "Seel",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", ""],
+    "imgGBC": "/imgs/pokemon_086_seel.png"
+  },
+  {
+    "id": 87,
+    "name": "Dewgong",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", "Ice"],
+    "imgGBC": "/imgs/pokemon_087_dewgong.png"
+  },
+  {
+    "id": 88,
+    "name": "Grimer",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Poison", ""],
+    "imgGBC": "/imgs/pokemon_088_grimer.png"
+  },
+  {
+    "id": 89,
+    "name": "Muk",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Poison", ""],
+    "imgGBC": "/imgs/pokemon_089_muk.png"
+  },
+  {
+    "id": 90,
+    "name": "Shellder",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", ""],
+    "imgGBC": "/imgs/pokemon_090_shellder.png"
+  },
+  {
+    "id": 91,
+    "name": "Cloyster",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", "Ice"],
+    "imgGBC": "/imgs/pokemon_091_cloyster.png"
+  },
+  {
+    "id": 92,
+    "name": "Gastly",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Ghost", "Poison"],
+    "imgGBC": "/imgs/pokemon_092_gastly.png"
+  },
+  {
+    "id": 93,
+    "name": "Haunter",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Ghost", "Poison"],
+    "imgGBC": "/imgs/pokemon_093_haunter.png"
+  },
+  {
+    "id": 94,
+    "name": "Gengar",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Ghost", "Poison"],
+    "imgGBC": "/imgs/pokemon_094_gengar.png"
+  },
+  {
+    "id": 95,
+    "name": "Onix",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Rock", "Ground"],
+    "imgGBC": "/imgs/pokemon_095_onix.png"
+  },
+  {
+    "id": 96,
+    "name": "Drowzee",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Psychic", ""],
+    "imgGBC": "/imgs/pokemon_096_drowzee.png"
+  },
+  {
+    "id": 97,
+    "name": "Hypno",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Psychic", ""],
+    "imgGBC": "/imgs/pokemon_097_hypno.png"
+  },
+  {
+    "id": 98,
+    "name": "Krabby",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", ""],
+    "imgGBC": "/imgs/pokemon_098_krabby.png"
+  },
+  {
+    "id": 99,
+    "name": "Kingler",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", ""],
+    "imgGBC": "/imgs/pokemon_099_kingler.png"
+  },
+  {
+    "id": 100,
+    "name": "Voltorb",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Electric", ""],
+    "imgGBC": "/imgs/pokemon_100_voltorb.png"
+  },
+  {
+    "id": 101,
+    "name": "Electrode",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Electric", ""],
+    "imgGBC": "/imgs/pokemon_101_electrode.png"
+  },
+  {
+    "id": 102,
+    "name": "Exeggcute",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Grass", "Psychic"],
+    "imgGBC": "/imgs/pokemon_102_exeggcute.png"
+  },
+  {
+    "id": 103,
+    "name": "Exeggutor",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Grass", "Psychic"],
+    "imgGBC": "/imgs/pokemon_103_exeggutor.png"
+  },
+  {
+    "id": 104,
+    "name": "Cubone",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Ground", ""],
+    "imgGBC": "/imgs/pokemon_104_cubone.png"
+  },
+  {
+    "id": 105,
+    "name": "Marowak",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Ground", ""],
+    "imgGBC": "/imgs/pokemon_105_marowak.png"
+  },
+  {
+    "id": 106,
+    "name": "Hitmonlee",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Fighting", ""],
+    "imgGBC": "/imgs/pokemon_106_hitmonlee.png"
+  },
+  {
+    "id": 107,
+    "name": "Hitmonchan",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Fighting", ""],
+    "imgGBC": "/imgs/pokemon_107_hitmonchan.png"
+  },
+  {
+    "id": 108,
+    "name": "Lickitung",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Normal", ""],
+    "imgGBC": "/imgs/pokemon_108_lickitung.png"
+  },
+  {
+    "id": 109,
+    "name": "Koffing",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Poison", ""],
+    "imgGBC": "/imgs/pokemon_109_koffing.png"
+  },
+  {
+    "id": 110,
+    "name": "",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Poison", ""],
+    "imgGBC": "/imgs/pokemon_110.png"
+  },
+  {
+    "id": 111,
+    "name": "Weezing",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Rock", "Ground"],
+    "imgGBC": "/imgs/pokemon_111_weezing.png"
+  },
+  {
+    "id": 112,
+    "name": "Rhyhorn",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Rock", "Ground"],
+    "imgGBC": "/imgs/pokemon_112_rhyhorn.png"
+  },
+  {
+    "id": 113,
+    "name": "Chansey",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Normal", ""],
+    "imgGBC": "/imgs/pokemon_113_chansey.png"
+  },
+  {
+    "id": 114,
+    "name": "Tangela",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Grass", ""],
+    "imgGBC": "/imgs/pokemon_114_tangela.png"
+  },
+  {
+    "id": 115,
+    "name": "Kangaskhan",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Normal", ""],
+    "imgGBC": "/imgs/pokemon_115_kangaskhan.png"
+  },
+  {
+    "id": 116,
+    "name": "Horsea",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", ""],
+    "imgGBC": "/imgs/pokemon_116_horsea.png"
+  },
+  {
+    "id": 117,
+    "name": "Seadra",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", ""],
+    "imgGBC": "/imgs/pokemon_117_seadra.png"
+  },
+  {
+    "id": 118,
+    "name": "Goldeen",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", ""],
+    "imgGBC": "/imgs/pokemon_118_goldeen.png"
+  },
+  {
+    "id": 119,
+    "name": "Seaking",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", ""],
+    "imgGBC": "/imgs/pokemon_119_seaking.png"
+  },
+  {
+    "id": 120,
+    "name": "Staryu",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", ""],
+    "imgGBC": "/imgs/pokemon_120_staryu.png"
+  },
+  {
+    "id": 121,
+    "name": "Starmie",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", "Psychic"],
+    "imgGBC": "/imgs/pokemon_121_starmie.png"
+  },
+  {
+    "id": 122,
+    "name": "Mr. Mime",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Psychic", ""],
+    "imgGBC": "/imgs/pokemon_122_mr_mime.png"
+  },
+  {
+    "id": 123,
+    "name": "Scyther",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Bug", "Flying"],
+    "imgGBC": "/imgs/pokemon_123_scyther.png"
+  },
+  {
+    "id": 124,
+    "name": "Jynx",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Ice", "Psychic"],
+    "imgGBC": "/imgs/pokemon_124_jynx.png"
+  },
+  {
+    "id": 125,
+    "name": "Electabuzz",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Electric", ""],
+    "imgGBC": "/imgs/pokemon_125_electabuzz.png"
+  },
+  {
+    "id": 126,
+    "name": "Magmar",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Fire", ""],
+    "imgGBC": "/imgs/pokemon_126_magmar.png"
+  },
+  {
+    "id": 127,
+    "name": "Pinsir",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Bug", ""],
+    "imgGBC": "/imgs/pokemon_127_pinsir.png"
+  },
+  {
+    "id": 128,
+    "name": "Tauros",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Normal", ""],
+    "imgGBC": "/imgs/pokemon_128_tauros.png"
+  },
+  {
+    "id": 129,
+    "name": "Magikarp",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", ""],
+    "imgGBC": "/imgs/pokemon_129_magikarp.png"
+  },
+  {
+    "id": 130,
+    "name": "Gyarados",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", "Flying"],
+    "imgGBC": "/imgs/pokemon_130_gyarados.png"
+  },
+  {
+    "id": 131,
+    "name": "Lapras",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", "Ice"],
+    "imgGBC": "/imgs/pokemon_131_lapras.png"
+  },
+  {
+    "id": 132,
+    "name": "Ditto",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Normal", ""],
+    "imgGBC": "/imgs/pokemon_132_ditto.png"
+  },
+  {
+    "id": 133,
+    "name": "Eevee",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Normal", ""],
+    "imgGBC": "/imgs/pokemon_133_eevee.png"
+  },
+  {
+    "id": 134,
+    "name": "Vaporeon",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Water", ""],
+    "imgGBC": "/imgs/pokemon_134_vaporeon.png"
+  },
+  {
+    "id": 135,
+    "name": "Jolteon",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Electric", ""],
+    "imgGBC": "/imgs/pokemon_135_jolteon.png"
+  },
+  {
+    "id": 136,
+    "name": "Flareon",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Fire", ""],
+    "imgGBC": "/imgs/pokemon_136_flareon.png"
+  },
+  {
+    "id": 137,
+    "name": "Porygon",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Normal", ""],
+    "imgGBC": "/imgs/pokemon_137_porygon.png"
+  },
+  {
+    "id": 138,
+    "name": "Omanyte",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Rock", "Water"],
+    "imgGBC": "/imgs/pokemon_138_omanyte.png"
+  },
+  {
+    "id": 139,
+    "name": "Omastar",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Rock", "Water"],
+    "imgGBC": "/imgs/pokemon_139_omastar.png"
+  },
+  {
+    "id": 140,
+    "name": "Kabuto",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Rock", "Water"],
+    "imgGBC": "/imgs/pokemon_140_kabuto.png"
+  },
+  {
+    "id": 141,
+    "name": "Kabutops",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Rock", "Water"],
+    "imgGBC": "/imgs/pokemon_141_kabutops.png"
+  },
+  {
+    "id": 142,
+    "name": "Aerodactyl",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Rock", "Flying"],
+    "imgGBC": "/imgs/pokemon_142_aerodactyl.png"
+  },
+  {
+    "id": 143,
+    "name": "Snorlax",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Normal", ""],
+    "imgGBC": "/imgs/pokemon_143_snorlax.png"
+  },
+  {
+    "id": 144,
+    "name": "Articuno",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Ice", "Flying"],
+    "imgGBC": "/imgs/pokemon_144_articuno.png"
+  },
+  {
+    "id": 145,
+    "name": "Zapdos",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Electric", "Flying"],
+    "imgGBC": "/imgs/pokemon_145_zapdos.png"
+  },
+  {
+    "id": 146,
+    "name": "Moltress",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Fire", "Flying"],
+    "imgGBC": "/imgs/pokemon_146_moltress.png"
+  },
+  {
+    "id": 147,
+    "name": "Dratini",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Dragon", ""],
+    "imgGBC": "/imgs/pokemon_147_dratini.png"
+  },
+  {
+    "id": 148,
+    "name": "Dragonair",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Dragon", ""],
+    "imgGBC": "/imgs/pokemon_148_dragonair.png"
+  },
+  {
+    "id": 149,
+    "name": "Dragonite",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Dragon", "Flying"],
+    "imgGBC": "/imgs/pokemon_149_dragonite.png"
+  },
+  {
+    "id": 150,
+    "name": "Mewtwo",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Psychic", ""],
+    "imgGBC": "/imgs/pokemon_150_mewtwo.png"
+  },
+  {
+    "id": 151,
+    "name": "Mew",
+    "species": "",
+    "height": "0′00″",
+    "weight": "0.0 lb",
+    "desc": "",
+    "types": ["Psychic", ""],
+    "imgGBC": "/imgs/pokemon_151_mew.png"
+  }
+]
