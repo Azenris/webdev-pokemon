@@ -2,1354 +2,1862 @@
   {
     "id": 1,
     "name": "Bulbasaur",
-    "species": "",
+    "species": "SEED",
     "species-clean": "Seed",
     "height": "2′04″",
     "weight": "15.0 lb",
     "desc": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON.",
-    "types": ["Grass", "Poison"],
+    "types": [7, 11],
+    "evolveTo": [
+        {
+            "id": 2,
+            "type": 0,
+            "lvl": 16
+        }
+    ],
     "imgGBC": "/imgs/pokemon_001_bulbasaur.png"
   },
   {
     "id": 2,
     "name": "Ivysaur",
-    "species": "",
+    "species": "SEED",
     "species-clean": "Seed",
     "height": "3′03″",
     "weight": "29.0 lb",
     "desc": "When the blub on its back grows large, it appears to lose the ability to stand on its hind legs.",
-    "types": ["Grass", "Poison"],
+    "types": [7, 11],
+    "evolveFrom": [1],
+    "evolveTo": [
+        {
+            "id": 3,
+            "type": 0,
+            "lvl": 32
+        }
+    ],
     "imgGBC": "/imgs/pokemon_002_ivysaur.png"
   },
   {
     "id": 3,
     "name": "Venusaur",
-    "species": "",
+    "species": "SEED",
     "species-clean": "Seed",
     "height": "6′07″",
     "weight": "221.0 lb",
     "desc": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
-    "types": ["Grass", "Poison"],
+    "types": [7, 11],
+    "evolveFrom": [2],
     "imgGBC": "/imgs/pokemon_003_venusaur.png"
   },
   {
     "id": 4,
     "name": "Charmander",
-    "species": "",
+    "species": "LIZARD",
     "species-clean": "Lizard",
     "height": "2′00″",
     "weight": "19.0 lb",
     "desc": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.",
-    "types": ["Fire", ""],
+    "types": [4],
+    "evolveTo": [
+        {
+            "id": 5,
+            "type": 0,
+            "lvl": 16
+        }
+    ],
     "imgGBC": "/imgs/pokemon_004_charmander.png"
   },
   {
     "id": 5,
     "name": "Charmeleon",
-    "species": "",
+    "species": "FLAME",
     "species-clean": "Flame",
     "height": "3′07″",
     "weight": "42.0 lb",
     "desc": "When it swings its burning tail, it elevates the temperature to unbearably high levels.",
-    "types": ["Fire", ""],
+    "types": [4],
+    "evolveFrom": [4],
+    "evolveTo": [
+        {
+            "id": 6,
+            "type": 0,
+            "lvl": 36
+        }
+    ],
     "imgGBC": "/imgs/pokemon_005_charmeleon.png"
   },
   {
     "id": 6,
     "name": "Charizard",
-    "species": "",
+    "species": "FLAME",
     "species-clean": "Flame",
     "height": "5′07″",
     "weight": "200.0 lb",
     "desc": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
-    "types": ["Fire", "Flying"],
+    "types": [4, 5],
+    "evolveFrom": [5],
     "imgGBC": "/imgs/pokemon_006_charizard.png"
   },
   {
     "id": 7,
     "name": "Squirtle",
-    "species": "",
+    "species": "TINYTURTLE",
     "species-clean": "Tiny Turtle",
     "height": "1′08″",
     "weight": "20.0 lb",
     "desc": "After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth.",
-    "types": ["Water", ""],
+    "types": [14],
+    "evolveTo": [
+        {
+            "id": 8,
+            "type": 0,
+            "lvl": 16
+        }
+    ],
     "imgGBC": "/imgs/pokemon_007_squirtle.png"
   },
   {
     "id": 8,
     "name": "Wartortle",
-    "species": "",
+    "species": "TURTLE",
     "species-clean": "Turtle",
     "height": "3′03″",
     "weight": "50.0 lb",
     "desc": "Often Hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance.",
-    "types": ["Water", ""],
+    "types": [14],
+    "evolveFrom": [7],
+    "evolveTo": [
+        {
+            "id": 9,
+            "type": 0,
+            "lvl": 36
+        }
+    ],
     "imgGBC": "/imgs/pokemon_008_wartortle.png"
   },
   {
     "id": 9,
     "name": "Blastoise",
-    "species": "",
+    "species": "SHELLFISH",
     "species-clean": "Shellfish",
     "height": "5′03″",
     "weight": "189.0 lb",
     "desc": "A brutal POKéMON with pressurized water jets on its shell. They are used for high speed tackles.",
-    "types": ["Water", ""],
+    "types": [14],
+    "evolveFrom": [8],
     "imgGBC": "/imgs/pokemon_009_blastoise.png"
   },
   {
     "id": 10,
     "name": "Caterpie",
-    "species": "",
+    "species": "WORM",
     "species-clean": "Worm",
     "height": "1′00″",
     "weight": "6.0 lb",
     "desc": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.",
-    "types": ["Bug", ""],
+    "types": [0],
+    "evolveTo": [
+        {
+            "id": 11,
+            "type": 0,
+            "lvl": 7
+        }
+    ],
     "imgGBC": "/imgs/pokemon_010_caterpie.png"
   },
   {
     "id": 11,
     "name": "Metapod",
-    "species": "",
+    "species": "CACOON",
     "species-clean": "Cacoon",
     "height": "2′04″",
     "weight": "22.0 lb",
     "desc": "This POKéMON is vulnerable to attack while its shell is soft, exposing its weak and tender body.",
-    "types": ["Bug", ""],
+    "types": [0],
+    "evolveFrom": [10],
+    "evolveTo": [
+        {
+            "id": 12,
+            "type": 0,
+            "lvl": 10
+        }
+    ],
     "imgGBC": "/imgs/pokemon_011_metapod.png"
   },
   {
     "id": 12,
     "name": "Butterfree",
-    "species": "",
+    "species": "BUTTERFLY",
     "species-clean": "Butterfly",
     "height": "3′07″",
     "weight": "71.0 lb",
     "desc": "In battle, it flaps its wings at high speed to release highly toxic dust into the air.",
-    "types": ["Bug", "Flying"],
+    "types": [0, 5],
+    "evolveFrom": [11],
     "imgGBC": "/imgs/pokemon_012_butterfree.png"
   },
   {
     "id": 13,
     "name": "Weedle",
-    "species": "",
+    "species": "HAIRY BUG",
     "species-clean": "Hairy Bug",
     "height": "1′00″",
     "weight": "7.0 lb",
     "desc": "Often found in forests, rating leaves. It has a sharp venomous stinger on its head.",
-    "types": ["Bug", "Poison"],
+    "types": [0, 11],
+    "evolveTo": [
+        {
+            "id": 14,
+            "type": 0,
+            "lvl": 7
+        }
+    ],
     "imgGBC": "/imgs/pokemon_013_weedle.png"
   },
   {
     "id": 14,
     "name": "Kakuna",
-    "species": "",
+    "species": "CACOON",
     "species-clean": "Cacoon",
     "height": "2′00″",
     "weight": "22.0 lb",
     "desc": "Almost incapable of moving, this POKéMON can only harden its shell to protect itself from predators.",
-    "types": ["Bug", "Poison"],
+    "types": [0, 11],
+    "evolveFrom": [13],
+    "evolveTo": [
+        {
+            "id": 15,
+            "type": 0,
+            "lvl": 10
+        }
+    ],
     "imgGBC": "/imgs/pokemon_014_kakuna.png"
   },
   {
     "id": 15,
     "name": "Beedrill",
-    "species": "",
+    "species": "POISON BEE",
     "species-clean": "Poison Bee",
     "height": "3′03″",
     "weight": "65.0 lb",
     "desc": "Flies at high speed and attacks using its large venomous stingers on its forelegs and tail.",
-    "types": ["Bug", "Poison"],
+    "types": [0, 11],
+    "evolveFrom": [14],
     "imgGBC": "/imgs/pokemon_015_beedrill.png"
   },
   {
     "id": 16,
     "name": "Pidgey",
-    "species": "",
+    "species": "TINY BIRD",
     "species-clean": "Tiny Bird",
     "height": "1′00″",
     "weight": "4.0 lb",
     "desc": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.",
-    "types": ["Normal", "Flying"],
+    "types": [10, 5],
+    "evolveTo": [
+        {
+            "id": 17,
+            "type": 0,
+            "lvl": 18
+        }
+    ],
     "imgGBC": "/imgs/pokemon_016_pidgey.png"
   },
   {
     "id": 17,
     "name": "Pidgeotto",
-    "species": "",
+    "species": "BIRD",
     "species-clean": "Bird",
     "height": "3′07″",
     "weight": "66.0 lb",
     "desc": "Very protective of its sprawling territorial area, this POKéMON will fiercely peck at any intruder.",
-    "types": ["Normal", "Flying"],
+    "types": [10, 5],
+    "evolveFrom": [16],
+    "evolveTo": [
+        {
+            "id": 18,
+            "type": 0,
+            "lvl": 36
+        }
+    ],
     "imgGBC": "/imgs/pokemon_017_pidgeotto.png"
   },
   {
     "id": 18,
     "name": "Pidgeot",
-    "species": "",
+    "species": "BIRD",
     "species-clean": "Bird",
     "height": "4′11″",
     "weight": "87.0 lb",
     "desc": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP.",
-    "types": ["Normal", "Flying"],
+    "types": [10, 5],
+    "evolveFrom": [17],
     "imgGBC": "/imgs/pokemon_018_pidgeot.png"
   },
   {
     "id": 19,
     "name": "Rattata",
-    "species": "",
+    "species": "RAT",
     "species-clean": "Rat",
     "height": "1′00″",
     "weight": "8.0 lb",
     "desc": "Bites anything when it attacks. Small and very quick, it is a common sight in many places.",
-    "types": ["Normal", ""],
+    "types": [10],
+    "evolveTo": [
+        {
+            "id": 20,
+            "type": 0,
+            "lvl": 20
+        }
+    ],
     "imgGBC": "/imgs/pokemon_019_rattata.png"
   },
   {
     "id": 20,
     "name": "Raticate",
-    "species": "",
+    "species": "RAT",
     "species-clean": "Rat",
     "height": "2′04″",
     "weight": "41.0 lb",
     "desc": "It uses its whiskers to maintain its balance. It apparently slows down if they are cut off.",
-    "types": ["Normal", ""],
+    "types": [10],
+    "evolveFrom": [19],
     "imgGBC": "/imgs/pokemon_020_raticate.png"
   },
   {
     "id": 21,
     "name": "Spearow",
-    "species": "",
+    "species": "TINY BIRD",
     "species-clean": "Tiny Bird",
     "height": "1′00″",
     "weight": "4.0 lb",
     "desc": "Eats bugs in grassy areas. It has to flap its short wings at high speed to stay airborne.",
-    "types": ["Normal", "Flying"],
+    "types": [10, 5],
+    "evolveTo": [
+        {
+            "id": 22,
+            "type": 0,
+            "lvl": 20
+        }
+    ],
     "imgGBC": "/imgs/pokemon_021_spearow.png"
   },
   {
     "id": 22,
     "name": "Fearow",
-    "species": "",
+    "species": "BEAK",
     "species-clean": "Beak",
     "height": "3′11″",
     "weight": "84.0 lb",
     "desc": "With its huge and magnificent wings, it can keep aloft without ever having to land for rest.",
-    "types": ["Normal", "Flying"],
+    "types": [10, 5],
+    "evolveFrom": [21],
     "imgGBC": "/imgs/pokemon_022_fearow.png"
   },
   {
     "id": 23,
     "name": "Ekans",
-    "species": "",
+    "species": "SNAKE",
     "species-clean": "Snake",
     "height": "6′07″",
     "weight": "15.0 lb",
     "desc": "Moves silently and stealthily. Eats the eggs of birds, such as PIDGEY and SPEAROW, whole.",
-    "types": ["Poison", ""],
+    "types": [11],
+    "evolveTo": [
+        {
+            "id": 24,
+            "type": 0,
+            "lvl": 22
+        }
+    ],
     "imgGBC": "/imgs/pokemon_023_ekans.png"
   },
   {
     "id": 24,
     "name": "Arbok",
-    "species": "",
+    "species": "COBRA",
     "species-clean": "Cobra",
     "height": "11′06″",
     "weight": "143.0 lb",
     "desc": "It is rumored that the ferocious warning markings on its belly differ from area to area.",
-    "types": ["Poison", ""],
+    "types": [11],
+    "evolveFrom": [23],
     "imgGBC": "/imgs/pokemon_024_arbok.png"
   },
   {
     "id": 25,
     "name": "Pikachu",
-    "species": "",
+    "species": "MOUSE",
     "species-clean": "Mouse",
     "height": "1′04″",
     "weight": "13.0 lb",
     "desc": "When several of these POKéMON gather, their electricity could build and cause lightning storms.",
-    "types": ["Electric", ""],
+    "types": [2],
+    "evolveTo": [
+        {
+            "id": 26,
+            "type": 1,
+            "item": "Thunderstone"
+        }
+    ],
     "imgGBC": "/imgs/pokemon_025_pikachu.png"
   },
   {
     "id": 26,
     "name": "Raichu",
-    "species": "",
+    "species": "MOUSE",
     "species-clean": "Mouse",
     "height": "2′07″",
     "weight": "66.0 lb",
     "desc": "Its long tail serves as a ground to protect itself from its own high voltage power.",
-    "types": ["Electric", ""],
+    "types": [2],
+    "evolveFrom": [25],
     "imgGBC": "/imgs/pokemon_026_raichu.png"
   },
   {
     "id": 27,
     "name": "Sandshrew",
-    "species": "",
+    "species": "MOUSE",
     "species-clean": "Mouse",
     "height": "2′00″",
     "weight": "26.0 lb",
     "desc": "Burrows deep underground in arid locations far from water. It only emerges to hunt for food.",
-    "types": ["Ground", ""],
+    "types": [8],
+    "evolveTo": [
+        {
+            "id": 28,
+            "type": 0,
+            "lvl": 22
+        }
+    ],
     "imgGBC": "/imgs/pokemon_027_sandshrew.png"
   },
   {
     "id": 28,
     "name": "Sandslash",
-    "species": "",
+    "species": "MOUSE",
     "species-clean": "Mouse",
     "height": "3′03″",
     "weight": "65.0 lb",
     "desc": "Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.",
-    "types": ["Ground", ""],
+    "types": [8],
+    "evolveFrom": [27],
     "imgGBC": "/imgs/pokemon_028_sandslash.png"
   },
   {
     "id": 29,
     "name": "Nidoran♀",
-    "species": "",
+    "species": "POISON PIN",
     "species-clean": "Poison Pin",
     "height": "1′04″",
     "weight": "15.0 lb",
     "desc": "Although small, its venomous barbs render this POKéMON dangerous. The female has smaller horns.",
-    "types": ["Poison", ""],
+    "types": [11],
+    "evolveTo": [
+        {
+            "id": 30,
+            "type": 0,
+            "lvl": 16
+        }
+    ],
     "imgGBC": "/imgs/pokemon_029_nidoran.png"
   },
   {
     "id": 30,
     "name": "Nidorina",
-    "species": "",
+    "species": "POISON PIN",
     "species-clean": "Poison Pin",
     "height": "2′07″",
     "weight": "44.0 lb",
     "desc": "The female's horn develops slowly. Prefers physical attacks such as clawing and biting.",
-    "types": ["Poison", ""],
+    "types": [11],
+    "evolveFrom": [29],
+    "evolveTo": [
+        {
+            "id": 31,
+            "type": 1,
+            "item": "Moon Stone"
+        }
+    ],
     "imgGBC": "/imgs/pokemon_030_nidorina.png"
   },
   {
     "id": 31,
     "name": "Nidoqueen",
-    "species": "",
+    "species": "DRILL",
     "species-clean": "Drill",
     "height": "4′03″",
     "weight": "132.0 lb",
     "desc": "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves.",
-    "types": ["Poison", "Ground"],
+    "types": [11, 8],
+    "evolveFrom": [30],
     "imgGBC": "/imgs/pokemon_031_nidoqueen.png"
   },
   {
     "id": 32,
     "name": "Nidoran♂",
-    "species": "",
+    "species": "POISON PIN",
     "species-clean": "Poison Pin",
     "height": "1′08″",
     "weight": "20.0 lb",
     "desc": "Stiffens its ears to sense danger. The larger its horns, the more powerful its secreted venom.",
-    "types": ["Poison", ""],
+    "types": [11],
+    "evolveTo": [
+        {
+            "id": 33,
+            "type": 0,
+            "lvl": 16
+        }
+    ],
     "imgGBC": "/imgs/pokemon_032_nidoran.png"
   },
   {
     "id": 33,
     "name": "Nidorino",
-    "species": "",
+    "species": "POISON PIN",
     "species-clean": "Poison Pin",
     "height": "2′11″",
     "weight": "43.0 lb",
     "desc": "An aggressive POKéMON that is quick to attack. The horn on its head secretes a powerful venom.",
-    "types": ["Poison", ""],
+    "types": [11],
+    "evolveFrom": [32],
+    "evolveTo": [
+        {
+            "id": 34,
+            "type": 1,
+            "item": "Moon Stone"
+        }
+    ],
     "imgGBC": "/imgs/pokemon_033_nidorino.png"
   },
   {
     "id": 34,
     "name": "Nidoking",
-    "species": "",
+    "species": "DRILL",
     "species-clean": "Drill",
     "height": "4′07″",
     "weight": "137.0 lb",
     "desc": "It uses its powerful tail in battle to smash, constrict, then break the prey's bones.",
-    "types": ["Poison", "Ground"],
+    "types": [11, 8],
+    "evolveFrom": [33],
     "imgGBC": "/imgs/pokemon_034_nidoking.png"
   },
   {
     "id": 35,
     "name": "Clefairy",
-    "species": "",
+    "species": "FAIRY",
     "species-clean": "Fairy",
     "height": "2′00″",
     "weight": "17.0 lb",
     "desc": "Its magical and cute appeal has many admirers. It is rare and found only in certain areas.",
-    "types": ["Normal", ""],
+    "types": [10],
+    "evolveTo": [
+        {
+            "id": 36,
+            "type": 1,
+            "item": "Moon Stone"
+        }
+    ],
     "imgGBC": "/imgs/pokemon_035_clefairy.png"
   },
   {
     "id": 36,
     "name": "Clefable",
-    "species": "",
+    "species": "FAIRY",
     "species-clean": "Fairy",
     "height": "4′03″",
     "weight": "88.0 lb",
     "desc": "A timid fairy POKéMON that is rarely seen. It will run and hide the moment it senses people.",
-    "types": ["Normal", ""],
+    "types": [10],
+    "evolveFrom": [35],
     "imgGBC": "/imgs/pokemon_036_clefable.png"
   },
   {
     "id": 37,
     "name": "Vulpix",
-    "species": "",
+    "species": "FOX",
     "species-clean": "Fox",
     "height": "2′00″",
     "weight": "22.0 lb",
     "desc": "At the time of birth, it has just one tail. The tail splits from its tip as it grows older.",
-    "types": ["Fire", ""],
+    "types": [4],
+    "evolveTo": [
+        {
+            "id": 38,
+            "type": 1,
+            "item": "Fire Stone"
+        }
+    ],
     "imgGBC": "/imgs/pokemon_037_vulpix.png"
   },
   {
     "id": 38,
     "name": "Ninetales",
-    "species": "",
+    "species": "FOX",
     "species-clean": "Fox",
     "height": "3′07″",
     "weight": "44.0 lb",
     "desc": "Very smart and very vengeful. Grabbing one of its many tails could result in a 1000-year curse.",
-    "types": ["Fire", ""],
+    "types": [4],
+    "evolveFrom": [37],
     "imgGBC": "/imgs/pokemon_038_ninetales.png"
   },
   {
     "id": 39,
     "name": "Jigglypuff",
-    "species": "",
+    "species": "BALLOON",
     "species-clean": "Balloon",
     "height": "1′08″",
     "weight": "12.0 lb",
     "desc": "When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep.",
-    "types": ["Normal", ""],
+    "types": [10]
+    "evolveTo": [
+        {
+            "id": 40,
+            "type": 0,
+            "lvl": "Moon Stone"
+        }
+    ],
     "imgGBC": "/imgs/pokemon_039_jigglypuff.png"
   },
   {
     "id": 40,
     "name": "Wigglytuff",
-    "species": "",
+    "species": "BALLOON",
     "species-clean": "Balloon",
     "height": "3′03″",
     "weight": "26.0 lb",
     "desc": "The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size",
-    "types": ["Normal", ""],
+    "types": [10],
+    "evolveFrom": [39],
     "imgGBC": "/imgs/pokemon_040_wigglytuff.png"
   },
   {
     "id": 41,
     "name": "Zubat",
-    "species": "",
+    "species": "BAT",
     "species-clean": "Bat",
     "height": "2′070″",
     "weight": "17.0 lb",
     "desc": "Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets.",
-    "types": ["Poison", "Flying"],
+    "types": [11, 5],
+    "evolveTo": [
+        {
+            "id": 42,
+            "type": 0,
+            "lvl": 22
+        }
+    ],
     "imgGBC": "/imgs/pokemon_041_zubat.png"
   },
   {
     "id": 42,
     "name": "Golbat",
-    "species": "",
+    "species": "BAT",
     "species-clean": "Bat",
     "height": "5′03″",
     "weight": "121.0 lb",
     "desc": "Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly.",
-    "types": ["Poison", "Flying"],
+    "types": [11, 5],
+    "evolveFrom": [41],
     "imgGBC": "/imgs/pokemon_042_golbat.png"
   },
   {
     "id": 43,
     "name": "Oddish",
-    "species": "",
+    "species": "WEED",
     "species-clean": "Weed",
     "height": "1′08″",
     "weight": "12.0 lb",
     "desc": "During the day, it keeps its face buried in the ground. At night, it wanders around sowing its seeds.",
-    "types": ["Grass", "Poison"],
+    "types": [7, 11],
+    "evolveTo": [
+        {
+            "id": 44,
+            "type": 0,
+            "lvl": 32
+        }
+    ],
     "imgGBC": "/imgs/pokemon_043_oddish.png"
   },
   {
     "id": 44,
     "name": "Gloom",
-    "species": "",
+    "species": "WEED",
     "species-clean": "Weed",
     "height": "2′07″",
     "weight": "19.0 lb",
     "desc": "The fluid that oozes from its mouth isn't drool. It is a nectar that is used to attract prey.",
-    "types": ["Grass", "Poison"],
+    "types": [7, 11],
+    "evolveFrom": [43],
+    "evolveTo": [
+        {
+            "id": 45,
+            "type": 1,
+            "item": "Leaf Stone"
+        }
+    ],
     "imgGBC": "/imgs/pokemon_044_gloom.png"
   },
   {
     "id": 45,
     "name": "Vileplume",
-    "species": "",
+    "species": "FLOWER",
     "species-clean": "Flower",
     "height": "3′11″",
     "weight": "41.0 lb",
     "desc": "The larger its petals, the more toxic pollen it contains. Its big head is heavy and hard to hold up.",
-    "types": ["Grass", "Poison"],
+    "types": [7, 11],
+    "evolveFrom": [44],
     "imgGBC": "/imgs/pokemon_045_vileplume.png"
   },
   {
     "id": 46,
     "name": "Paras",
-    "species": "",
+    "species": "MUSHROOM",
     "species-clean": "Mushroom",
     "height": "1′00″",
     "weight": "12.0 lb",
     "desc": "Burrows to suck tree roots. The mushrooms on its back grow by drawing nutrients from the bug host.",
-    "types": ["Bug", "Grass"],
+    "types": [0, 7]
+    "evolveTo": [
+        {
+            "id": 47,
+            "type": 0,
+            "lvl": 24
+        }
+    ],
     "imgGBC": "/imgs/pokemon_046_paras.png"
   },
   {
     "id": 47,
     "name": "Parasect",
-    "species": "",
+    "species": "MUSHROOM",
     "species-clean": "Mushroom",
     "height": "3′03″",
     "weight": "65.0 lb",
     "desc": "A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places.",
-    "types": ["Bug", "Grass"],
+    "types": [0, 7],
+    "evolveFrom": [46],
     "imgGBC": "/imgs/pokemon_047_parasect.png"
   },
   {
     "id": 48,
     "name": "Venonat",
-    "species": "",
+    "species": "INSECT",
     "species-clean": "Insect",
     "height": "3′03″",
     "weight": "66.0 lb",
     "desc": "Lives in the shadows of tall trees where it eats insects. It is attracted by light at night.",
-    "types": ["Bug", "Poison"],
+    "types": [0, 11],
+    "evolveTo": [
+        {
+            "id": 49,
+            "type": 0,
+            "lvl": 31
+        }
+    ],
     "imgGBC": "/imgs/pokemon_048_venonat.png"
   },
   {
     "id": 49,
     "name": "Venomoth",
-    "species": "",
+    "species": "POISONMOTH",
     "species-clean": "Poison Moth",
     "height": "4′11″",
     "weight": "28.0 lb",
     "desc": "The dust-like scales covering its wings are color coded to indicate the kinds of poison it has.",
-    "types": ["Bug", "Poison"],
+    "types": [0, 11],
+    "evolveFrom": [48],
     "imgGBC": "/imgs/pokemon_049_venomoth.png"
   },
   {
     "id": 50,
     "name": "Diglett",
-    "species": "",
+    "species": "MOLE",
     "species-clean": "Mole",
     "height": "0′08″",
     "weight": "2.0 lb",
     "desc": "Lives about one yard underground where it feeds on plant roots. It sometimes appears above ground.",
-    "types": ["Ground", ""],
+    "types": [8],
+    "evolveTo": [
+        {
+            "id": 51,
+            "type": 0,
+            "lvl": 26
+        }
+    ],
     "imgGBC": "/imgs/pokemon_50_diglett.png"
   },
   {
     "id": 51,
     "name": "Dugtrio",
-    "species": "",
+    "species": "MOLE",
     "species-clean": "Mole",
     "height": "2′04″",
     "weight": "73.0 lb",
     "desc": "A team of DIGLETT triplets. It triggers huge earthquakes by burrowing 60 miles underground.",
-    "types": ["Ground", ""],
+    "types": [8],
+    "evolveFrom": [50],
     "imgGBC": "/imgs/pokemon_051_dugtrio.png"
   },
   {
     "id": 52,
     "name": "Meowth",
-    "species": "",
+    "species": "SCRATCHCAT",
     "species-clean": "Scratch Cat",
     "height": "1′04″",
     "weight": "9.0 lb",
     "desc": "Adores circular objects. Wanders the streets on a nightly basis to look for dropped loose change.",
-    "types": ["Normal", ""],
+    "types": [10],
+    "evolveTo": [
+        {
+            "id": 53,
+            "type": 0,
+            "lvl": 28
+        }
+    ],
     "imgGBC": "/imgs/pokemon_052_meowth.png"
   },
   {
     "id": 53,
     "name": "Persian",
-    "species": "",
+    "species": "CLASSY CAT",
     "species-clean": "Classy Cat",
     "height": "3′03″",
     "weight": "71.0 lb",
     "desc": "Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness.",
-    "types": ["Normal", ""],
+    "types": [10],
+    "evolveFrom": [52],
     "imgGBC": "/imgs/pokemon_053_persian.png"
   },
   {
     "id": 54,
     "name": "Psyduck",
-    "species": "",
+    "species": "DUCK",
     "species-clean": "Duck",
     "height": "2′07″",
     "weight": "43.0 lb",
     "desc": "While lulling its enemies with its vacant look, this wily POKéMON will use psychokinetic powers.",
-    "types": ["Water", ""],
+    "types": [14],
+    "evolveTo": [
+        {
+            "id": 55,
+            "type": 0,
+            "lvl": 33
+        }
+    ],
     "imgGBC": "/imgs/pokemon_054_psyduck.png"
   },
   {
     "id": 55,
     "name": "Golduck",
-    "species": "",
+    "species": "DUCK",
     "species-clean": "Duck",
     "height": "5′07″",
     "weight": "169.0 lb",
     "desc": "Often seen swimming elegantly by lake shores. It is often mistaken for the Japanese monster, Kappa.",
-    "types": ["Water", ""],
+    "types": [14],
+    "evolveFrom": [54],
     "imgGBC": "/imgs/pokemon_055_golduck.png"
   },
   {
     "id": 56,
     "name": "Mankey",
-    "species": "",
+    "species": "PIG MONKEY",
     "species-clean": "Pig Monkey",
     "height": "1′08″",
     "weight": "62.0 lb",
     "desc": "Extermely quick to anger. It could be docile one moment then thrashing away the next instant.",
-    "types": ["Fighting", ""],
+    "types": [3],
+    "evolveTo": [
+        {
+            "id": 57,
+            "type": 0,
+            "lvl": 28
+        }
+    ],
     "imgGBC": "/imgs/pokemon_056_mankey.png"
   },
   {
     "id": 57,
     "name": "Primeape",
-    "species": "",
+    "species": "PIG MONKEY",
     "species-clean": "Pig Monkey",
     "height": "3′03″",
     "weight": "71.0 lb",
     "desc": "Always furious and tenacious to boot. It will not abandon chasing its quarry until it is caught.",
-    "types": ["Fighting", ""],
+    "types": [3],
+    "evolveFrom": [56],
     "imgGBC": "/imgs/pokemon_057_primeape.png"
   },
   {
     "id": 58,
     "name": "Growlithe",
-    "species": "",
+    "species": "PUPPY",
     "species-clean": "Puppy",
     "height": "2′04″",
     "weight": "42.0 lb",
     "desc": "Very protective of its territory. It will bark and bite to repel instruders from its space.",
-    "types": ["Fire", ""],
+    "types": [4],
+    "evolveTo": [
+        {
+            "id": 59,
+            "type": 1,
+            "item": "Fire Stone"
+        }
+    ],
     "imgGBC": "/imgs/pokemon_058_growlithe.png"
   },
   {
     "id": 59,
     "name": "Arcanine",
-    "species": "",
+    "species": "LEGENDARY",
     "species-clean": "Legendary",
     "height": "6′03″",
     "weight": "342.0 lb",
     "desc": "A POKéMON that has been admired since the past for its beauty. It runs agilely as if on wings.",
-    "types": ["Fire", ""],
+    "types": [4],
+    "evolveFrom": [58],
     "imgGBC": "/imgs/pokemon_059_arcanine.png"
   },
   {
     "id": 60,
     "name": "Poliwag",
-    "species": "",
+    "species": "TADPOLE",
     "species-clean": "Tadpole",
     "height": "2′00″",
     "weight": "27.0 lb",
     "desc": "Its newly grown legs prevent it from running. It appears to prefer swimming than trying to stand.",
-    "types": ["Water", ""],
+    "types": [14],
+    "evolveTo": [
+        {
+            "id": 61,
+            "type": 0,
+            "lvl": 25
+        }
+    ],
     "imgGBC": "/imgs/pokemon_060_poliwag.png"
   },
   {
     "id": 61,
     "name": "Poliwhirl",
-    "species": "",
+    "species": "TADPOLE",
     "species-clean": "Tadpole",
     "height": "3′03″",
     "weight": "44.0 lb",
     "desc": "Capab;e of living in or out of water. When out of water, it sweats to keep its body slimy.",
-    "types": ["Water", ""],
+    "types": [14],
+    "evolveFrom": [60],
+    "evolveTo": [
+        {
+            "id": 62,
+            "type": 1,
+            "item": "Water Stone"
+        }
+    ],
     "imgGBC": "/imgs/pokemon_061_poliwhirl.png"
   },
   {
     "id": 62,
     "name": "Poliwrath",
-    "species": "",
+    "species": "TADPOLE",
     "species-clean": "Tadpole",
     "height": "4′03″",
     "weight": "119.0 lb",
     "desc": "An adept swimmer at both the front crawl and breast stroke. Easily overtakes the best human swimmers.",
-    "types": ["Water", "Fighting"],
+    "types": [14, 3],
+    "evolveFrom": [61],
     "imgGBC": "/imgs/pokemon_062_poliwrath.png"
   },
   {
     "id": 63,
     "name": "Abra",
-    "species": "",
+    "species": "PSI",
     "species-clean": "Psi",
     "height": "2′11″",
     "weight": "43.0 lb",
     "desc": "Using its ability to read minds, ot will identify impending danger and TELEPORT to safety.",
-    "types": ["Psychic", ""],
+    "types": [12],
+    "evolveTo": [
+        {
+            "id": 64,
+            "type": 0,
+            "lvl": 16
+        }
+    ],
     "imgGBC": "/imgs/pokemon_063_abra.png"
   },
   {
     "id": 64,
     "name": "Kadabra",
-    "species": "",
+    "species": "PSI",
     "species-clean": "Psi",
     "height": "4′03″",
     "weight": "125.0 lb",
     "desc": "It emits special alpha waves from its body that induce headaches just by being close by.",
-    "types": ["Psychic", ""],
+    "types": [12],
+    "evolveFrom": [63],
+    "evolveTo": [
+        {
+            "id": 65,
+            "type": 2
+        }
+    ],
     "imgGBC": "/imgs/pokemon_064_kadabra.png"
   },
   {
     "id": 65,
     "name": "Alakazam",
-    "species": "",
+    "species": "PSI",
     "species-clean": "Psi",
     "height": "4′11″",
     "weight": "106.0 lb",
     "desc": "Its brain can outperform a supercomputer. Its intelligence quotient is said to be 5,000.",
-    "types": ["Psychic", ""],
+    "types": [12],
+    "evolveFrom": [64],
     "imgGBC": "/imgs/pokemon_065_alakazam.png"
   },
   {
     "id": 66,
     "name": "Machop",
-    "species": "",
+    "species": "SUPERPOWER",
     "species-clean": "Superpower",
     "height": "2′07″",
     "weight": "43.0 lb",
     "desc": "Loves to build its muscles. It trains in all styles of martial arts to become even stronger.",
-    "types": ["Fighting", ""],
+    "types": [3],
+    "evolveTo": [
+        {
+            "id": 67,
+            "type": 0,
+            "lvl": 28
+        }
+    ],
     "imgGBC": "/imgs/pokemon_066_machop.png"
   },
   {
     "id": 67,
     "name": "Machoke",
-    "species": "",
+    "species": "SUPERPOWER",
     "species-clean": "Superpower",
     "height": "4′11″",
     "weight": "155.0 lb",
     "desc": "Its muscular body is so powerful, it mist wear a power save belt to be able to regulate its motions.",
-    "types": ["Fighting", ""],
+    "types": [3],
+    "evolveFrom": [66],
+    "evolveTo": [
+        {
+            "id": 68,
+            "type": 2
+        }
+    ],
     "imgGBC": "/imgs/pokemon_067_machoke.png"
   },
   {
     "id": 68,
     "name": "Machamp",
-    "species": "",
+    "species": "SUPERPOWER",
     "species-clean": "Superpower",
     "height": "5′03″",
     "weight": "287.0 lb",
     "desc": "Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon.",
-    "types": ["Fighting", ""],
+    "types": [3],
+    "evolveFrom": [67],
     "imgGBC": "/imgs/pokemon_068_machamp.png"
   },
   {
     "id": 69,
     "name": "Bellsprout",
-    "species": "",
+    "species": "FLOWER",
     "species-clean": "Flower",
     "height": "2′04″",
     "weight": "9.0 lb",
     "desc": "A carnivorous POKéMON that traps and eats bugs. It uses its root feet to soak up needed moisture.",
-    "types": ["Grass", "Poison"],
+    "types": [7, 11],
+    "evolveTo": [
+        {
+            "id": 70,
+            "type": 0,
+            "lvl": 21
+        }
+    ],
     "imgGBC": "/imgs/pokemon_069_bellsprout.png"
   },
   {
     "id": 70,
     "name": "Weepinbell",
-    "species": "",
+    "species": "FLYCATCHER",
     "species-clean": "Fly Catcher",
     "height": "3′03″",
     "weight": "14.0 lb",
     "desc": "It spits out POISONPOWDER to immobilize the enemy and then finishes it with a spray of ACID.",
-    "types": ["Grass", "Poison"],
+    "types": [7, 11],
+    "evolveFrom": [69],
+    "evolveTo": [
+        {
+            "id": 71,
+            "type": 1,
+            "item": "Leaf Stone"
+        }
+    ],
     "imgGBC": "/imgs/pokemon_70_weepinbell.png"
   },
   {
     "id": 71,
     "name": "Victreebel",
-    "species": "",
+    "species": "FLYCATCHER",
     "species-clean": "Fly Catcher",
     "height": "5′07″",
     "weight": "34.0 lb",
     "desc": "Said to live in huge colonies deep in jungles, although no one has ever returned from there.",
-    "types": ["Grass", "Poison"],
+    "types": [7, 11],
+    "evolveFrom": [70],
     "imgGBC": "/imgs/pokemon_071_victreebel.png"
   },
   {
     "id": 72,
     "name": "Tentacool",
-    "species": "",
+    "species": "JELLYFISH",
     "species-clean": "Jellyfish",
     "height": "2′11″",
     "weight": "100.0 lb",
     "desc": "Drifts in shallow seas. Anglers who hook them by accident are often punished by its stinging acid.",
-    "types": ["Water", "Poison"],
+    "types": [14, 11],
+    "evolveTo": [
+        {
+            "id": 73,
+            "type": 0,
+            "lvl": 30
+        }
+    ],
     "imgGBC": "/imgs/pokemon_072_tentacool.png"
   },
   {
     "id": 73,
     "name": "Tentacruel",
-    "species": "",
+    "species": "JELLYFISH",
     "species-clean": "Jellyfish",
     "height": "5′03″",
     "weight": "121.0 lb",
     "desc": "The tentacles are normally kept short. On hunts, they are extended to ensnare and immobilize prey.",
-    "types": ["Water", "Poison"],
+    "types": [14, 11],
+    "evolveFrom": [72],
     "imgGBC": "/imgs/pokemon_073_tentacruel.png"
   },
   {
     "id": 74,
     "name": "Geodude",
-    "species": "",
+    "species": "ROCK",
     "species-clean": "Rock",
     "height": "1′04″",
     "weight": "44.0 lb",
     "desc": "Found in fields and mountains. Mistaking them for boulders, people often stop or trip o them.",
-    "types": ["Rock", "Ground"],
+    "types": [13, 8],
+    "evolveTo": [
+        {
+            "id": 75,
+            "type": 0,
+            "lvl": 25
+        }
+    ],
     "imgGBC": "/imgs/pokemon_074_geodude.png"
   },
   {
     "id": 75,
     "name": "Graveler",
-    "species": "",
-    "species-clean": "",
+    "species": "ROCK",
+    "species-clean": "Rock",
     "height": "3′03″",
     "weight": "232.0 lb",
     "desc": "Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction.",
-    "types": ["Rock", "Ground"],
+    "types": [13, 8],
+    "evolveFrom": [74],
+    "evolveTo": [
+        {
+            "id": 76,
+            "type": 2
+        }
+    ],
     "imgGBC": "/imgs/pokemon_075_graveler.png"
   },
   {
     "id": 76,
     "name": "Golem",
-    "species": "",
+    "species": "MEGATON",
     "species-clean": "Megaton",
     "height": "4′07″",
     "weight": "662.0 lb",
     "desc": "Its boulder-like body is extremely hard. It can easily withstand dynamite blases without damage.",
-    "types": ["Rock", "Ground"],
+    "types": [13, 8],
+    "evolveFrom": [75],
     "imgGBC": "/imgs/pokemon_076_golem.png"
   },
   {
     "id": 77,
     "name": "Ponyta",
-    "species": "",
+    "species": "FIRE HORSE",
     "species-clean": "Fire Horse",
     "height": "3′03″",
     "weight": "66.0 lb",
     "desc": "Its hooves are 10 times harder than diamonds. It can trample anything completely flat in little time.",
-    "types": ["Fire", ""],
+    "types": [4],
+    "evolveTo": [
+        {
+            "id": 78,
+            "type": 0,
+            "lvl": 40
+        }
+    ],
     "imgGBC": "/imgs/pokemon_077_ponyta.png"
   },
   {
     "id": 78,
     "name": "Rapidash",
-    "species": "",
+    "species": "FIRE HORSE",
     "species-clean": "Fire Horse",
     "height": "5′07″",
     "weight": "209.0 lb",
     "desc": "Very competitive, this POKéMON will chase anything that moves fast in the hopes of racing it.",
-    "types": ["Fire", ""],
+    "types": [4],
+    "evolveFrom": [77],
     "imgGBC": "/imgs/pokemon_078_rapidash.png"
   },
   {
     "id": 79,
     "name": "Slowpoke",
-    "species": "",
+    "species": "DOPEY",
     "species-clean": "Dopey",
     "height": "3′11″",
     "weight": "79.0 lb",
     "desc": "Incredibly slow and dopey. It takes 5 seconds for it to feel pain when under attack.",
-    "types": ["Water", "Psychic"],
+    "types": [14, 12],
+    "evolveTo": [
+        {
+            "id": 80,
+            "type": 0,
+            "lvl": 37
+        }
+    ],
     "imgGBC": "/imgs/pokemon_079_slowpoke.png"
   },
   {
     "id": 80,
     "name": "Slowbro",
-    "species": "",
+    "species": "HERMITCRAB",
     "species-clean": "Hermit Crab",
     "height": "5′03″",
     "weight": "173.0 lb",
     "desc": "The SHELLDER that is latched onto SLOWPOKE's tail is said to feed on the host's left over scraps.",
-    "types": ["Water", "Psychic"],
+    "types": [14, 12],
+    "evolveFrom": [79],
     "imgGBC": "/imgs/pokemon_080_slowbro.png"
   },
   {
     "id": 81,
     "name": "Magnemite",
-    "species": "",
+    "species": "MAGNET",
     "species-clean": "Magnet",
     "height": "1′00″",
     "weight": "13.0 lb",
     "desc": "Uses anti-gravity to stay suspended. Appears without warning and uses THUNDER WAVE and similar moves.",
-    "types": ["Electric", ""],
+    "types": [2],
+    "evolveTo": [
+        {
+            "id": 82,
+            "type": 0,
+            "lvl": 30
+        }
+    ],
     "imgGBC": "/imgs/pokemon_081_magnemite.png"
   },
   {
     "id": 82,
     "name": "Magneton",
-    "species": "",
+    "species": "MAGNET",
     "species-clean": "Magnet",
     "height": "3′03″",
     "weight": "132.0 lb",
     "desc": "Formed by several MAGNEMITEs linked together. They frequently appear when sinspots flare up.",
-    "types": ["Electric", ""],
+    "types": [2],
+    "evolveFrom": [81],
     "imgGBC": "/imgs/pokemon_082_magneton.png"
   },
   {
     "id": 83,
     "name": "Farfetch'd",
-    "species": "",
+    "species": "WILD DUCK",
     "species-clean": "Wild Duck",
     "height": "2′07″",
     "weight": "33.0 lb",
     "desc": "The sprig of green onions it holds is its weapon. It is used much like a metal sword.",
-    "types": ["Normal", "Flying"],
+    "types": [10, 5],
     "imgGBC": "/imgs/pokemon_083_farfetchd.png"
   },
   {
     "id": 84,
     "name": "Doduo",
-    "species": "",
+    "species": "TWIN BIRD",
     "species-clean": "Twin Bird",
     "height": "4′07″",
     "weight": "86.0 lb",
     "desc": "A bird that makes up for its poor flying with its fast foot speed. Leaves giant footprints.",
-    "types": ["Normal", "Flying"],
+    "types": [10, 5],
+    "evolveTo": [
+        {
+            "id": 85,
+            "type": 0,
+            "lvl": 31
+        }
+    ],
     "imgGBC": "/imgs/pokemon_084_doduo.png"
   },
   {
     "id": 85,
     "name": "Dodrio",
-    "species": "",
+    "species": "TRIPLEBIRD",
     "species-clean": "Triple Bird",
     "height": "5′11″",
     "weight": "188.0 lb",
     "desc": "Uses its three brains to execute complex plans. While two heads sleep, one head stays awake.",
-    "types": ["Normal", "Flying"],
+    "types": [10, 5],
+    "evolveFrom": [84],
     "imgGBC": "/imgs/pokemon_085_dodrio.png"
   },
   {
     "id": 86,
     "name": "Seel",
-    "species": "",
+    "species": "SEA LION",
     "species-clean": "Sea Lion",
     "height": "3′07″",
     "weight": "198.0 lb",
     "desc": "The protruding horn on its head is very hard. It is used for bashing through thick ice.",
-    "types": ["Water", ""],
+    "types": [14],
+    "evolveTo": [
+        {
+            "id": 87,
+            "type": 0,
+            "lvl": 34
+        }
+    ],
     "imgGBC": "/imgs/pokemon_086_seel.png"
   },
   {
     "id": 87,
     "name": "Dewgong",
-    "species": "",
+    "species": "SEA LION",
     "species-clean": "Sea Lion",
     "height": "5′07″",
     "weight": "265.0 lb",
     "desc": "Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters.",
-    "types": ["Water", "Ice"],
+    "types": [14, 9],
+    "evolveFrom": [86],
     "imgGBC": "/imgs/pokemon_087_dewgong.png"
   },
   {
     "id": 88,
     "name": "Grimer",
-    "species": "",
+    "species": "SLUDGE",
     "species-clean": "Sludge",
     "height": "2′11″",
     "weight": "66.0 lb",
     "desc": "Appears in filthy areas. Thrives by sucking up polluted sludge that is pumped out of factories.",
-    "types": ["Poison", ""],
+    "types": [11],
+    "evolveTo": [
+        {
+            "id": 89,
+            "type": 0,
+            "lvl": 38
+        }
+    ],
     "imgGBC": "/imgs/pokemon_088_grimer.png"
   },
   {
     "id": 89,
     "name": "Muk",
-    "species": "",
+    "species": "SLUDGE",
     "species-clean": "Sludge",
     "height": "3′11″",
     "weight": "66.0 lb",
     "desc": "Thickly covered with a filthy, vile sludge. It is so toxic, even its footprints contain poison.",
-    "types": ["Poison", ""],
+    "types": [11],
+    "evolveFrom": [88],
     "imgGBC": "/imgs/pokemon_089_muk.png"
   },
   {
     "id": 90,
     "name": "Shellder",
-    "species": "",
+    "species": "BIVALVE",
     "species-clean": "Bivalve",
     "height": "1′00″",
     "weight": "9.0 lb",
     "desc": "Its hard shell repels any kind of attack. It is vulnerable only when its shell is open.",
-    "types": ["Water", ""],
+    "types": [14],
+    "evolveTo": [
+        {
+            "id": 91,
+            "type": 1,
+            "item": "Water Stone"
+        }
+    ],
     "imgGBC": "/imgs/pokemon_090_shellder.png"
   },
   {
     "id": 91,
     "name": "Cloyster",
-    "species": "",
+    "species": "BIVALVE",
     "species-clean": "Bivalve",
     "height": "4′11″",
     "weight": "292.0 lb",
     "desc": "When attacked, it launches its horns in quick volleys. Its innards have never been seen.",
-    "types": ["Water", "Ice"],
+    "types": [14, 9],
+    "evolveFrom": [90],
     "imgGBC": "/imgs/pokemon_091_cloyster.png"
   },
   {
     "id": 92,
     "name": "Gastly",
-    "species": "",
+    "species": "GAS",
     "species-clean": "Gas",
     "height": "4′03″",
     "weight": "0.2 lb",
     "desc": "Almost invisible, this gaseous POKéMON cloaks the target and puts it to sleep without notice.",
-    "types": ["Ghost", "Poison"],
+    "types": [6, 11],
+    "evolveTo": [
+        {
+            "id": 93,
+            "type": 0,
+            "lvl": 25
+        }
+    ],
     "imgGBC": "/imgs/pokemon_092_gastly.png"
   },
   {
     "id": 93,
     "name": "Haunter",
-    "species": "",
+    "species": "GAS",
     "species-clean": "Gas",
     "height": "5′03″",
     "weight": "0.2 lb",
     "desc": "Because of its ability to slip through block wallsm it is said to be from another dimension.",
-    "types": ["Ghost", "Poison"],
+    "types": [6, 11],
+    "evolveFrom": [92],
+    "evolveTo": [
+        {
+            "id": 94,
+            "type": 2
+        }
+    ],
     "imgGBC": "/imgs/pokemon_093_haunter.png"
   },
   {
     "id": 94,
     "name": "Gengar",
-    "species": "",
+    "species": "SHADOW",
     "species-clean": "Shadow",
     "height": "4′11″",
     "weight": "89.0 lb",
     "desc": "Under a full moon, this POKéMON likes to mimic the shadows of people and laugh at their fright.",
-    "types": ["Ghost", "Poison"],
+    "types": [6, 11],
+    "evolveFrom": [39],
     "imgGBC": "/imgs/pokemon_094_gengar.png"
   },
   {
     "id": 95,
     "name": "Onix",
-    "species": "",
+    "species": "ROCK SNAKE",
     "species-clean": "Rock Snake",
     "height": "28′10″",
     "weight": "463.0 lb",
     "desc": "As it grows, the stone portions of its body harden to become similar to a diamond, but colored black.",
-    "types": ["Rock", "Ground"],
+    "types": [13, 8],
     "imgGBC": "/imgs/pokemon_095_onix.png"
   },
   {
     "id": 96,
     "name": "Drowzee",
-    "species": "",
+    "species": "HYPNOSIS",
     "species-clean": "Hypnosis",
     "height": "3′03″",
     "weight": "71.0 lb",
     "desc": "Puts enemies to sleep then eats their dreams. Occasionally gets sick from eating bad dreams.",
-    "types": ["Psychic", ""],
+    "types": [12],
+    "evolveTo": [
+        {
+            "id": 97,
+            "type": 0,
+            "lvl": 26
+        }
+    ],
     "imgGBC": "/imgs/pokemon_096_drowzee.png"
   },
   {
     "id": 97,
     "name": "Hypno",
-    "species": "",
+    "species": "HYPNOSIS",
     "species-clean": "Hypnosis",
     "height": "5′03″",
     "weight": "167.0 lb",
     "desc": "When it locks eyes with an enemy, it will use a mix of PSI moves such as HYPNOSIS and CONFUSION.",
-    "types": ["Psychic", ""],
+    "types": [12],
+    "evolveFrom": [96],
     "imgGBC": "/imgs/pokemon_097_hypno.png"
   },
   {
     "id": 98,
     "name": "Krabby",
-    "species": "",
+    "species": "RIVER CRAB",
     "species-clean": "River Crab",
     "height": "1′04″",
     "weight": "14.0 lb",
     "desc": "Its pincers are not only powerful weapons, they are used for balance when walking sideways.",
-    "types": ["Water", ""],
+    "types": [14],
+    "evolveTo": [
+        {
+            "id": 99,
+            "type": 0,
+            "lvl": 28
+        }
+    ],
     "imgGBC": "/imgs/pokemon_098_krabby.png"
   },
   {
     "id": 99,
     "name": "Kingler",
-    "species": "",
+    "species": "PINCER",
     "species-clean": "Pincer",
     "height": "4′03″",
     "weight": "132.0 lb",
     "desc": "The large pincer has 10000 hp of crushing power. However, its huge size makes it unwieldy to use.",
-    "types": ["Water", ""],
+    "types": [14],
+    "evolveFrom": [98],
     "imgGBC": "/imgs/pokemon_099_kingler.png"
   },
   {
     "id": 100,
     "name": "Voltorb",
-    "species": "",
+    "species": "BALL",
     "species-clean": "Ball",
     "height": "1′08″",
     "weight": "23.0 lb",
     "desc": "Usually found in power plants. Easily mistaken for POKé BALL, they have zapped many people.",
-    "types": ["Electric", ""],
+    "types": [2],
+    "evolveTo": [
+        {
+            "id": 101,
+            "type": 0,
+            "lvl": 30
+        }
+    ],
     "imgGBC": "/imgs/pokemon_100_voltorb.png"
   },
   {
     "id": 101,
     "name": "Electrode",
-    "species": "",
+    "species": "BALL",
     "species-clean": "Ball",
     "height": "3′11″",
     "weight": "147.0 lb",
     "desc": "It stores electric energy under very high pressure. It often explodes with little or no provocation.",
-    "types": ["Electric", ""],
+    "types": [2],
+    "evolveFrom": [100],
     "imgGBC": "/imgs/pokemon_101_electrode.png"
   },
   {
     "id": 102,
     "name": "Exeggcute",
-    "species": "",
+    "species": "EGG",
     "species-clean": "Egg",
     "height": "1′04″",
     "weight": "6.0 lb",
     "desc": "Often mistaken for eggs. When disturbed, they quickly gather and attack in swarms.",
-    "types": ["Grass", "Psychic"],
+    "types": [7, 12],
+    "evolveTo": [
+        {
+            "id": 103,
+            "type": 1,
+            "item": "Leaf Stone"
+        }
+    ],
     "imgGBC": "/imgs/pokemon_102_exeggcute.png"
   },
   {
     "id": 103,
     "name": "Exeggutor",
-    "species": "",
+    "species": "COCONUT",
     "species-clean": "Coconut",
     "height": "6′07″",
     "weight": "265.0 lb",
     "desc": "Legend has it that on rare occasions, one of its heads will drop off and continue on as an EXEGGCUTE.",
-    "types": ["Grass", "Psychic"],
+    "types": [7, 12],
+    "evolveFrom": [102],
     "imgGBC": "/imgs/pokemon_103_exeggutor.png"
   },
   {
     "id": 104,
     "name": "Cubone",
-    "species": "",
+    "species": "LONELY",
     "species-clean": "Lonely",
     "height": "1′04″",
     "weight": "14.0 lb",
     "desc": "Because it never removes its skull helmet, no one has ever seen this POKéMON's real face.",
-    "types": ["Ground", ""],
+    "types": [8],
+    "evolveTo": [
+        {
+            "id": 105,
+            "type": 0,
+            "lvl": 28
+        }
+    ],
     "imgGBC": "/imgs/pokemon_104_cubone.png"
   },
   {
     "id": 105,
     "name": "Marowak",
-    "species": "",
+    "species": "BONEKEEPER",
     "species-clean": "Bone Keeper",
     "height": "3′03″",
     "weight": "99.0 lb",
     "desc": "The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets.",
-    "types": ["Ground", ""],
+    "types": [8],
+    "evolveFrom": [104],
     "imgGBC": "/imgs/pokemon_105_marowak.png"
   },
   {
     "id": 106,
     "name": "Hitmonlee",
-    "species": "",
+    "species": "KICKING",
     "species-clean": "Kicking",
     "height": "4′11″",
     "weight": "110.0 lb",
     "desc": "When in a hurry, its legs lenghten progressively. It runs smoothly With extra long, loping strides.",
-    "types": ["Fighting", ""],
+    "types": [3],
     "imgGBC": "/imgs/pokemon_106_hitmonlee.png"
   },
   {
     "id": 107,
     "name": "Hitmonchan",
-    "species": "",
+    "species": "PUNCHING",
     "species-clean": "Punching",
     "height": "4′07″",
     "weight": "111.0 lb",
     "desc": "While apparently doing nothing, it fires punches in lightning fast volleys that are impossible to see.",
-    "types": ["Fighting", ""],
+    "types": [3],
     "imgGBC": "/imgs/pokemon_107_hitmonchan.png"
   },
   {
     "id": 108,
     "name": "Lickitung",
-    "species": "",
+    "species": "LICKING",
     "species-clean": "Licking",
     "height": "3′11″",
     "weight": "144.0 lb",
     "desc": "Its tongue can be extended like a chameleon's. It leaves a tingling sensation when it licks enemies.",
-    "types": ["Normal", ""],
+    "types": [10],
     "imgGBC": "/imgs/pokemon_108_lickitung.png"
   },
   {
     "id": 109,
     "name": "Koffing",
-    "species": "",
+    "species": "POISON GAS",
     "species-clean": "Poison Gas",
     "height": "2′00″",
     "weight": "2.0 lb",
     "desc": "Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning.",
-    "types": ["Poison", ""],
+    "types": [11],
+    "evolveTo": [
+        {
+            "id": 110,
+            "type": 0,
+            "lvl": 35
+        }
+    ],
     "imgGBC": "/imgs/pokemon_109_koffing.png"
   },
   {
     "id": 110,
     "name": "Weezing",
-    "species": "",
+    "species": "POISON GAS",
     "species-clean": "Poison Gas",
     "height": "3′11″",
     "weight": "21.0 lb",
     "desc": "Where two kinds of poison gases meet, 2 KOFFINGSs can fuse into a WEEZING over many years.",
-    "types": ["Poison", ""],
+    "types": [11],
+    "evolveFrom": [109],
     "imgGBC": "/imgs/pokemon_110_weezing.png"
   },
   {
     "id": 111,
     "name": "Rhyhorn",
-    "species": "",
+    "species": "SPIKES",
     "species-clean": "Spikes",
     "height": "3′03″",
     "weight": "254.0 lb",
     "desc": "Its massive bones are 1000 times harder than human bones. It can easily knock a trailer flying.",
-    "types": ["Rock", "Ground"],
+    "types": [13, 8],
+    "evolveTo": [
+        {
+            "id": 112,
+            "type": 0,
+            "lvl": 42
+        }
+    ],
     "imgGBC": "/imgs/pokemon_111_rhyhorn.png"
   },
   {
     "id": 112,
     "name": "Rhydon",
-    "species": "",
+    "species": "DRILL",
     "species-clean": "Drill",
     "height": "6′03″",
     "weight": "265.0 lb",
     "desc": "Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees.",
-    "types": ["Rock", "Ground"],
+    "types": [13, 8],
+    "evolveFrom": [111],
     "imgGBC": "/imgs/pokemon_112_rhydon.png"
   },
   {
     "id": 113,
     "name": "Chansey",
-    "species": "",
+    "species": "EGG",
     "species-clean": "Egg",
     "height": "3′07″",
     "weight": "76.0 lb",
     "desc": "A rare and elusive POKéMON that is said to bring happiness to those who manage to get it.",
-    "types": ["Normal", ""],
+    "types": [10],
     "imgGBC": "/imgs/pokemon_113_chansey.png"
   },
   {
     "id": 114,
     "name": "Tangela",
-    "species": "",
+    "species": "VINE",
     "species-clean": "Vine",
     "height": "3′03″",
     "weight": "77.0 lb",
     "desc": "The whole body is swathed with wide vines that are similar to seaweed. Its vines shake as it walks.",
-    "types": ["Grass", ""],
+    "types": [7],
     "imgGBC": "/imgs/pokemon_114_tangela.png"
   },
   {
     "id": 115,
     "name": "Kangaskhan",
-    "species": "",
+    "species": "PARENT",
     "species-clean": "Parent",
     "height": "7′03″",
     "weight": "176.0 lb",
     "desc": "The infant rarely ventures out of its mother's protective pouch until it is 3 years old.",
-    "types": ["Normal", ""],
+    "types": [10],
     "imgGBC": "/imgs/pokemon_115_kangaskhan.png"
   },
   {
     "id": 116,
     "name": "Horsea",
-    "species": "",
+    "species": "DRAGON",
     "species-clean": "Dragon",
     "height": "1′04″",
     "weight": "18.0 lb",
     "desc": "Known to shoot down flying bugs with precision blasts of ink from the surface of the water.",
-    "types": ["Water", ""],
+    "types": [14],
+    "evolveTo": [
+        {
+            "id": 117,
+            "type": 0,
+            "lvl": 32
+        }
+    ],
     "imgGBC": "/imgs/pokemon_116_horsea.png"
   },
   {
     "id": 117,
     "name": "Seadra",
-    "species": "",
+    "species": "DRAGON",
     "species-clean": "Dragon",
     "height": "3′11″",
     "weight": "55.0 lb",
     "desc": "Capable of swimming backwards by rapidly flapping its wing-like pectoral fins and stout tail.",
-    "types": ["Water", ""],
+    "types": [14],
+    "evolveFrom": [116],
     "imgGBC": "/imgs/pokemon_117_seadra.png"
   },
   {
     "id": 118,
     "name": "Goldeen",
-    "species": "",
+    "species": "GOLDFISH",
     "species-clean": "Goldfish",
     "height": "2′00″",
     "weight": "33.0 lb",
     "desc": "Its tail fin billows like an elegant ballroom dress, giving it the nickname of the Water Queen.",
-    "types": ["Water", ""],
+    "types": [14],
+    "evolveTo": [
+        {
+            "id": 119,
+            "type": 0,
+            "lvl": 33
+        }
+    ],
     "imgGBC": "/imgs/pokemon_118_goldeen.png"
   },
   {
     "id": 119,
     "name": "Seaking",
-    "species": "",
+    "species": "GOLDFISH",
     "species-clean": "Goldfish",
     "height": "4′03″",
     "weight": "86.0 lb",
     "desc": "In the autumn spawning season, they can be seen swimming powerfully up rivers and creeks.",
-    "types": ["Water", ""],
+    "types": [14],
+    "evolveFrom": [118],
     "imgGBC": "/imgs/pokemon_119_seaking.png"
   },
   {
     "id": 120,
     "name": "Staryu",
-    "species": "",
+    "species": "STARSHAPE",
     "species-clean": "Star Shape",
     "height": "2′07″",
     "weight": "76.0 lb",
     "desc": "An enigmatic POKéMON that can effortlessly regenerate any appendage it loses in battle.",
-    "types": ["Water", ""],
+    "types": [14],
+    "evolveTo": [
+        {
+            "id": 121,
+            "type": 1,
+            "item": "Water Stone"
+        }
+    ],
     "imgGBC": "/imgs/pokemon_120_staryu.png"
   },
   {
     "id": 121,
     "name": "Starmie",
-    "species": "",
+    "species": "MYSTERIOUS",
     "species-clean": "Mysterious",
     "height": "3′07″",
     "weight": "176.0 lb",
     "desc": "Its central core glows with the seven colors of the rainbow. Some people value the core as a gem.",
-    "types": ["Water", "Psychic"],
+    "types": [14, 12],
+    "evolveFrom": [120],
     "imgGBC": "/imgs/pokemon_121_starmie.png"
   },
   {
     "id": 122,
     "name": "Mr. Mime",
-    "species": "",
+    "species": "BARRIER",
     "species-clean": "Barrier",
     "height": "4′03″",
     "weight": "120.0 lb",
     "desc": "If interrupted while its miming, it will slap around the offender with its broad hands.",
-    "types": ["Psychic", ""],
+    "types": [12],
     "imgGBC": "/imgs/pokemon_122_mr_mime.png"
   },
   {
     "id": 123,
     "name": "Scyther",
-    "species": "",
+    "species": "MANTIS",
     "species-clean": "Mantis",
     "height": "4′11″",
     "weight": "123.0 lb",
     "desc": "With ninja-like agility and speed, it can create the illusion that there is more than one.",
-    "types": ["Bug", "Flying"],
+    "types": [0, 5],
     "imgGBC": "/imgs/pokemon_123_scyther.png"
   },
   {
@@ -1360,7 +1868,7 @@
     "height": "4′07″",
     "weight": "90.0 lb",
     "desc": "It seductively wiggles its hips as it walks. It can cause people to dance in unison with it.",
-    "types": ["Ice", "Psychic"],
+    "types": [9, 12],
     "imgGBC": "/imgs/pokemon_124_jynx.png"
   },
   {
@@ -1371,7 +1879,7 @@
     "height": "3′07″",
     "weight": "66.0 lb",
     "desc": "Normally found near power plants, they can wander away and cause major blackouts in cities.",
-    "types": ["Electric", ""],
+    "types": [2],
     "imgGBC": "/imgs/pokemon_125_electabuzz.png"
   },
   {
@@ -1382,7 +1890,7 @@
     "height": "4′03″",
     "weight": "98.0 lb",
     "desc": "Its body always burns with an orange glow that enables it to hide perfectly among flames.",
-    "types": ["Fire", ""],
+    "types": [4],
     "imgGBC": "/imgs/pokemon_126_magmar.png"
   },
   {
@@ -1393,7 +1901,7 @@
     "height": "4′11″",
     "weight": "121.0 lb",
     "desc": "If it tails to crush the vitim in its pincers,it will swing it around and toss it hard. ",
-    "types": ["Bug", ""],
+    "types": [0],
     "imgGBC": "/imgs/pokemon_127_pinsir.png"
   },
   {
@@ -1404,7 +1912,7 @@
     "height": "4′07″",
     "weight": "195.0 lb",
     "desc": "When it targets an enemy, it charges furiously while whipping its body with its long tails.",
-    "types": ["Normal", ""],
+    "types": [10],
     "imgGBC": "/imgs/pokemon_128_tauros.png"
   },
   {
@@ -1415,7 +1923,14 @@
     "height": "2′11″",
     "weight": "22.0 lb",
     "desc": "In the distant past, it was somewhat stronger than the horribly weak descendants that exist today.",
-    "types": ["Water", ""],
+    "types": [14],
+    "evolveTo": [
+        {
+            "id": 130,
+            "type": 0,
+            "lvl": 20
+        }
+    ],
     "imgGBC": "/imgs/pokemon_129_magikarp.png"
   },
   {
@@ -1426,238 +1941,291 @@
     "height": "21′04″",
     "weight": "518.0 lb",
     "desc": "Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage.",
-    "types": ["Water", "Flying"],
+    "types": [14, 5],
+    "evolveFrom": [129],
     "imgGBC": "/imgs/pokemon_130_gyarados.png"
   },
   {
     "id": 131,
     "name": "Lapras",
-    "species": "",
-    "species-clean": "",
-    "height": "0′00″",
-    "weight": "0.0 lb",
-    "desc": "",
-    "types": ["Water", "Ice"],
+    "species": "TRANSPORT",
+    "species-clean": "Transport",
+    "height": "8′02″",
+    "weight": "485.0 lb",
+    "desc": "A POKéMON that has been overhunted almost to extinction. It can ferry people across the water.",
+    "types": [14, 9],
     "imgGBC": "/imgs/pokemon_131_lapras.png"
   },
   {
     "id": 132,
     "name": "Ditto",
-    "species": "",
-    "species-clean": "",
-    "height": "0′00″",
-    "weight": "0.0 lb",
-    "desc": "",
-    "types": ["Normal", ""],
+    "species": "TRANSFORM",
+    "species-clean": "Transform",
+    "height": "1′00″",
+    "weight": "9.0 lb",
+    "desc": "Capable of copying an enemy's genetic code to instantly transform itself into a duplicate of the enemy.",
+    "types": [10],
     "imgGBC": "/imgs/pokemon_132_ditto.png"
   },
   {
     "id": 133,
     "name": "Eevee",
-    "species": "",
-    "species-clean": "",
-    "height": "0′00″",
-    "weight": "0.0 lb",
-    "desc": "",
-    "types": ["Normal", ""],
+    "species": "EVOLUTION",
+    "species-clean": "Evolution",
+    "height": "1′00″",
+    "weight": "14.0 lb",
+    "desc": "Its genetic code is irregular. It may mutate if it is exposed to radiation from element STONEs.",
+    "types": [10],
+    "evolveTo": [
+        {
+            "id": 134,
+            "type": 1,
+            "item": "Water Stone"
+        },
+        {
+            "id": 135,
+            "type": 1,
+            "item": "Thunderstone"
+        },
+        {
+            "id": 136,
+            "type": 1,
+            "item": "Fire Stone"
+        }
+    ],
     "imgGBC": "/imgs/pokemon_133_eevee.png"
   },
   {
     "id": 134,
     "name": "Vaporeon",
-    "species": "",
-    "species-clean": "",
-    "height": "0′00″",
-    "weight": "0.0 lb",
-    "desc": "",
-    "types": ["Water", ""],
+    "species": "BUBBLE JET",
+    "species-clean": "Bubble Jet",
+    "height": "3′03″",
+    "weight": "64.0 lb",
+    "desc": "Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid's.",
+    "types": [14],
+    "evolveFrom": [133],
     "imgGBC": "/imgs/pokemon_134_vaporeon.png"
   },
   {
     "id": 135,
     "name": "Jolteon",
-    "species": "",
-    "species-clean": "",
-    "height": "0′00″",
-    "weight": "0.0 lb",
-    "desc": "",
-    "types": ["Electric", ""],
+    "species": "LIGHTNING",
+    "species-clean": "Lightning",
+    "height": "2′07″",
+    "weight": "54.0 lb",
+    "desc": "It accumulates negative ions in the atmosphere to blast out 10000-volt lightning bolts.",
+    "types": [2],
+    "evolveFrom": [133],
     "imgGBC": "/imgs/pokemon_135_jolteon.png"
   },
   {
     "id": 136,
     "name": "Flareon",
-    "species": "",
-    "species-clean": "",
-    "height": "0′00″",
-    "weight": "0.0 lb",
-    "desc": "",
-    "types": ["Fire", ""],
+    "species": "FLAME",
+    "species-clean": "Flame",
+    "height": "2′11″",
+    "weight": "55.0 lb",
+    "desc": "When storing thermal energy in its body, its temperature could soar to over 1600 degrees.",
+    "types": [4],
+    "evolveFrom": [133],
     "imgGBC": "/imgs/pokemon_136_flareon.png"
   },
   {
     "id": 137,
     "name": "Porygon",
-    "species": "",
-    "species-clean": "",
-    "height": "0′00″",
-    "weight": "0.0 lb",
-    "desc": "",
-    "types": ["Normal", ""],
+    "species": "VIRTUAL",
+    "species-clean": "Virtual",
+    "height": "2′07″",
+    "weight": "80.0 lb",
+    "desc": "A POKéMON that consists entirely of programming code. Capable of moving freely in cyberspace.",
+    "types": [10],
     "imgGBC": "/imgs/pokemon_137_porygon.png"
   },
   {
     "id": 138,
     "name": "Omanyte",
-    "species": "",
-    "species-clean": "",
-    "height": "0′00″",
-    "weight": "0.0 lb",
-    "desc": "",
-    "types": ["Rock", "Water"],
+    "species": "SPIRAL",
+    "species-clean": "Spiral",
+    "height": "1′04″",
+    "weight": "17.0 lb",
+    "desc": "Although long extinct, in rare cases, it can be genetically ressurrected from fossils.",
+    "types": [13, 14],
+    "evolveTo": [
+        {
+            "id": 139,
+            "type": 0,
+            "lvl": 40
+        }
+    ],
     "imgGBC": "/imgs/pokemon_138_omanyte.png"
   },
   {
     "id": 139,
     "name": "Omastar",
-    "species": "",
-    "species-clean": "",
-    "height": "0′00″",
-    "weight": "0.0 lb",
-    "desc": "",
-    "types": ["Rock", "Water"],
+    "species": "SPIRAL",
+    "species-clean": "Spiral",
+    "height": "3′03″",
+    "weight": "77.0 lb",
+    "desc": "A prehistoric POKéMON that died out when its heavy shell made it impossible to catch prey.",
+    "types": [13, 14],
+    "evolveFrom": [138],
     "imgGBC": "/imgs/pokemon_139_omastar.png"
   },
   {
     "id": 140,
     "name": "Kabuto",
-    "species": "",
-    "species-clean": "",
-    "height": "0′00″",
-    "weight": "0.0 lb",
-    "desc": "",
-    "types": ["Rock", "Water"],
+    "species": "SHELLFISH",
+    "species-clean": "Shellfish",
+    "height": "1′08″",
+    "weight": "25.0 lb",
+    "desc": "A POKéMON that was ressurrected from a fossil found in what was once the ocean floor eons ago.",
+    "types": [13, 14],
+    "evolveTo": [
+        {
+            "id": 141,
+            "type": 0,
+            "lvl": 40
+        }
+    ],
     "imgGBC": "/imgs/pokemon_140_kabuto.png"
   },
   {
     "id": 141,
     "name": "Kabutops",
-    "species": "",
-    "species-clean": "",
-    "height": "0′00″",
-    "weight": "0.0 lb",
-    "desc": "",
-    "types": ["Rock", "Water"],
+    "species": "SHELLFISH",
+    "species-clean": "Shellfish",
+    "height": "4′03″",
+    "weight": "89.0 lb",
+    "desc": "Its sleek shape is perfect for swimming. It slashes prey with its claws and drains the body of fluids.",
+    "types": [13, 14],
+    "evolveFrom": [140],
     "imgGBC": "/imgs/pokemon_141_kabutops.png"
   },
   {
     "id": 142,
     "name": "Aerodactyl",
-    "species": "",
-    "species-clean": "",
-    "height": "0′00″",
-    "weight": "0.0 lb",
-    "desc": "",
-    "types": ["Rock", "Flying"],
+    "species": "FOSSIL",
+    "species-clean": "Fossil",
+    "height": "5′11″",
+    "weight": "130.0 lb",
+    "desc": "A ferocious, prehistoric POKéMON that goes for the enemy's throat with its serrated saw-like fangs.",
+    "types": [13, 5],
     "imgGBC": "/imgs/pokemon_142_aerodactyl.png"
   },
   {
     "id": 143,
     "name": "Snorlax",
-    "species": "",
-    "species-clean": "",
-    "height": "0′00″",
-    "weight": "0.0 lb",
-    "desc": "",
-    "types": ["Normal", ""],
+    "species": "SLEEPING",
+    "species-clean": "Sleeping",
+    "height": "6′11″",
+    "weight": "1014.0 lb",
+    "desc": "Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful.",
+    "types": [10],
     "imgGBC": "/imgs/pokemon_143_snorlax.png"
   },
   {
     "id": 144,
     "name": "Articuno",
-    "species": "",
-    "species-clean": "",
-    "height": "0′00″",
-    "weight": "0.0 lb",
-    "desc": "",
-    "types": ["Ice", "Flying"],
+    "species": "FREEZE",
+    "species-clean": "Freeze",
+    "height": "5′07″",
+    "weight": "122.0 lb",
+    "desc": "A legendary bird POKéMON that is said to appear to doomed people who are lost in icy mountains.",
+    "types": [9, 5],
     "imgGBC": "/imgs/pokemon_144_articuno.png"
   },
   {
     "id": 145,
     "name": "Zapdos",
-    "species": "",
-    "species-clean": "",
-    "height": "0′00″",
-    "weight": "0.0 lb",
-    "desc": "",
-    "types": ["Electric", "Flying"],
+    "species": "ELECTRIC",
+    "species-clean": "Electric",
+    "height": "5′03″",
+    "weight": "116.0 lb",
+    "desc": "A legendary bird POKéMON that is said to appear from clouds while dropping enormous lightning bolts.",
+    "types": [2, 5],
     "imgGBC": "/imgs/pokemon_145_zapdos.png"
   },
   {
     "id": 146,
     "name": "Moltress",
-    "species": "",
-    "species-clean": "",
-    "height": "0′00″",
-    "weight": "0.0 lb",
-    "desc": "",
-    "types": ["Fire", "Flying"],
+    "species": "FLAME",
+    "species-clean": "Flame",
+    "height": "6′07″",
+    "weight": "132.0 lb",
+    "desc": "Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames.",
+    "types": [4, 5],
     "imgGBC": "/imgs/pokemon_146_moltress.png"
   },
   {
     "id": 147,
     "name": "Dratini",
-    "species": "",
-    "species-clean": "",
-    "height": "0′00″",
-    "weight": "0.0 lb",
-    "desc": "",
-    "types": ["Dragon", ""],
+    "species": "DRAGON",
+    "species-clean": "Dragon",
+    "height": "5′11″",
+    "weight": "7.0 lb",
+    "desc": "Long considered a mythical POKéMON until recently when a small colony was found living underwater.",
+    "types": [1],
+    "evolveTo": [
+        {
+            "id": 148,
+            "type": 0,
+            "lvl": 30
+        }
+    ],
     "imgGBC": "/imgs/pokemon_147_dratini.png"
   },
   {
     "id": 148,
     "name": "Dragonair",
-    "species": "",
-    "species-clean": "",
-    "height": "0′00″",
-    "weight": "0.0 lb",
-    "desc": "",
-    "types": ["Dragon", ""],
+    "species": "DRAGON",
+    "species-clean": "Dragon",
+    "height": "13′01″",
+    "weight": "36.0 lb",
+    "desc": "A mystical POKéMON that exudes a gentle aura. Has the ability to change climate conditions.",
+    "types": [1],
+    "evolveFrom": [147],
+    "evolveTo": [
+        {
+            "id": 149,
+            "type": 0,
+            "lvl": 55
+        }
+    ],
     "imgGBC": "/imgs/pokemon_148_dragonair.png"
   },
   {
     "id": 149,
     "name": "Dragonite",
-    "species": "",
-    "species-clean": "",
-    "height": "0′00″",
-    "weight": "0.0 lb",
-    "desc": "",
-    "types": ["Dragon", "Flying"],
+    "species": "DRAGON",
+    "species-clean": "Dragon",
+    "height": "7′03″",
+    "weight": "463.0 lb",
+    "desc": "An extremely rarely seen marine POKéMON. Its intelligence is said to match that of humans.",
+    "types": [1, 5],
+    "evolveFrom": [148],
     "imgGBC": "/imgs/pokemon_149_dragonite.png"
   },
   {
     "id": 150,
     "name": "Mewtwo",
-    "species": "",
-    "species-clean": "",
-    "height": "0′00″",
-    "weight": "0.0 lb",
-    "desc": "",
-    "types": ["Psychic", ""],
+    "species": "GENETIC",
+    "species-clean": "Genetic",
+    "height": "6′07″",
+    "weight": "269.0 lb",
+    "desc": "It was created by a scientist after years of horrific gene splicing and DNA engineering experiments.",
+    "types": [12],
     "imgGBC": "/imgs/pokemon_150_mewtwo.png"
   },
   {
     "id": 151,
     "name": "Mew",
-    "species": "",
-    "species-clean": "",
-    "height": "0′00″",
-    "weight": "0.0 lb",
-    "desc": "",
-    "types": ["Psychic", ""],
+    "species": "NEW SPECIE",
+    "species-clean": "New Specie",
+    "height": "1′04″",
+    "weight": "9.0 lb",
+    "desc": "So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide.",
+    "types": [12],
     "imgGBC": "/imgs/pokemon_151_mew.png"
   }
 ]
