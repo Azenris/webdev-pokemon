@@ -4,6 +4,7 @@ import { Home } from "./pages/Home"
 import { About } from "./pages/About"
 import { Pokemon } from "./pages/Pokemon"
 import { PokemonLocations } from "./components/PokemonLocations"
+import { PokemonCollection } from "./pages/PokemonCollection"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route index element={<Pokemon />} />
           <Route path="locations" element={<PokemonLocations />} />
         </Route>
+        <Route path="collection" element={<PokemonCollection />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </PokemonContextProvider>

@@ -1,13 +1,5 @@
 import { ReactNode, createContext, useContext } from "react";
 
-type PokemonContextProviderData = {
-  children: ReactNode
-};
-
-export type PokemonContext = {
-  version: number;
-};
-
 export const PokemonTypes: string[] = [
   "Bug",
   "Dragon",
@@ -36,6 +28,14 @@ export enum PokemonGameVersion {
   Red,
   Blue,
   Yellow,
+};
+
+type PokemonContextProviderData = {
+  children: ReactNode
+};
+
+export type PokemonContext = {
+  version: number;
 };
 
 const PokemonContext = createContext({} as PokemonContext);

@@ -1,7 +1,7 @@
 export function PokemonLocations() {
   return (
     <>
-      <h2>PokemonLocations</h2>
+      <h2>POKéMON Locations</h2>
     </>
   );
 }
