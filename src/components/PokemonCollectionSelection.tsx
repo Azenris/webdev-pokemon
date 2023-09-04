@@ -9,22 +9,24 @@ export function PokemonCollectionSelection({ pokemonID }: PokemonCollectionSelec
 
   const { isInCollection, setInCollection } = usePokemonContext();
   const pokemon = pokemonDB.find(i => i.id === pokemonID);
+  const inCollection = pokemon ? isInCollection(pokemon.id) : false;
+  const active = inCollection ? "caught" : false;
 
   function toggleSelected() {
     if (pokemon) {
-      setInCollection(pokemon.id, !isInCollection(pokemon.id));
+      setInCollection(pokemon.id, !inCollection);
     }
   }
 
   if (pokemon)
   {
     return (
-      <div className="collection-box" onClick={toggleSelected}>
-        <div className="collection-name">{pokemon.name}</div>
-        <div className="collection-image-block">
-          <img className="collection-image" src={pokemon.imgGBC} alt={pokemon.name} width={pokemon.imgW} height={pokemon.imgH} />
+      <div className={`collection-box ${active}`} onClick={toggleSelected}>
+        <div className={`collection-name ${active}`}>{pokemon.name}</div>
+        <div className={`collection-image-block ${active}`}>
+          <img className={`collection-image ${active}`} src={pokemon.imgGBC} alt={pokemon.name} width={pokemon.imgW} height={pokemon.imgH} />
         </div>
-        <div className="collection-dexno">#{pokemon.id}</div>
+        <div className={`collection-dexno ${active}`}>#{pokemon.id}</div>
       </div>
     );
   }
