@@ -50,6 +50,18 @@ export enum PokemonGameVersion {
   Yellow,
 };
 
+export const PokemonGameVersionNames: string[] = [
+  "Red Version",
+  "Blue Version",
+  "Yellow Version",
+];
+
+export const PokemonAvailableGameVersionNames: string[] = [
+  "Available in Red Version",
+  "Available in Blue Version",
+  "Available in Yellow Version",
+];
+
 type PokemonContextProviderData = {
   children: ReactNode
 };
