@@ -16,7 +16,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_001_bulbasaur.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_001_bulbasaur.png",
     "imgW": 34,
     "imgH": 36
   },
@@ -38,7 +38,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_002_ivysaur.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_002_ivysaur.png",
     "imgW": 40,
     "imgH": 40
   },
@@ -53,7 +53,7 @@
     "types": [7, 11],
     "evolveFrom": [2],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_003_venusaur.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_003_venusaur.png",
     "imgW": 53,
     "imgH": 50
   },
@@ -74,7 +74,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_004_charmander.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_004_charmander.png",
     "imgW": 35,
     "imgH": 39
   },
@@ -96,7 +96,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_005_charmeleon.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_005_charmeleon.png",
     "imgW": 48,
     "imgH": 45
   },
@@ -111,7 +111,7 @@
     "types": [4, 5],
     "evolveFrom": [5],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_006_charizard.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_006_charizard.png",
     "imgW": 55,
     "imgH": 55
   },
@@ -132,7 +132,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_007_squirtle.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_007_squirtle.png",
     "imgW": 35,
     "imgH": 32
   },
@@ -154,7 +154,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_008_wartortle.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_008_wartortle.png",
     "imgW": 39,
     "imgH": 44
   },
@@ -169,7 +169,7 @@
     "types": [14],
     "evolveFrom": [8],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_009_blastoise.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_009_blastoise.png",
     "imgW": 54,
     "imgH": 54
   },
@@ -190,7 +190,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_010_caterpie.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_010_caterpie.png",
     "imgW": 26,
     "imgH": 26
   },
@@ -212,7 +212,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_011_metapod.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_011_metapod.png",
     "imgW": 28,
     "imgH": 32
   },
@@ -227,7 +227,7 @@
     "types": [0, 5],
     "evolveFrom": [11],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_012_butterfree.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_012_butterfree.png",
     "imgW": 54,
     "imgH": 53
   },
@@ -248,7 +248,7 @@
         }
     ],
     "available": [0, 1],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_013_weedle.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_013_weedle.png",
     "imgW": 24,
     "imgH": 35
   },
@@ -270,7 +270,7 @@
         }
     ],
     "available": [0, 1],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_014_kakuna.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_014_kakuna.png",
     "imgW": 27,
     "imgH": 38
   },
@@ -285,7 +285,7 @@
     "types": [0, 11],
     "evolveFrom": [14],
     "available": [0, 1],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_015_beedrill.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_015_beedrill.png",
     "imgW": 52,
     "imgH": 55
   },
@@ -306,7 +306,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_016_pidgey.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_016_pidgey.png",
     "imgW": 33,
     "imgH": 30
   },
@@ -328,7 +328,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_017_pidgeotto.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_017_pidgeotto.png",
     "imgW": 47,
     "imgH": 45
   },
@@ -343,7 +343,7 @@
     "types": [10, 5],
     "evolveFrom": [17],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_018_pidgeot.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_018_pidgeot.png",
     "imgW": 53,
     "imgH": 54
   },
@@ -364,7 +364,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_019_rattata.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_019_rattata.png",
     "imgW": 32,
     "imgH": 33
   },
@@ -379,7 +379,7 @@
     "types": [10],
     "evolveFrom": [19],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_020_raticate.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_020_raticate.png",
     "imgW": 48,
     "imgH": 47
   },
@@ -400,7 +400,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_021_spearow.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_021_spearow.png",
     "imgW": 32,
     "imgH": 32
   },
@@ -415,7 +415,7 @@
     "types": [10, 5],
     "evolveFrom": [21],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_022_fearow.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_022_fearow.png",
     "imgW": 58,
     "imgH": 48
   },
@@ -436,7 +436,7 @@
         }
     ],
     "available": [0],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_023_ekans.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_023_ekans.png",
     "imgW": 34,
     "imgH": 35
   },
@@ -451,7 +451,7 @@
     "types": [11],
     "evolveFrom": [23],
     "available": [0],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_024_arbok.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_024_arbok.png",
     "imgW": 55,
     "imgH": 56
   },
@@ -472,7 +472,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_025_pikachu.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_025_pikachu.png",
     "imgW": 39,
     "imgH": 40
   },
@@ -487,7 +487,7 @@
     "types": [2],
     "evolveFrom": [25],
     "available": [0, 1],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_026_raichu.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_026_raichu.png",
     "imgW": 54,
     "imgH": 54
   },
@@ -508,7 +508,7 @@
         }
     ],
     "available": [1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_027_sandshrew.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_027_sandshrew.png",
     "imgW": 37,
     "imgH": 35
   },
@@ -523,7 +523,7 @@
     "types": [8],
     "evolveFrom": [27],
     "available": [1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_028_sandslash.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_028_sandslash.png",
     "imgW": 47,
     "imgH": 48
   },
@@ -544,7 +544,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_029_nidoran.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_029_nidoran.png",
     "imgW": 31,
     "imgH": 26
   },
@@ -566,7 +566,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_030_nidorina.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_030_nidorina.png",
     "imgW": 46,
     "imgH": 39
   },
@@ -581,7 +581,7 @@
     "types": [11, 8],
     "evolveFrom": [30],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_031_nidoqueen.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_031_nidoqueen.png",
     "imgW": 56,
     "imgH": 56
   },
@@ -602,7 +602,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_032_nidoran.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_032_nidoran.png",
     "imgW": 36,
     "imgH": 33
   },
@@ -624,7 +624,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_033_nidorino.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_033_nidorino.png",
     "imgW": 44,
     "imgH": 43
   },
@@ -639,7 +639,7 @@
     "types": [11, 8],
     "evolveFrom": [33],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_034_nidoking.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_034_nidoking.png",
     "imgW": 56,
     "imgH": 56
   },
@@ -660,7 +660,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_035_clefairy.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_035_clefairy.png",
     "imgW": 37,
     "imgH": 35
   },
@@ -675,7 +675,7 @@
     "types": [10],
     "evolveFrom": [35],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_036_clefable.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_036_clefable.png",
     "imgW": 48,
     "imgH": 46
   },
@@ -696,7 +696,7 @@
         }
     ],
     "available": [1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_037_vulpix.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_037_vulpix.png",
     "imgW": 44,
     "imgH": 47
   },
@@ -711,7 +711,7 @@
     "types": [4],
     "evolveFrom": [37],
     "available": [1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_038_ninetales.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_038_ninetales.png",
     "imgW": 56,
     "imgH": 55
   },
@@ -732,7 +732,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_039_jigglypuff.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_039_jigglypuff.png",
     "imgW": 37,
     "imgH": 33
   },
@@ -747,7 +747,7 @@
     "types": [10],
     "evolveFrom": [39],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_040_wigglytuff.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_040_wigglytuff.png",
     "imgW": 47,
     "imgH": 48
   },
@@ -768,7 +768,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_041_zubat.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_041_zubat.png",
     "imgW": 39,
     "imgH": 37
   },
@@ -783,7 +783,7 @@
     "types": [11, 5],
     "evolveFrom": [41],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_042_golbat.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_042_golbat.png",
     "imgW": 56,
     "imgH": 55
   },
@@ -804,7 +804,7 @@
         }
     ],
     "available": [0, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_043_oddish.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_043_oddish.png",
     "imgW": 29,
     "imgH": 33
   },
@@ -826,7 +826,7 @@
         }
     ],
     "available": [0, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_044_gloom.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_044_gloom.png",
     "imgW": 41,
     "imgH": 43
   },
@@ -841,7 +841,7 @@
     "types": [7, 11],
     "evolveFrom": [44],
     "available": [0, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_045_vileplume.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_045_vileplume.png",
     "imgW": 48,
     "imgH": 48
   },
@@ -862,7 +862,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_046_paras.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_046_paras.png",
     "imgW": 36,
     "imgH": 26
   },
@@ -877,7 +877,7 @@
     "types": [0, 7],
     "evolveFrom": [46],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_047_parasect.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_047_parasect.png",
     "imgW": 56,
     "imgH": 56
   },
@@ -898,7 +898,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_048_venonat.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_048_venonat.png",
     "imgW": 39,
     "imgH": 40
   },
@@ -913,7 +913,7 @@
     "types": [0, 11],
     "evolveFrom": [48],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_049_venomoth.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_049_venomoth.png",
     "imgW": 50,
     "imgH": 55
   },
@@ -934,7 +934,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_050_diglett.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_050_diglett.png",
     "imgW": 38,
     "imgH": 30
   },
@@ -949,7 +949,7 @@
     "types": [8],
     "evolveFrom": [50],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_051_dugtrio.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_051_dugtrio.png",
     "imgW": 48,
     "imgH": 41
   },
@@ -970,7 +970,7 @@
         }
     ],
     "available": [1],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_052_meowth.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_052_meowth.png",
     "imgW": 38,
     "imgH": 35
   },
@@ -985,7 +985,7 @@
     "types": [10],
     "evolveFrom": [52],
     "available": [1],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_053_persian.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_053_persian.png",
     "imgW": 53,
     "imgH": 55
   },
@@ -1006,7 +1006,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_054_psyduck.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_054_psyduck.png",
     "imgW": 38,
     "imgH": 40
   },
@@ -1021,7 +1021,7 @@
     "types": [14],
     "evolveFrom": [54],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_055_golduck.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_055_golduck.png",
     "imgW": 52,
     "imgH": 56
   },
@@ -1042,7 +1042,7 @@
         }
     ],
     "available": [0, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_056_mankey.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_056_mankey.png",
     "imgW": 40,
     "imgH": 37
   },
@@ -1057,7 +1057,7 @@
     "types": [3],
     "evolveFrom": [56],
     "available": [0, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_057_primeape.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_057_primeape.png",
     "imgW": 49,
     "imgH": 56
   },
@@ -1078,7 +1078,7 @@
         }
     ],
     "available": [0, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_058_growlithe.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_058_growlithe.png",
     "imgW": 34,
     "imgH": 39
   },
@@ -1093,7 +1093,7 @@
     "types": [4],
     "evolveFrom": [58],
     "available": [0, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_059_arcanine.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_059_arcanine.png",
     "imgW": 53,
     "imgH": 54
   },
@@ -1114,7 +1114,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_060_poliwag.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_060_poliwag.png",
     "imgW": 36,
     "imgH": 32
   },
@@ -1136,7 +1136,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_061_poliwhirl.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_061_poliwhirl.png",
     "imgW": 45,
     "imgH": 46
   },
@@ -1151,7 +1151,7 @@
     "types": [14, 3],
     "evolveFrom": [61],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_062_poliwrath.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_062_poliwrath.png",
     "imgW": 52,
     "imgH": 53
   },
@@ -1172,7 +1172,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_063_abra.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_063_abra.png",
     "imgW": 34,
     "imgH": 37
   },
@@ -1193,7 +1193,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_064_kadabra.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_064_kadabra.png",
     "imgW": 46,
     "imgH": 48
   },
@@ -1208,7 +1208,7 @@
     "types": [12],
     "evolveFrom": [64],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_065_alakazam.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_065_alakazam.png",
     "imgW": 54,
     "imgH": 56
   },
@@ -1229,7 +1229,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_066_machop.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_066_machop.png",
     "imgW": 39,
     "imgH": 39
   },
@@ -1250,7 +1250,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_067_machoke.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_067_machoke.png",
     "imgW": 51,
     "imgH": 51
   },
@@ -1265,7 +1265,7 @@
     "types": [3],
     "evolveFrom": [67],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_068_machamp.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_068_machamp.png",
     "imgW": 56,
     "imgH": 55
   },
@@ -1286,7 +1286,7 @@
         }
     ],
     "available": [1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_069_bellsprout.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_069_bellsprout.png",
     "imgW": 32,
     "imgH": 38
   },
@@ -1308,7 +1308,7 @@
         }
     ],
     "available": [1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_070_weepinbell.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_070_weepinbell.png",
     "imgW": 46,
     "imgH": 42
   },
@@ -1323,7 +1323,7 @@
     "types": [7, 11],
     "evolveFrom": [70],
     "available": [1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_071_victreebel.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_071_victreebel.png",
     "imgW": 50,
     "imgH": 54
   },
@@ -1344,7 +1344,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_072_tentacool.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_072_tentacool.png",
     "imgW": 38,
     "imgH": 32
   },
@@ -1359,7 +1359,7 @@
     "types": [14, 11],
     "evolveFrom": [72],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_073_tentacruel.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_073_tentacruel.png",
     "imgW": 47,
     "imgH": 47
   },
@@ -1380,7 +1380,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_074_geodude.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_074_geodude.png",
     "imgW": 39,
     "imgH": 33
   },
@@ -1401,7 +1401,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_075_graveler.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_075_graveler.png",
     "imgW": 48,
     "imgH": 48
   },
@@ -1416,7 +1416,7 @@
     "types": [13, 8],
     "evolveFrom": [75],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_076_golem.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_076_golem.png",
     "imgW": 47,
     "imgH": 44
   },
@@ -1437,7 +1437,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_077_ponyta.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_077_ponyta.png",
     "imgW": 44,
     "imgH": 45
   },
@@ -1452,7 +1452,7 @@
     "types": [4],
     "evolveFrom": [77],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_078_rapidash.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_078_rapidash.png",
     "imgW": 55,
     "imgH": 55
   },
@@ -1473,7 +1473,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_079_slowpoke.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_079_slowpoke.png",
     "imgW": 40,
     "imgH": 37
   },
@@ -1488,7 +1488,7 @@
     "types": [14, 12],
     "evolveFrom": [79],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_080_slowbro.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_080_slowbro.png",
     "imgW": 56,
     "imgH": 56
   },
@@ -1509,7 +1509,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_081_magnemite.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_081_magnemite.png",
     "imgW": 26,
     "imgH": 23
   },
@@ -1524,7 +1524,7 @@
     "types": [2],
     "evolveFrom": [81],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_082_magneton.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_082_magneton.png",
     "imgW": 48,
     "imgH": 48
   },
@@ -1538,7 +1538,7 @@
     "desc": "The sprig of green onions it holds is its weapon. It is used much like a metal sword.",
     "types": [10, 5],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_083_farfetchd.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_083_farfetchd.png",
     "imgW": 47,
     "imgH": 47
   },
@@ -1559,7 +1559,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_084_doduo.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_084_doduo.png",
     "imgW": 36,
     "imgH": 39
   },
@@ -1574,7 +1574,7 @@
     "types": [10, 5],
     "evolveFrom": [84],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_085_dodrio.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_085_dodrio.png",
     "imgW": 50,
     "imgH": 55
   },
@@ -1595,7 +1595,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_086_seel.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_086_seel.png",
     "imgW": 47,
     "imgH": 47
   },
@@ -1610,7 +1610,7 @@
     "types": [14, 9],
     "evolveFrom": [86],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_087_dewgong.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_087_dewgong.png",
     "imgW": 47,
     "imgH": 48
   },
@@ -1631,7 +1631,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_088_grimer.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_088_grimer.png",
     "imgW": 40,
     "imgH": 40
   },
@@ -1646,7 +1646,7 @@
     "types": [11],
     "evolveFrom": [88],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_089_muk.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_089_muk.png",
     "imgW": 55,
     "imgH": 56
   },
@@ -1667,7 +1667,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_090_shellder.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_090_shellder.png",
     "imgW": 36,
     "imgH": 38
   },
@@ -1682,7 +1682,7 @@
     "types": [14, 9],
     "evolveFrom": [90],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_091_cloyster.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_091_cloyster.png",
     "imgW": 53,
     "imgH": 52
   },
@@ -1703,7 +1703,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_092_gastly.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_092_gastly.png",
     "imgW": 54,
     "imgH": 53
   },
@@ -1724,7 +1724,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_093_haunter.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_093_haunter.png",
     "imgW": 48,
     "imgH": 48
   },
@@ -1739,7 +1739,7 @@
     "types": [6, 11],
     "evolveFrom": [39],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_094_gengar.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_094_gengar.png",
     "imgW": 47,
     "imgH": 47
   },
@@ -1753,7 +1753,7 @@
     "desc": "As it grows, the stone portions of its body harden to become similar to a diamond, but colored black.",
     "types": [13, 8],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_095_onix.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_095_onix.png",
     "imgW": 50,
     "imgH": 55
   },
@@ -1774,7 +1774,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_096_drowzee.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_096_drowzee.png",
     "imgW": 48,
     "imgH": 48
   },
@@ -1789,7 +1789,7 @@
     "types": [12],
     "evolveFrom": [96],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_097_hypno.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_097_hypno.png",
     "imgW": 54,
     "imgH": 55
   },
@@ -1810,7 +1810,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_098_krabby.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_098_krabby.png",
     "imgW": 40,
     "imgH": 39
   },
@@ -1825,7 +1825,7 @@
     "types": [14],
     "evolveFrom": [98],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_099_kingler.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_099_kingler.png",
     "imgW": 56,
     "imgH": 50
   },
@@ -1846,7 +1846,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_100_voltorb.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_100_voltorb.png",
     "imgW": 25,
     "imgH": 25
   },
@@ -1861,7 +1861,7 @@
     "types": [2],
     "evolveFrom": [100],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_101_electrode.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_101_electrode.png",
     "imgW": 36,
     "imgH": 35
   },
@@ -1882,7 +1882,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_102_exeggcute.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_102_exeggcute.png",
     "imgW": 53,
     "imgH": 52
   },
@@ -1897,7 +1897,7 @@
     "types": [7, 12],
     "evolveFrom": [102],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_103_exeggutor.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_103_exeggutor.png",
     "imgW": 56,
     "imgH": 53
   },
@@ -1918,7 +1918,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_104_cubone.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_104_cubone.png",
     "imgW": 35,
     "imgH": 38
   },
@@ -1933,7 +1933,7 @@
     "types": [8],
     "evolveFrom": [104],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_105_marowak.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_105_marowak.png",
     "imgW": 48,
     "imgH": 48
   },
@@ -1947,7 +1947,7 @@
     "desc": "When in a hurry, its legs lenghten progressively. It runs smoothly With extra long, loping strides.",
     "types": [3],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_106_hitmonlee.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_106_hitmonlee.png",
     "imgW": 56,
     "imgH": 56
   },
@@ -1961,7 +1961,7 @@
     "desc": "While apparently doing nothing, it fires punches in lightning fast volleys that are impossible to see.",
     "types": [3],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_107_hitmonchan.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_107_hitmonchan.png",
     "imgW": 47,
     "imgH": 48
   },
@@ -1975,7 +1975,7 @@
     "desc": "Its tongue can be extended like a chameleon's. It leaves a tingling sensation when it licks enemies.",
     "types": [10],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_108_lickitung.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_108_lickitung.png",
     "imgW": 55,
     "imgH": 45
   },
@@ -1996,7 +1996,7 @@
         }
     ],
     "available": [0, 1],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_109_koffing.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_109_koffing.png",
     "imgW": 47,
     "imgH": 47
   },
@@ -2011,7 +2011,7 @@
     "types": [11],
     "evolveFrom": [109],
     "available": [0, 1],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_110_weezing.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_110_weezing.png",
     "imgW": 54,
     "imgH": 54
   },
@@ -2032,7 +2032,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_111_rhyhorn.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_111_rhyhorn.png",
     "imgW": 56,
     "imgH": 55
   },
@@ -2047,7 +2047,7 @@
     "types": [13, 8],
     "evolveFrom": [111],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_112_rhydon.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_112_rhydon.png",
     "imgW": 55,
     "imgH": 53
   },
@@ -2061,7 +2061,7 @@
     "desc": "A rare and elusive POKéMON that is said to bring happiness to those who manage to get it.",
     "types": [10],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_113_chansey.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_113_chansey.png",
     "imgW": 47,
     "imgH": 48
   },
@@ -2075,7 +2075,7 @@
     "desc": "The whole body is swathed with wide vines that are similar to seaweed. Its vines shake as it walks.",
     "types": [7],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_114_tangela.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_114_tangela.png",
     "imgW": 45,
     "imgH": 44
   },
@@ -2089,7 +2089,7 @@
     "desc": "The infant rarely ventures out of its mother's protective pouch until it is 3 years old.",
     "types": [10],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_115_kangaskhan.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_115_kangaskhan.png",
     "imgW": 54,
     "imgH": 55
   },
@@ -2110,7 +2110,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_116_horsea.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_116_horsea.png",
     "imgW": 31,
     "imgH": 32
   },
@@ -2125,7 +2125,7 @@
     "types": [14],
     "evolveFrom": [116],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_117_seadra.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_117_seadra.png",
     "imgW": 45,
     "imgH": 48
   },
@@ -2146,7 +2146,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_118_goldeen.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_118_goldeen.png",
     "imgW": 36,
     "imgH": 47
   },
@@ -2161,7 +2161,7 @@
     "types": [14],
     "evolveFrom": [118],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_119_seaking.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_119_seaking.png",
     "imgW": 56,
     "imgH": 54
   },
@@ -2182,7 +2182,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_120_staryu.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_120_staryu.png",
     "imgW": 39,
     "imgH": 42
   },
@@ -2197,7 +2197,7 @@
     "types": [14, 12],
     "evolveFrom": [120],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_121_starmie.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_121_starmie.png",
     "imgW": 47,
     "imgH": 47
   },
@@ -2211,7 +2211,7 @@
     "desc": "If interrupted while its miming, it will slap around the offender with its broad hands.",
     "types": [12],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_122_mr_mime.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_122_mr_mime.png",
     "imgW": 48,
     "imgH": 42
   },
@@ -2225,7 +2225,7 @@
     "desc": "With ninja-like agility and speed, it can create the illusion that there is more than one.",
     "types": [0, 5],
     "available": [0, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_123_scyther.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_123_scyther.png",
     "imgW": 56,
     "imgH": 56
   },
@@ -2239,7 +2239,7 @@
     "desc": "It seductively wiggles its hips as it walks. It can cause people to dance in unison with it.",
     "types": [9, 12],
     "available": [0, 1],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_124_jynx.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_124_jynx.png",
     "imgW": 47,
     "imgH": 48
   },
@@ -2253,7 +2253,7 @@
     "desc": "Normally found near power plants, they can wander away and cause major blackouts in cities.",
     "types": [2],
     "available": [0],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_125_electabuzz.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_125_electabuzz.png",
     "imgW": 48,
     "imgH": 45
   },
@@ -2267,7 +2267,7 @@
     "desc": "Its body always burns with an orange glow that enables it to hide perfectly among flames.",
     "types": [4],
     "available": [1],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_126_magmar.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_126_magmar.png",
     "imgW": 46,
     "imgH": 43
   },
@@ -2281,7 +2281,7 @@
     "desc": "If it tails to crush the vitim in its pincers,it will swing it around and toss it hard. ",
     "types": [0],
     "available": [1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_127_pinsir.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_127_pinsir.png",
     "imgW": 53,
     "imgH": 54
   },
@@ -2295,7 +2295,7 @@
     "desc": "When it targets an enemy, it charges furiously while whipping its body with its long tails.",
     "types": [10],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_128_tauros.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_128_tauros.png",
     "imgW": 55,
     "imgH": 56
   },
@@ -2316,7 +2316,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_129_magikarp.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_129_magikarp.png",
     "imgW": 48,
     "imgH": 48
   },
@@ -2331,7 +2331,7 @@
     "types": [14, 5],
     "evolveFrom": [129],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_130_gyarados.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_130_gyarados.png",
     "imgW": 56,
     "imgH": 56
   },
@@ -2345,7 +2345,7 @@
     "desc": "A POKéMON that has been overhunted almost to extinction. It can ferry people across the water.",
     "types": [14, 9],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_131_lapras.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_131_lapras.png",
     "imgW": 56,
     "imgH": 56
   },
@@ -2359,7 +2359,7 @@
     "desc": "Capable of copying an enemy's genetic code to instantly transform itself into a duplicate of the enemy.",
     "types": [10],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_132_ditto.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_132_ditto.png",
     "imgW": 34,
     "imgH": 30
   },
@@ -2390,7 +2390,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_133_eevee.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_133_eevee.png",
     "imgW": 38,
     "imgH": 38
   },
@@ -2405,7 +2405,7 @@
     "types": [14],
     "evolveFrom": [133],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_134_vaporeon.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_134_vaporeon.png",
     "imgW": 46,
     "imgH": 44
   },
@@ -2420,7 +2420,7 @@
     "types": [2],
     "evolveFrom": [133],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_135_jolteon.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_135_jolteon.png",
     "imgW": 48,
     "imgH": 43
   },
@@ -2435,7 +2435,7 @@
     "types": [4],
     "evolveFrom": [133],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_136_flareon.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_136_flareon.png",
     "imgW": 47,
     "imgH": 47
   },
@@ -2449,7 +2449,7 @@
     "desc": "A POKéMON that consists entirely of programming code. Capable of moving freely in cyberspace.",
     "types": [10],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_137_porygon.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_137_porygon.png",
     "imgW": 47,
     "imgH": 45
   },
@@ -2470,7 +2470,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_138_omanyte.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_138_omanyte.png",
     "imgW": 31,
     "imgH": 32
   },
@@ -2485,7 +2485,7 @@
     "types": [13, 14],
     "evolveFrom": [138],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_139_omastar.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_139_omastar.png",
     "imgW": 47,
     "imgH": 48
   },
@@ -2506,7 +2506,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_140_kabuto.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_140_kabuto.png",
     "imgW": 40,
     "imgH": 36
   },
@@ -2521,7 +2521,7 @@
     "types": [13, 14],
     "evolveFrom": [140],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_141_kabutops.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_141_kabutops.png",
     "imgW": 47,
     "imgH": 46
   },
@@ -2535,7 +2535,7 @@
     "desc": "A ferocious, prehistoric POKéMON that goes for the enemy's throat with its serrated saw-like fangs.",
     "types": [13, 5],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_142_aerodactyl.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_142_aerodactyl.png",
     "imgW": 56,
     "imgH": 50
   },
@@ -2549,7 +2549,7 @@
     "desc": "Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful.",
     "types": [10],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_143_snorlax.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_143_snorlax.png",
     "imgW": 54,
     "imgH": 55
   },
@@ -2563,7 +2563,7 @@
     "desc": "A legendary bird POKéMON that is said to appear to doomed people who are lost in icy mountains.",
     "types": [9, 5],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_144_articuno.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_144_articuno.png",
     "imgW": 56,
     "imgH": 56
   },
@@ -2577,7 +2577,7 @@
     "desc": "A legendary bird POKéMON that is said to appear from clouds while dropping enormous lightning bolts.",
     "types": [2, 5],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_145_zapdos.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_145_zapdos.png",
     "imgW": 53,
     "imgH": 55
   },
@@ -2591,7 +2591,7 @@
     "desc": "Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames.",
     "types": [4, 5],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_146_moltres.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_146_moltres.png",
     "imgW": 55,
     "imgH": 56
   },
@@ -2612,7 +2612,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_147_dratini.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_147_dratini.png",
     "imgW": 32,
     "imgH": 39
   },
@@ -2634,7 +2634,7 @@
         }
     ],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_148_dragonair.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_148_dragonair.png",
     "imgW": 46,
     "imgH": 44
   },
@@ -2649,7 +2649,7 @@
     "types": [1, 5],
     "evolveFrom": [148],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_149_dragonite.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_149_dragonite.png",
     "imgW": 52,
     "imgH": 53
   },
@@ -2663,7 +2663,7 @@
     "desc": "It was created by a scientist after years of horrific gene splicing and DNA engineering experiments.",
     "types": [12],
     "available": [0, 1, 2],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_150_mewtwo.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_150_mewtwo.png",
     "imgW": 56,
     "imgH": 56
   },
@@ -2677,7 +2677,7 @@
     "desc": "So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide.",
     "types": [12],
     "available": [],
-    "imgGBC": "imgs/pokemon/gbc/pokemon_151_mew.png",
+    "imgGBC": "/imgs/pokemon/gbc/pokemon_151_mew.png",
     "imgW": 36,
     "imgH": 40
   }
