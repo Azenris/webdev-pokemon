@@ -46,7 +46,7 @@ h2 {
   color: white;
 }
 
-.poke-card {
+.poke-cards-layout {
   max-width: 1400px;
   display: grid;
   grid-auto-flow: row;

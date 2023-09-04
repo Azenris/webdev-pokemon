@@ -8,7 +8,7 @@ export function PokemonMenuPage() {
     <>
       <h1>POKéMON</h1>
       <h2>{collectionTotal}</h2>
-      <div className="poke-card">
+      <div className="poke-cards-layout">
         {pokemonDB.map((pokemon) => {
           function viewPokemon() {
             
