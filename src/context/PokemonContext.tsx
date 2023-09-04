@@ -2,7 +2,25 @@ import { ReactNode, createContext, useContext } from "react";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 import pokemonDB from "../data/pokemon.json";
 
-export const PokemonTypes: string[] = [
+export enum PokemonType {
+  Bug,
+  Dragon,
+  Electric,
+  Fighting,
+  Fire,
+  Flying,
+  Ghost,
+  Grass,
+  Ground,
+  Ice,
+  Normal,
+  Poison,
+  Psychic,
+  Rock,
+  Water,
+};
+
+export const PokemonTypeNames: string[] = [
   "Bug",
   "Dragon",
   "Electric",

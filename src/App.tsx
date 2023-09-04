@@ -1,22 +1,24 @@
 import { Navigate, Route, Routes } from "react-router-dom"
 import { PokemonContextProvider } from "./context/PokemonContext"
-import { Home } from "./pages/Home"
-import { About } from "./pages/About"
-import { Pokemon } from "./pages/Pokemon"
-import { PokemonLocations } from "./components/PokemonLocations"
-import { PokemonCollection } from "./pages/PokemonCollection"
+import { HomePage } from "./pages/HomePage"
+import { AboutPage } from "./pages/AboutPage"
+import { PokemonMenuPage } from "./pages/PokemonMenuPage"
+import { PokemonPage } from "./pages/PokemonPage"
+import { PokemonLocationsPage } from "./pages/PokemonLocationsPage"
+import { PokemonCollectionPage } from "./pages/PokemonCollectionPage"
 
 function App() {
   return (
     <PokemonContextProvider>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/pokemon/:id">
-          <Route index element={<Pokemon />} />
-          <Route path="locations" element={<PokemonLocations />} />
+          <Route index element={<PokemonPage />} />
+          <Route path="locations" element={<PokemonLocationsPage />} />
         </Route>
-        <Route path="collection" element={<PokemonCollection />} />
+        <Route path="/pokemon" element={<PokemonMenuPage />} />
+        <Route path="collection" element={<PokemonCollectionPage />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </PokemonContextProvider>
