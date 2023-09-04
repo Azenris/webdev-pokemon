@@ -1,4 +1,5 @@
 import { ReactNode, createContext, useContext } from "react";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 
 export const PokemonTypes: string[] = [
   "Bug",
@@ -34,8 +35,17 @@ type PokemonContextProviderData = {
   children: ReactNode
 };
 
+type PokemonCollection = {
+  id: number;
+  collected: boolean;
+};
+
 export type PokemonContext = {
-  version: number;
+  collection: PokemonCollection[];
+  collectionCount: number;
+
+  isInCollection: (id:number) => boolean;
+  setInCollection: (id:number, set:boolean) => void;
 };
 
 const PokemonContext = createContext({} as PokemonContext);
@@ -46,10 +56,59 @@ export function usePokemonContext() {
 
 export function PokemonContextProvider({ children }: PokemonContextProviderData) {
 
-  const version:number = 1;
+  const [collection, setCollection] = useLocalStorage<PokemonCollection[]>("Pokemon-Collection", []);
+
+  const collectionCount = collection.reduce((quantity) => quantity = quantity + 1, 0);
+
+  function isInCollection(id:number) {
+    id -= 1;
+    if (id < 0 || id >= collection.length)
+      return false;
+    return collection[id].collected;
+  }
+
+  function setInCollection(id:number, set:boolean) {
+    id -= 1;
+    if (id < 0)
+      return;
+    if (id >= collection.length)
+    {
+      var added: PokemonCollection[] = [];
+      const offset:number = collection.length;
+      const req:number = (id - collection.length) + 1;
+      for(var i = 1; i <= req; i++) {
+        var value: PokemonCollection = {
+          id: offset + i,
+          collected: false
+        };
+
+        added.push(value);
+      }
+
+      added[added.length - 1].collected = set;
+
+      setCollection([...collection, ...added]);
+    }
+    else
+    {
+      const index:number = id + 1;
+
+      const newCollections = collection.map((pok) => {
+        if (pok.id === index) {
+          pok.collected = set;
+        }
+        return pok;
+      });
+
+      setCollection(newCollections);
+    }
+  }
 
   const context: PokemonContext = {
-    version
+    collection,
+    collectionCount,
+    isInCollection,
+    setInCollection,
   };
 
   return (

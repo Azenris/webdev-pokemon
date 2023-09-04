@@ -18,8 +18,8 @@ h1 {
 }
 
 .collection {
-  display: grid;
   max-width: 1200px;
+  display: grid;
   grid-auto-flow: row;
   grid-template-columns: repeat(6, 1fr);
   padding: 10px;
@@ -38,12 +38,13 @@ h1 {
   border: 2px solid black;
   border-radius: 9px;
   text-align: center;
+  cursor: cell;
 }
 
 .collection-name {
   font-family: 'Verdana', 'Arial', 'Tahoma', sans-serif;
   color: rgb(168,0,31);
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 .collection-dexno {
@@ -52,12 +53,16 @@ h1 {
 }
 
 .collection-image-block {
-  text-align: center;
   background-color: rgb(248,232,248);
+  justify-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  border-radius: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  width: 60px;
+  height: 60px;
 }
 
 .collection-image {

@@ -8,7 +8,7 @@ export function PokemonCollection() {
       <div className="collection">
         {pokemonDB.map((pokemon) => {
           return (
-            <PokemonCollectionSelection pokemonID={pokemon.id}/>
+            <PokemonCollectionSelection key={pokemon.id} pokemonID={pokemon.id}/>
           );
         })}
       </div>
