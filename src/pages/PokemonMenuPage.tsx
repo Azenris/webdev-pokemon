@@ -8,21 +8,23 @@ export function PokemonMenuPage() {
     <>
       <h1>POKéMON</h1>
       <h2>{collectionTotal}</h2>
-      <div className="poke-cards-layout">
-        {pokemonDB.map((pokemon) => {
-          function viewPokemon() {
-            
-          }
-          return (
-            <PokemonCard
-              key={pokemon.id}
-              pokemonID={pokemon.id}
-              active={false}
-              forceInPokeball={true}
-              clicked={viewPokemon}
-            />
-          );
-        })}
+      <div className="poke-page-content">
+        <div className="poke-cards-layout">
+          {pokemonDB.map((pokemon) => {
+            function viewPokemon() {
+              
+            }
+            return (
+              <PokemonCard
+                key={pokemon.id}
+                pokemonID={pokemon.id}
+                active={false}
+                forceInPokeball={true}
+                clicked={viewPokemon}
+              />
+            );
+          })}
+        </div>
       </div>
     </>
   );

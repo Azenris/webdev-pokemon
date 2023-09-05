@@ -9,26 +9,29 @@ export function PokemonCollectionPage() {
     <>
       <h1>POKéMON Collection</h1>
       <h2>{collectionCount}/{collectionTotal}</h2>
-      <div className="poke-cards-layout">
-      {pokemonDB.map((pokemon) => {
-        const inCollection = pokemon ? isInCollection(pokemon.id) : false;
+      <div className="poke-page-content">
+        <div className="poke-cards-layout">
+        {pokemonDB.map((pokemon) => {
+          const inCollection = pokemon ? isInCollection(pokemon.id) : false;
 
-        function toggleSelected() {
-          if (pokemon) {
-            setInCollection(pokemon.id, !inCollection);
+          function toggleSelected() {
+            if (pokemon) {
+              setInCollection(pokemon.id, !inCollection);
+            }
           }
-        }
-        return (
-          <PokemonCard
-            key={pokemon.id}
-            pokemonID={pokemon.id}
-            active={inCollection}
-            forceInPokeball={false}
-            clicked={toggleSelected}
-          />
-        );
-      })}
-    </div>
+
+          return (
+            <PokemonCard
+              key={pokemon.id}
+              pokemonID={pokemon.id}
+              active={inCollection}
+              forceInPokeball={false}
+              clicked={toggleSelected}
+            />
+          );
+        })}
+        </div>
+      </div>
     </>
   );
 }

@@ -46,23 +46,30 @@ h2 {
   color: white;
 }
 
+.poke-page-content {
+  text-align: center;
+  padding: 10px;
+  padding-top: 0px;
+}
+
 .poke-cards-layout {
   max-width: 1400px;
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-columns: repeat(6, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   padding: 10px;
   margin: auto;
-  text-align: center;
   background-color: rgb(128,0,21);
   border-radius: 9px;
 }
 
 .poke-card-box {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
   color: black;
   display: grid;
   background-color: rgb(228,212,228);
-  padding: 4px;
+  padding: 10px;
   margin: 3px;
   border: 2px solid black;
   border-radius: 9px;
