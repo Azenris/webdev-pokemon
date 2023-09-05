@@ -1,14 +1,51 @@
 import { NavLink, useLocation } from "react-router-dom";
 
+type MenuItem = {
+  path: string;
+  name: string;
+  icon: string;
+};
+
+const menuItems: MenuItem[] = [
+  {
+    path: "/",
+    name: "Home",
+    icon: "/imgs/pokeball-0.png"
+  },
+  {
+    path: "/pokemon",
+    name: "POKéMON",
+    icon: "/imgs/pokeball-0.png"
+  },
+  {
+    path: "/collection",
+    name: "Collection",
+    icon: "/imgs/pokeball-0.png"
+  },
+  {
+    path: "/about",
+    name: "About",
+    icon: "/imgs/pokeball-0.png"
+  }
+];
+
 export function Navbar() {
   const location = useLocation().pathname;
+
   return (
     <div className="navbar">
       <ul>
-        <li className={location == "/" ? "active" : ""}><NavLink to="/">Home</NavLink></li>
-        <li className={location == "/pokemon" ? "active" : ""}><NavLink to="/pokemon">POKéMON</NavLink></li>
-        <li className={location == "/collection" ? "active" : ""}><NavLink to="/collection">Collection</NavLink></li>
-        <li className={location == "/about" ? "active" : ""}><NavLink to="/about">About</NavLink></li>
+        {menuItems.map((menu) => {
+          return (
+            <li className={location == menu.path ? "active" : ""}>
+              <NavLink to={menu.path}>
+                <img src={menu.icon} alt={menu.name}></img>
+                {' '}
+                {menu.name}
+              </NavLink>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );
