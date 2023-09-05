@@ -1,6 +1,7 @@
 
 :root {
   --theme-light-color: rgb(212, 167, 167);
+  --theme-most-light-color: rgb(229, 215, 215);
   --theme-color: rgb(168,0,31);
   --theme-background-color: rgb(128,0,21);
   --theme-navbar-background-color: rgb(68, 7, 16);
@@ -282,4 +283,47 @@ a {
 }
 .element-Water {
   background-color: hsl(228, 71%, 61%);
+}
+
+.pokedex-page {
+  display: flex;
+  justify-content: left;
+  margin: 10px;
+  padding: 10px;
+}
+
+.pokemon-image-header {
+  border-right: 4px solid black;
+  padding: 10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.pokemon-image-block, .pokemon-image-block-big {
+  background-color: var(--gb-background-color);
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+}
+
+.pokemon-image-block-big {
+  width: 180px;
+  height: 180px;
+}
+
+.pokemon-image, .pokemon-image-big {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+.pokedex-desc {
+  color: var(--theme-most-light-color);
 }

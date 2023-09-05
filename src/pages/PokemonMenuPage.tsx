@@ -3,9 +3,11 @@ import { Footer } from "../components/Footer";
 import { PokemonCard } from "../components/PokemonCard";
 import { usePokemonContext } from "../context/PokemonContext";
 import pokemonDB from "../data/pokemon.json";
+import { useNavigate } from "react-router-dom";
 
 export function PokemonMenuPage() {
   const { collectionTotal } = usePokemonContext();
+  const navigate = useNavigate();
   return (
     <>
       <Navbar />
@@ -15,7 +17,7 @@ export function PokemonMenuPage() {
         <div className="poke-cards-layout">
           {pokemonDB.map((pokemon) => {
             function viewPokemon() {
-              
+              navigate(`/pokemon/${pokemon.id}`);
             }
             return (
               <PokemonCard
