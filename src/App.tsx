@@ -1,11 +1,13 @@
-import { Navigate, Route, Routes } from "react-router-dom"
-import { PokemonContextProvider } from "./context/PokemonContext"
-import { HomePage } from "./pages/HomePage"
-import { AboutPage } from "./pages/AboutPage"
-import { PokemonMenuPage } from "./pages/PokemonMenuPage"
-import { PokemonPage } from "./pages/PokemonPage"
-import { PokemonLocationsPage } from "./pages/PokemonLocationsPage"
-import { PokemonCollectionPage } from "./pages/PokemonCollectionPage"
+import { Navigate, Route, Routes } from "react-router-dom";
+import { PokemonContextProvider } from "./context/PokemonContext";
+import { HomePage } from "./pages/HomePage";
+import { AboutPage } from "./pages/AboutPage";
+import { PokemonMenuPage } from "./pages/PokemonMenuPage";
+import { PokemonPage } from "./pages/PokemonPage";
+import { PokemonLocationsPage } from "./pages/PokemonLocationsPage";
+import { PokemonCollectionPage } from "./pages/PokemonCollectionPage";
+import { DisclaimerPage } from "./pages/DisclaimerPage";
+import { CopyrightPage } from "./pages/CopyrightPage";
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
           <Route path="locations" element={<PokemonLocationsPage />} />
         </Route>
         <Route path="/pokemon" element={<PokemonMenuPage />} />
-        <Route path="collection" element={<PokemonCollectionPage />} />
+        <Route path="/collection" element={<PokemonCollectionPage />} />
+        <Route path="/disclaimer" element={<DisclaimerPage />} />
+        <Route path="/copyright" element={<CopyrightPage />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </PokemonContextProvider>

@@ -1,22 +1,102 @@
 
+:root {
+  --theme-light-color: rgb(212, 167, 167);
+  --theme-color: rgb(168,0,31);
+  --theme-background-color: rgb(128,0,21);
+  --theme-navbar-background-color: rgb(68, 7, 16);
+  --gb-background-color: rgb(228,212,228);
+}
+
 body {
   font-family: 'Verdana', 'Arial', 'Tahoma', sans-serif;
   margin: 0;
   padding-bottom: 70px;
   color: white;
-  background-color: rgb(168,0,31);
+  background-color: var(--theme-color);
 }
 
 h1 {
-  color: rgb(212, 167, 167);
+  color: var(--theme-light-color);
   text-align: center;
   margin-bottom: 0;
 }
 
 h2 {
-  color: rgb(212, 167, 167);
+  color: var(--theme-light-color);
   text-align: center;
   margin-top: 0;
+}
+
+.navbar {
+  border: 2px solid black;
+  position: sticky;
+  top: 0;
+}
+
+.navbar > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--theme-navbar-background-color);
+}
+
+.navbar > ul > li {
+  float: left;
+}
+
+.navbar > ul > li > a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar > ul > li.active {
+  background-color: limegreen;
+  color: var(--theme-light-color);
+  font-weight: bold;
+}
+
+.navbar > ul > li > a:hover:not(.active) {
+  background-color: rgb(21, 20, 20);
+  transition: background-color 0.175s ease-in;
+}
+
+.footer {
+  border: 2px solid black;
+  margin: 15px;
+  margin-bottom: 0px;
+}
+
+.footer > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+.footer > ul > li {
+  float: center;
+}
+
+.footer > ul > li > a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.footer > ul > li.active {
+  background-color: limegreen;
+  color: var(--theme-light-color);
+  font-weight: bold;
+}
+
+.footer > ul > li > a:hover:not(.active) {
+  background-color: rgb(21, 20, 20);
 }
 
 .about {
@@ -58,7 +138,7 @@ h2 {
   flex-wrap: wrap;
   padding: 10px;
   margin: auto;
-  background-color: rgb(128,0,21);
+  background-color: var(--theme-background-color);
   border-radius: 9px;
 }
 
@@ -68,7 +148,7 @@ h2 {
   flex-basis: 0;
   color: black;
   display: grid;
-  background-color: rgb(228,212,228);
+  background-color: var(--gb-background-color);
   padding: 10px;
   margin: 3px;
   border: 2px solid black;
@@ -80,7 +160,7 @@ h2 {
 
 .poke-card-box.caught {
   background-color: greenyellow;
-  border: 2px dashed rgb(168,0,31);
+  border: 2px dashed var(--theme-color);
   transition: all 0.5s ease-in;
 }
 
@@ -92,7 +172,7 @@ h2 {
 
 .poke-card-name {
   font-family: 'Verdana', 'Arial', 'Tahoma', sans-serif;
-  color: rgb(168,0,31);
+  color: var(--theme-color);
   font-size: 1.2rem;
 }
 

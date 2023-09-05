@@ -1,3 +1,5 @@
+import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
 import { PokemonCard } from "../components/PokemonCard";
 import { usePokemonContext } from "../context/PokemonContext";
 import pokemonDB from "../data/pokemon.json";
@@ -7,6 +9,7 @@ export function PokemonCollectionPage() {
 
   return (
     <>
+      <Navbar />
       <h1>POKéMON Collection</h1>
       <h2>{collectionCount}/{collectionTotal}</h2>
       <div className="poke-page-content">
@@ -32,6 +35,7 @@ export function PokemonCollectionPage() {
         })}
         </div>
       </div>
+      <Footer />
     </>
   );
 }

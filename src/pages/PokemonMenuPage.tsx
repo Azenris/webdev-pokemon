@@ -1,3 +1,5 @@
+import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
 import { PokemonCard } from "../components/PokemonCard";
 import { usePokemonContext } from "../context/PokemonContext";
 import pokemonDB from "../data/pokemon.json";
@@ -6,6 +8,7 @@ export function PokemonMenuPage() {
   const { collectionTotal } = usePokemonContext();
   return (
     <>
+      <Navbar />
       <h1>POKéMON</h1>
       <h2>{collectionTotal}</h2>
       <div className="poke-page-content">
@@ -26,6 +29,7 @@ export function PokemonMenuPage() {
           })}
         </div>
       </div>
+      <Footer />
     </>
   );
 }
