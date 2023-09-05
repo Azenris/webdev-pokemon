@@ -1,5 +1,6 @@
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
+import { NavLink } from "react-router-dom";
 
 export function AboutPage() {
   return (
@@ -7,8 +8,13 @@ export function AboutPage() {
       <Navbar />
       <h1>About</h1>
       <div className="about">
-        <p className="about-description">This is a fan website of the original Gameboy Pokémon games.</p>
-        <p className="copyright">Pokémon © 2002-2023 Pokémon. © 1995-2023 Nintendo/Creatures Inc./GAME FREAK inc. TM, ® and Pokémon character names are trademarks of Nintendo.</p>
+        <p className="about-description">
+          This is a fan website of the original Gameboy Pokémon games.
+          <br />
+          See <NavLink to="/disclaimer">disclaimer</NavLink> at the bottom of the page for the disclaimer information.
+          <br />
+          See <NavLink to="/copyright">copyright</NavLink> at the bottom of the page for copyright information.
+        </p>
       </div>
       <Footer />
     </>
