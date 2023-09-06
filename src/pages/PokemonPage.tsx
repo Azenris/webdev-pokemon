@@ -142,24 +142,48 @@ export function PokemonPage() {
               </tr>
               <tr className="pokedex-desc">
                 <td>
-                  Description
-                  <br />
-                  {pokemon.desc}
+                  <table className="pokedex-desc-table">
+                    <tbody>
+                      <tr>
+                        <td className="pokedex-desc-title">
+                          Description
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div className="pokedex-desc">
+                            {pokemon.desc}
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </td>
               </tr>
               <tr className="pokedex-trivia">
                 <td>
-                  Trivia
-                  <br />
-                  <ul>
-                  {pokemon.trivia.map((trivia) => {
-                    return (
-                      <li>
-                        {trivia}
-                      </li>
-                    );
-                  })}
-                  </ul>
+                  <table className="pokedex-trivia-table">
+                    <tbody>
+                      <tr>
+                        <td className="pokedex-trivia-title">
+                          Trivia
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <ul className="pokedex-trivia">
+                            {pokemon.trivia.map((trivia) => {
+                              return (
+                                <li>
+                                  {trivia}
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </td>
               </tr>
             </tbody>
