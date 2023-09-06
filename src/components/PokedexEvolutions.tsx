@@ -19,7 +19,7 @@ export function PokedexEvolutions({ pokemon }: PokedexEvolutionsProps) {
           <tbody>
             <tr>
               <td className="pokedex-evolution-title">
-                Evolutions
+                Evolution
               </td>
             </tr>
             <tr>
