@@ -26,7 +26,7 @@ function App() {
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </PokemonContextProvider>
-  )
+  );
 }
 
-export default App
+export default App;
