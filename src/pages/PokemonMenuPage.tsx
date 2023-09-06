@@ -11,24 +11,26 @@ export function PokemonMenuPage() {
   return (
     <>
       <Navbar />
-      <h1>POKéMON</h1>
-      <h2>{collectionTotal}</h2>
-      <div className="poke-page-content">
-        <div className="poke-cards-layout">
-          {pokemonDB.map((pokemon) => {
-            function viewPokemon() {
-              navigate(`/pokemon/${pokemon.id}`);
-            }
-            return (
-              <PokemonCard
-                key={pokemon.id}
-                pokemonID={pokemon.id}
-                active={false}
-                forceInPokeball={true}
-                clicked={viewPokemon}
-              />
-            );
-          })}
+      <div className="main-content">
+        <h1>POKéMON</h1>
+        <h2>{collectionTotal}</h2>
+        <div className="poke-page-content">
+          <div className="poke-cards-layout">
+            {pokemonDB.map((pokemon) => {
+              function viewPokemon() {
+                navigate(`/pokemon/${pokemon.id}`);
+              }
+              return (
+                <PokemonCard
+                  key={pokemon.id}
+                  pokemonID={pokemon.id}
+                  active={false}
+                  forceInPokeball={true}
+                  clicked={viewPokemon}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
       <Footer />

@@ -32,6 +32,11 @@ a {
   color: var(--theme-light-color);
 }
 
+.main-content {
+  max-width: 1350px;
+  margin: auto;
+}
+
 .navbar {
   border: 2px solid black;
   position: sticky;
@@ -110,11 +115,8 @@ a {
 }
 
 .about {
-  max-width: 1400px;
   display: grid;
-  margin: auto;
   margin-top: 20px;
-  text-align: center;
 }
 
 .about-description {
@@ -143,11 +145,9 @@ a {
 }
 
 .poke-cards-layout {
-  max-width: 1400px;
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
-  margin: auto;
   background-color: var(--theme-background-color);
   border-radius: 9px;
 }

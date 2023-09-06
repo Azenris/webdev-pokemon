@@ -29,43 +29,45 @@ export function PokemonPage() {
   return (
     <>
       <Navbar />
-      <h1>{pokemon.name}</h1>
-      <h2>POKéMON</h2>
-      <div className="pokedex-page">
+      <div className="main-content">
+        <h1>{pokemon.name}</h1>
+        <h2>POKéMON</h2>
+        <div className="pokedex-page">
 
-        <div className="pokemon-image-header">
-          <div className="pokemon-image-block">
-              <img className="pokemon-image" src={pokemon.imgGBC} alt={pokemon.name} width={pokemon.imgW} height={pokemon.imgH} />
+          <div className="pokemon-image-header">
+            <div className="pokemon-image-block">
+                <img className="pokemon-image" src={pokemon.imgGBC} alt={pokemon.name} width={pokemon.imgW} height={pokemon.imgH} />
+            </div>
+            <div className="pokemon-image-block-big">
+                <img className="pokemon-image-big" src={pokemon.imgGBC} alt={pokemon.name} width={pokemon.imgW * 3} height={pokemon.imgH * 3} />
+            </div>
           </div>
-          <div className="pokemon-image-block-big">
-              <img className="pokemon-image-big" src={pokemon.imgGBC} alt={pokemon.name} width={pokemon.imgW * 3} height={pokemon.imgH * 3} />
-          </div>
-        </div>
 
-        <div>
           <div>
-            Its POKéDEX number is #{pokemon.id}.
+            <div>
+              Its POKéDEX number is #{pokemon.id}.
+            </div>
+            <br />
+            <div>
+              This POKéMON has the {pokemon.types.length > 1 ? "types" : "type"}{' '}
+              <span className="poke-card-element">
+                {pokemon.types.map((type, index) => {
+                  return (
+                    <span key={index}>
+                      {index != 0 && '/'}
+                      <PokemonElement type={type}/>
+                    </span>
+                  );
+                })}
+              </span>.
+            </div>
+            <br />
+            <div className="pokedex-desc">
+              {pokemon.desc}
+            </div>
           </div>
-          <br />
-          <div>
-            This POKéMON has the {pokemon.types.length > 1 ? "types" : "type"}{' '}
-            <span className="poke-card-element">
-              {pokemon.types.map((type, index) => {
-                return (
-                  <span key={index}>
-                    {index != 0 && '/'}
-                    <PokemonElement type={type}/>
-                  </span>
-                );
-              })}
-            </span>.
-          </div>
-          <br />
-          <div className="pokedex-desc">
-            {pokemon.desc}
-          </div>
-        </div>
 
+        </div>
       </div>
       <Footer />
     </>

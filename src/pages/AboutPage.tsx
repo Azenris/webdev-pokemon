@@ -7,14 +7,16 @@ export function AboutPage() {
     <>
       <Navbar />
       <h1>About</h1>
-      <div className="about">
-        <p className="about-description">
-          This is a fan website of the original Gameboy Pokémon games.
-          <br />
-          See <NavLink to="/disclaimer">disclaimer</NavLink> at the bottom of the page for the disclaimer information.
-          <br />
-          See <NavLink to="/copyright">copyright</NavLink> at the bottom of the page for copyright information.
-        </p>
+      <div className="main-content">
+        <div className="about">
+          <p className="about-description">
+            This is a fan website of the original Gameboy Pokémon games.
+            <br />
+            See <NavLink to="/disclaimer">disclaimer</NavLink> at the bottom of the page for the disclaimer information.
+            <br />
+            See <NavLink to="/copyright">copyright</NavLink> at the bottom of the page for copyright information.
+          </p>
+        </div>
       </div>
       <Footer />
     </>

@@ -5,7 +5,9 @@ export function PokemonLocationsPage() {
   return (
     <>
       <Navbar />
-      <h2>POKéMON Locations</h2>
+      <div className="main-content">
+        <h2>POKéMON Locations</h2>
+      </div>
       <Footer />
     </>
   );

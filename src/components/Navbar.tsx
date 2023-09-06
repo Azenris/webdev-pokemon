@@ -37,7 +37,7 @@ export function Navbar() {
       <ul>
         {menuItems.map((menu) => {
           return (
-            <li className={location == menu.path ? "active" : ""}>
+            <li key={menu.path} className={location == menu.path ? "active" : ""}>
               <NavLink to={menu.path}>
                 <img src={menu.icon} alt={menu.name}></img>
                 {' '}
