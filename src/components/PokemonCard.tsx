@@ -1,6 +1,5 @@
 import { PokemonElements } from "./PokemonElement";
-import { PokemonGameVersionNames, PokemonAvailableGameVersionNames } from "../context/PokemonContext";
-import pokemonDB from "../data/pokemon.json";
+import { pokemonDB, PokemonGameVersionNames, PokemonAvailableGameVersionNames } from "../data/pokemon";
 
 export type PokemonSelectionProps = {
   pokemonID: number;

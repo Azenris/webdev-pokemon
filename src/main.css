@@ -383,6 +383,7 @@ a {
 .pokedex-species-table,
 .pokedex-info-table,
 .pokedex-desc-table,
+.pokedex-evolution-table,
 .pokedex-trivia-table {
   width: 100%;
 }
@@ -391,7 +392,8 @@ a {
 .pokedex-species-table > tbody > tr > th, .pokedex-species-table > tbody > tr > td,
 .pokedex-info-table > tbody > tr > th, .pokedex-info-table > tbody > tr > td,
 .pokedex-desc-table > tbody > tr > th, .pokedex-desc-table > tbody > tr > td,
-.pokedex-trivia-table > tbody > tr > th, .pokedex-trivia-table > tbody > tr > td {
+.pokedex-trivia-table > tbody > tr > th, .pokedex-trivia-table > tbody > tr > td,
+.pokedex-evolution-table > tbody > tr > th, .pokedex-evolution-table > tbody > tr > td {
   background-color: var(--theme-dark-color);
   padding: 2px;
   padding-left: 6px;
@@ -404,7 +406,8 @@ a {
 .pokedex-species-title,
 .pokedex-info-title,
 .pokedex-desc-title,
-.pokedex-trivia-title {
+.pokedex-trivia-title,
+.pokedex-evolution-title {
   color: lightseagreen;
   font-weight: bold;
 }

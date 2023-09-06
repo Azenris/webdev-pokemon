@@ -1,4 +1,4 @@
-import { PokemonType, PokemonTypeNames } from "../context/PokemonContext";
+import { PokemonType, PokemonTypeNames } from "../data/pokemon";
 
 export type ElementTypeProps = {
   type: PokemonType;

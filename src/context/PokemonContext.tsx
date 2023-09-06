@@ -1,66 +1,6 @@
 import { ReactNode, createContext, useContext } from "react";
 import { useLocalStorage } from "../hooks/useLocalStorage";
-import pokemonDB from "../data/pokemon.json";
-
-export enum PokemonType {
-  Bug,
-  Dragon,
-  Electric,
-  Fighting,
-  Fire,
-  Flying,
-  Ghost,
-  Grass,
-  Ground,
-  Ice,
-  Normal,
-  Poison,
-  Psychic,
-  Rock,
-  Water,
-};
-
-export const PokemonTypeNames: string[] = [
-  "Bug",
-  "Dragon",
-  "Electric",
-  "Fighting",
-  "Fire",
-  "Flying",
-  "Ghost",
-  "Grass",
-  "Ground",
-  "Ice",
-  "Normal",
-  "Poison",
-  "Psychic",
-  "Rock",
-  "Water",
-];
-
-export enum PokemonEvolutionType {
-  Level,
-  Item,
-  Trading,
-};
-
-export enum PokemonGameVersion {
-  Red,
-  Blue,
-  Yellow,
-};
-
-export const PokemonGameVersionNames: string[] = [
-  "Red Version",
-  "Blue Version",
-  "Yellow Version",
-];
-
-export const PokemonAvailableGameVersionNames: string[] = [
-  "Available in Red Version",
-  "Available in Blue Version",
-  "Available in Yellow Version",
-];
+import { pokemonDB } from "../data/pokemon";
 
 type PokemonContextProviderData = {
   children: ReactNode

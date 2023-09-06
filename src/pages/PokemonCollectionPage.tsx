@@ -2,7 +2,7 @@ import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { PokemonCard } from "../components/PokemonCard";
 import { usePokemonContext } from "../context/PokemonContext";
-import pokemonDB from "../data/pokemon.json";
+import { pokemonDB } from "../data/pokemon";
 
 export function PokemonCollectionPage() {
   const { collectionCount, collectionTotal, isInCollection, setInCollection } = usePokemonContext();
