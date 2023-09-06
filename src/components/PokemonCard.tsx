@@ -1,4 +1,4 @@
-import { PokemonElement } from "./PokemonElement";
+import { PokemonElements } from "./PokemonElement";
 import { PokemonGameVersionNames, PokemonAvailableGameVersionNames } from "../context/PokemonContext";
 import pokemonDB from "../data/pokemon.json";
 
@@ -37,16 +37,7 @@ export function PokemonCard({ pokemonID, active, forceInPokeball, clicked }: Pok
         <div className={`poke-card-image-block ${activeClass} ${forceInPokeball ? "pokeball" : ""}`}>
           <img className={`poke-card-image ${activeClass}`} src={pokemon.imgGBC} alt={pokemon.name} width={pokemon.imgW} height={pokemon.imgH} />
         </div>
-        <div className="poke-card-element">
-          {pokemon.types.map((type, index) => {
-            return (
-              <span key={index}>
-                {index != 0 && '/'}
-                <PokemonElement type={type}/>
-              </span>
-            );
-          })}
-        </div>
+        <PokemonElements types={pokemon.types} />
         <div className={`poke-card-dexno ${activeClass}`}>#{pokemon.id}</div>
       </div>
     );
