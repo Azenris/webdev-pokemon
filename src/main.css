@@ -426,7 +426,14 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  flex-direction: row;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 749px) {
+  .pokedex-evolution {
+    flex-direction: column;
+  }
 }
 
 .pokedex-evolution-image {
@@ -441,6 +448,16 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.pokedex-evolution-requirement {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.pokedex-evolution-requirement-arrow {
+  padding: 10px;
 }
 
 .pokedex-trivia {
@@ -483,6 +500,10 @@ a {
   image-rendering: auto;
   image-rendering: crisp-edges;
   image-rendering: pixelated;
+}
+
+.pokemon-image {
+  cursor: cell;
 }
 
 .pokedex-desc {
