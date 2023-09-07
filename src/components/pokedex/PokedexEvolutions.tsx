@@ -1,4 +1,4 @@
-import { EvolveTo, Pokemon, PokemonEvolutionType, get_pokemon } from "../..//data/pokemon";
+import { EvolveTo, Pokemon, PokemonEvolutionType, get_pokemon, get_pokemon_base } from "../..//data/pokemon";
 import { get_item } from "../../data/item";
 
 type PokedexEvolutionPokemonProps = {
@@ -23,7 +23,9 @@ function PokedexEvolutionPokemon({ pokemon }: PokedexEvolutionPokemonProps) {
           </td>
         </tr>
         <tr>
-          <td> {pokemon.name}</td>
+          <td className="pokedex-evolution-pokemon-name">
+            {pokemon.name}
+          </td>
         </tr>
       </tbody>
     </table>
@@ -44,13 +46,14 @@ function PokedexEvolutionArrow() {
 }
 
 type PokedexEvolutionRequirementProps = {
+  pokemon: Pokemon;
   requirement: EvolveTo;
 };
 
-function PokedexEvolutionRequirement({ requirement }: PokedexEvolutionRequirementProps) {
+function PokedexEvolutionRequirement({ pokemon, requirement }: PokedexEvolutionRequirementProps) {
 
-  const pokemon = get_pokemon(requirement.id);
-  if (!pokemon)
+  const evovledPokemon = get_pokemon(requirement.id);
+  if (!evovledPokemon)
     return null;
   const item = requirement.item ? get_item(requirement.item) : undefined;
 
@@ -67,7 +70,7 @@ function PokedexEvolutionRequirement({ requirement }: PokedexEvolutionRequiremen
                     alt="Trade"
                     width={26}
                     height={26}
-                    title="Trade this pokemon with another player to evolve it."
+                    title={`Trade ${pokemon.name} with another player to evolve it into ${evovledPokemon.name}.`}
                   />
                 </td>
               </tr>
@@ -89,7 +92,7 @@ function PokedexEvolutionRequirement({ requirement }: PokedexEvolutionRequiremen
                     alt="LevelUp"
                     width={26}
                     height={26}
-                    title={`Level to ${requirement.lvl}`}
+                    title={`Level ${pokemon.name} to level ${requirement.lvl} to evolve into ${evovledPokemon.name}.`}
                   />
                 </td>
               </tr>
@@ -111,7 +114,7 @@ function PokedexEvolutionRequirement({ requirement }: PokedexEvolutionRequiremen
                   alt={item.name}
                   width={item.imgW}
                   height={item.imgH}
-                  title={item.name}
+                  title={`Use the item ${item.name} on ${pokemon.name} to evolve it into ${evovledPokemon.name}.`}
                 />
               </td>
             </tr>
@@ -133,27 +136,27 @@ type PokedexEvolutionBackwardProps = {
 };
 
 function PokedexEvolutionBackward({ pokemon }: PokedexEvolutionBackwardProps) {
+  if (!pokemon.evolveFrom) {
+    return null;
+  }
+
+  const evolutionPokemon = get_pokemon(pokemon.evolveFrom);
+
+  if (!evolutionPokemon) {
+    return null;
+  }
+
+  const requirement = evolutionPokemon.evolveTo?.find((evolve) => evolve.id == pokemon.id);
+  if (!requirement) {
+    return null;
+  }
+
   return (
-    <>
-      {pokemon.evolveFrom && pokemon.evolveFrom.map((evolveFrom) => {
-        const evolutionPokemon = (evolveFrom ? get_pokemon(evolveFrom) : undefined);
-        if (evolutionPokemon) {
-          const requirement = evolutionPokemon.evolveTo?.find((evolve) => evolve.id == pokemon.id);
-          if (!requirement) {
-            return null;
-          }
-          return (
-            <div key={evolveFrom} className="pokedex-evolution" >
-              <PokedexEvolutionBackward pokemon={evolutionPokemon} />
-              <PokedexEvolutionPokemon pokemon={evolutionPokemon} />
-              <PokedexEvolutionRequirement requirement={requirement} />
-            </div>
-          );
-        } else {
-          return null;
-        }
-      })}
-    </>
+    <div className="pokedex-evolution" >
+      <PokedexEvolutionBackward pokemon={evolutionPokemon} />
+      <PokedexEvolutionPokemon pokemon={evolutionPokemon} />
+      <PokedexEvolutionRequirement pokemon={pokemon} requirement={requirement} />
+    </div>
   );
 }
 
@@ -169,7 +172,7 @@ function PokedexEvolutionForward({ pokemon }: PokedexEvolutionForwardProps) {
         if (evolutionPokemon) {
           return (
             <div key={evolveTo.id} className="pokedex-evolution" >
-              <PokedexEvolutionRequirement requirement={evolveTo} />
+              <PokedexEvolutionRequirement pokemon={pokemon} requirement={evolveTo} />
               <PokedexEvolutionPokemon key={evolveTo.id} pokemon={evolutionPokemon} />
               <PokedexEvolutionForward pokemon={evolutionPokemon} />
             </div>
@@ -187,6 +190,46 @@ export type PokedexEvolutionsProps = {
 };
 
 export function PokedexEvolutions({ pokemon }: PokedexEvolutionsProps) {
+
+  if (pokemon.evolveFrom == undefined && (pokemon.evolveTo == undefined || pokemon.evolveTo.length == 0)) {
+    return null;
+  }
+
+  const basePokemon = get_pokemon_base(pokemon);
+
+  return (
+    <tr>
+      <td>
+        <table className="pokedex-evolution-table">
+          <tbody>
+            <tr>
+              <td className="pokedex-evolution-title">
+                Evolution
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div className="pokedex-evolution">
+                  <PokedexEvolutionPokemon pokemon={basePokemon} />
+                  <div className="pokedex-evolution-descendants">
+                    <PokedexEvolutionForward pokemon={basePokemon} />
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  );
+}
+
+
+export type PokedexEvolutionLineProps = {
+  pokemon: Pokemon;
+};
+
+export function PokedexEvolutionLine({ pokemon }: PokedexEvolutionLineProps) {
 
   if (pokemon.evolveFrom == undefined && (pokemon.evolveTo == undefined || pokemon.evolveTo.length == 0)) {
     return null;

@@ -3,7 +3,7 @@ export enum ItemID {
   Water_Stone,
   Fire_Stone,
   Leaf_Stone,
-  Thuderstone,
+  Thuder_Stone,
 };
 
 export type Item = {
@@ -49,10 +49,10 @@ export const itemDB: Item[] = [
     imgH: 24
   },
   {
-    id: ItemID.Thuderstone,
-    name: "Thunderstone",
-    desc: "",
-    img: "/imgs/item/item_thunderstone.png",
+    id: ItemID.Thuder_Stone,
+    name: "Thunder Stone",
+    desc: "While writen as Thunder Stone on this website its actual name on the game is Thunderstone.",
+    img: "/imgs/item/item_thunder_stone.png",
     imgW: 24,
     imgH: 24
   }

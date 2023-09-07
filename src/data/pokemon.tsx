@@ -201,7 +201,7 @@ export type Pokemon = {
   weight: number;
   desc: string;
   types: PokemonType[];
-  evolveFrom?: PokemonID[];
+  evolveFrom?: PokemonID;
   evolveTo?: EvolveTo[];
   available: PokemonGameVersion[];
   imgGBC: string;
@@ -276,7 +276,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 29.0,
     "desc": "When the blub on its back grows large, it appears to lose the ability to stand on its hind legs.",
     "types": [PokemonType.Grass, PokemonType.Poison],
-    "evolveFrom": [PokemonID.Bulbasaur],
+    "evolveFrom": PokemonID.Bulbasaur,
     "evolveTo": [
         {
             "id": PokemonID.Venusaur,
@@ -300,7 +300,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 221,
     "desc": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
     "types": [PokemonType.Grass, PokemonType.Poison],
-    "evolveFrom": [PokemonID.Ivysaur],
+    "evolveFrom": PokemonID.Ivysaur,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_003_venusaur.png",
     "imgW": 53,
@@ -341,7 +341,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 42,
     "desc": "When it swings its burning tail, it elevates the temperature to unbearably high levels.",
     "types": [PokemonType.Fire],
-    "evolveFrom": [PokemonID.Charmander],
+    "evolveFrom": PokemonID.Charmander,
     "evolveTo": [
         {
             "id": PokemonID.Charizard,
@@ -365,7 +365,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 200,
     "desc": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
     "types": [PokemonType.Fire, PokemonType.Flying],
-    "evolveFrom": [PokemonID.Charmeleon],
+    "evolveFrom": PokemonID.Charmeleon,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_006_charizard.png",
     "imgW": 55,
@@ -406,7 +406,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 50,
     "desc": "Often Hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance.",
     "types": [PokemonType.Water],
-    "evolveFrom": [PokemonID.Squirtle],
+    "evolveFrom": PokemonID.Squirtle,
     "evolveTo": [
         {
             "id": PokemonID.Blastoise,
@@ -430,7 +430,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 189,
     "desc": "A brutal POKéMON with pressurized water jets on its shell. They are used for high speed tackles.",
     "types": [PokemonType.Water],
-    "evolveFrom": [PokemonID.Wartortle],
+    "evolveFrom": PokemonID.Wartortle,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_009_blastoise.png",
     "imgW": 54,
@@ -470,7 +470,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 22,
     "desc": "This POKéMON is vulnerable to attack while its shell is soft, exposing its weak and tender body.",
     "types": [PokemonType.Bug],
-    "evolveFrom": [PokemonID.Caterpie],
+    "evolveFrom": PokemonID.Caterpie,
     "evolveTo": [
         {
             "id": PokemonID.Butterfree,
@@ -494,7 +494,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 71,
     "desc": "In battle, it flaps its wings at high speed to release highly toxic dust into the air.",
     "types": [PokemonType.Bug, PokemonType.Flying],
-    "evolveFrom": [PokemonID.Metapod],
+    "evolveFrom": PokemonID.Metapod,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_012_butterfree.png",
     "imgW": 54,
@@ -534,7 +534,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 22,
     "desc": "Almost incapable of moving, this POKéMON can only harden its shell to protect itself from predators.",
     "types": [PokemonType.Bug, PokemonType.Poison],
-    "evolveFrom": [PokemonID.Weedle],
+    "evolveFrom": PokemonID.Weedle,
     "evolveTo": [
         {
             "id": 15,
@@ -558,7 +558,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 65,
     "desc": "Flies at high speed and attacks using its large venomous stingers on its forelegs and tail.",
     "types": [PokemonType.Bug, PokemonType.Poison],
-    "evolveFrom": [PokemonID.Kakuna],
+    "evolveFrom": PokemonID.Kakuna,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_015_beedrill.png",
     "imgW": 52,
@@ -598,7 +598,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 66,
     "desc": "Very protective of its sprawling territorial area, this POKéMON will fiercely peck at any intruder.",
     "types": [PokemonType.Normal, PokemonType.Flying],
-    "evolveFrom": [PokemonID.Pidgey],
+    "evolveFrom": PokemonID.Pidgey,
     "evolveTo": [
         {
             "id": PokemonID.Pidgeot,
@@ -622,7 +622,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 87,
     "desc": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP.",
     "types": [PokemonType.Normal, PokemonType.Flying],
-    "evolveFrom": [PokemonID.Pidgeotto],
+    "evolveFrom": PokemonID.Pidgeotto,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_018_pidgeot.png",
     "imgW": 53,
@@ -662,7 +662,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 41,
     "desc": "It uses its whiskers to maintain its balance. It apparently slows down if they are cut off.",
     "types": [PokemonType.Normal],
-    "evolveFrom": [PokemonID.Rattata],
+    "evolveFrom": PokemonID.Rattata,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_020_raticate.png",
     "imgW": 48,
@@ -702,7 +702,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 84,
     "desc": "With its huge and magnificent wings, it can keep aloft without ever having to land for rest.",
     "types": [PokemonType.Normal, PokemonType.Flying],
-    "evolveFrom": [PokemonID.Spearow],
+    "evolveFrom": PokemonID.Spearow,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_022_fearow.png",
     "imgW": 58,
@@ -742,7 +742,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 143,
     "desc": "It is rumored that the ferocious warning markings on its belly differ from area to area.",
     "types": [PokemonType.Poison],
-    "evolveFrom": [PokemonID.Ekans],
+    "evolveFrom": PokemonID.Ekans,
     "available": [PokemonGameVersion.Red],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_024_arbok.png",
     "imgW": 55,
@@ -763,7 +763,7 @@ export const pokemonDB: Pokemon[] = [
         {
             "id": PokemonID.Raichu,
             "type": PokemonEvolutionType.Item,
-            "item": ItemID.Thuderstone
+            "item": ItemID.Thuder_Stone
         }
     ],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
@@ -782,7 +782,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 66,
     "desc": "Its long tail serves as a ground to protect itself from its own high voltage power.",
     "types": [PokemonType.Electric],
-    "evolveFrom": [PokemonID.Pikachu],
+    "evolveFrom": PokemonID.Pikachu,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_026_raichu.png",
     "imgW": 54,
@@ -822,7 +822,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 65,
     "desc": "Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.",
     "types": [PokemonType.Ground],
-    "evolveFrom": [PokemonID.Sandshrew],
+    "evolveFrom": PokemonID.Sandshrew,
     "available": [PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_028_sandslash.png",
     "imgW": 47,
@@ -862,7 +862,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 44,
     "desc": "The female's horn develops slowly. Prefers physical attacks such as clawing and biting.",
     "types": [PokemonType.Poison],
-    "evolveFrom": [PokemonID.NidoranF],
+    "evolveFrom": PokemonID.NidoranF,
     "evolveTo": [
         {
             "id": PokemonID.Nidoqueen,
@@ -886,7 +886,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 132,
     "desc": "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves.",
     "types": [PokemonType.Poison, PokemonType.Ground],
-    "evolveFrom": [PokemonID.Nidorina],
+    "evolveFrom": PokemonID.Nidorina,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_031_nidoqueen.png",
     "imgW": 56,
@@ -926,7 +926,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 43,
     "desc": "An aggressive POKéMON that is quick to attack. The horn on its head secretes a powerful venom.",
     "types": [PokemonType.Poison],
-    "evolveFrom": [PokemonID.NidoranM],
+    "evolveFrom": PokemonID.NidoranM,
     "evolveTo": [
         {
             "id": 34,
@@ -950,7 +950,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 137,
     "desc": "It uses its powerful tail in battle to smash, constrict, then break the prey's bones.",
     "types": [PokemonType.Poison, PokemonType.Ground],
-    "evolveFrom": [PokemonID.Nidorino],
+    "evolveFrom": PokemonID.Nidorino,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_034_nidoking.png",
     "imgW": 56,
@@ -990,7 +990,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 88,
     "desc": "A timid fairy POKéMON that is rarely seen. It will run and hide the moment it senses people.",
     "types": [PokemonType.Normal],
-    "evolveFrom": [PokemonID.Clefairy],
+    "evolveFrom": PokemonID.Clefairy,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_036_clefable.png",
     "imgW": 48,
@@ -1030,7 +1030,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 44,
     "desc": "Very smart and very vengeful. Grabbing one of its many tails could result in a 1000-year curse.",
     "types": [PokemonType.Fire],
-    "evolveFrom": [PokemonID.Vulpix],
+    "evolveFrom": PokemonID.Vulpix,
     "available": [PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_038_ninetales.png",
     "imgW": 56,
@@ -1070,7 +1070,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 26,
     "desc": "The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size",
     "types": [PokemonType.Normal],
-    "evolveFrom": [PokemonID.Jigglypuff],
+    "evolveFrom": PokemonID.Jigglypuff,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_040_wigglytuff.png",
     "imgW": 47,
@@ -1110,7 +1110,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 121,
     "desc": "Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly.",
     "types": [PokemonType.Poison, PokemonType.Flying],
-    "evolveFrom": [PokemonID.Zubat],
+    "evolveFrom": PokemonID.Zubat,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_042_golbat.png",
     "imgW": 56,
@@ -1150,7 +1150,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 19,
     "desc": "The fluid that oozes from its mouth isn't drool. It is a nectar that is used to attract prey.",
     "types": [PokemonType.Grass, PokemonType.Poison],
-    "evolveFrom": [PokemonID.Oddish],
+    "evolveFrom": PokemonID.Oddish,
     "evolveTo": [
         {
             "id": PokemonID.Vileplume,
@@ -1174,7 +1174,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 41,
     "desc": "The larger its petals, the more toxic pollen it contains. Its big head is heavy and hard to hold up.",
     "types": [PokemonType.Grass, PokemonType.Poison],
-    "evolveFrom": [PokemonID.Gloom],
+    "evolveFrom": PokemonID.Gloom,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_045_vileplume.png",
     "imgW": 48,
@@ -1214,7 +1214,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 65,
     "desc": "A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places.",
     "types": [PokemonType.Bug, PokemonType.Grass],
-    "evolveFrom": [PokemonID.Paras],
+    "evolveFrom": PokemonID.Paras,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_047_parasect.png",
     "imgW": 56,
@@ -1254,7 +1254,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 28,
     "desc": "The dust-like scales covering its wings are color coded to indicate the kinds of poison it has.",
     "types": [PokemonType.Bug, PokemonType.Poison],
-    "evolveFrom": [PokemonID.Venonat],
+    "evolveFrom": PokemonID.Venonat,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_049_venomoth.png",
     "imgW": 50,
@@ -1294,7 +1294,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 73,
     "desc": "A team of DIGLETT triplets. It triggers huge earthquakes by burrowing 60 miles underground.",
     "types": [PokemonType.Ground],
-    "evolveFrom": [PokemonID.Diglett],
+    "evolveFrom": PokemonID.Diglett,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_051_dugtrio.png",
     "imgW": 48,
@@ -1334,7 +1334,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 71,
     "desc": "Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness.",
     "types": [PokemonType.Normal],
-    "evolveFrom": [PokemonID.Meowth],
+    "evolveFrom": PokemonID.Meowth,
     "available": [PokemonGameVersion.Blue],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_053_persian.png",
     "imgW": 53,
@@ -1374,7 +1374,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 169,
     "desc": "Often seen swimming elegantly by lake shores. It is often mistaken for the Japanese monster, Kappa.",
     "types": [PokemonType.Water],
-    "evolveFrom": [PokemonID.Psyduck],
+    "evolveFrom": PokemonID.Psyduck,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_055_golduck.png",
     "imgW": 52,
@@ -1414,7 +1414,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 71.0,
     "desc": "Always furious and tenacious to boot. It will not abandon chasing its quarry until it is caught.",
     "types": [PokemonType.Fighting],
-    "evolveFrom": [PokemonID.Mankey],
+    "evolveFrom": PokemonID.Mankey,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_057_primeape.png",
     "imgW": 49,
@@ -1454,7 +1454,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 342,
     "desc": "A POKéMON that has been admired since the past for its beauty. It runs agilely as if on wings.",
     "types": [PokemonType.Fire],
-    "evolveFrom": [PokemonID.Growlithe],
+    "evolveFrom": PokemonID.Growlithe,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_059_arcanine.png",
     "imgW": 53,
@@ -1494,7 +1494,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 44,
     "desc": "Capab;e of living in or out of water. When out of water, it sweats to keep its body slimy.",
     "types": [PokemonType.Water],
-    "evolveFrom": [PokemonID.Poliwag],
+    "evolveFrom": PokemonID.Poliwag,
     "evolveTo": [
         {
             "id": PokemonID.Poliwrath,
@@ -1518,7 +1518,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 119,
     "desc": "An adept swimmer at both the front crawl and breast stroke. Easily overtakes the best human swimmers.",
     "types": [PokemonType.Water, PokemonType.Fighting],
-    "evolveFrom": [PokemonID.Poliwhirl],
+    "evolveFrom": PokemonID.Poliwhirl,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_062_poliwrath.png",
     "imgW": 52,
@@ -1558,7 +1558,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 125,
     "desc": "It emits special alpha waves from its body that induce headaches just by being close by.",
     "types": [PokemonType.Psychic],
-    "evolveFrom": [PokemonID.Abra],
+    "evolveFrom": PokemonID.Abra,
     "evolveTo": [
         {
             "id": PokemonID.Alakazam,
@@ -1581,7 +1581,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 106,
     "desc": "Its brain can outperform a supercomputer. Its intelligence quotient is said to be 5,000.",
     "types": [PokemonType.Psychic],
-    "evolveFrom": [PokemonID.Kadabra],
+    "evolveFrom": PokemonID.Kadabra,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_065_alakazam.png",
     "imgW": 54,
@@ -1621,7 +1621,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 155,
     "desc": "Its muscular body is so powerful, it mist wear a power save belt to be able to regulate its motions.",
     "types": [PokemonType.Fighting],
-    "evolveFrom": [PokemonID.Machop],
+    "evolveFrom": PokemonID.Machop,
     "evolveTo": [
         {
             "id": PokemonID.Machamp,
@@ -1644,7 +1644,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 287,
     "desc": "Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon.",
     "types": [PokemonType.Fighting],
-    "evolveFrom": [PokemonID.Machoke],
+    "evolveFrom": PokemonID.Machoke,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_068_machamp.png",
     "imgW": 56,
@@ -1684,7 +1684,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 14,
     "desc": "It spits out POISONPOWDER to immobilize the enemy and then finishes it with a spray of ACID.",
     "types": [PokemonType.Grass, PokemonType.Poison],
-    "evolveFrom": [PokemonID.Bellsprout],
+    "evolveFrom": PokemonID.Bellsprout,
     "evolveTo": [
         {
             "id": PokemonID.Victreebel,
@@ -1708,7 +1708,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 34,
     "desc": "Said to live in huge colonies deep in jungles, although no one has ever returned from there.",
     "types": [PokemonType.Grass, PokemonType.Poison],
-    "evolveFrom": [PokemonID.Weepinbell],
+    "evolveFrom": PokemonID.Weepinbell,
     "available": [PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_071_victreebel.png",
     "imgW": 50,
@@ -1748,7 +1748,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 121,
     "desc": "The tentacles are normally kept short. On hunts, they are extended to ensnare and immobilize prey.",
     "types": [PokemonType.Water, PokemonType.Poison],
-    "evolveFrom": [PokemonID.Tentacool],
+    "evolveFrom": PokemonID.Tentacool,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_073_tentacruel.png",
     "imgW": 47,
@@ -1788,7 +1788,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 232,
     "desc": "Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction.",
     "types": [PokemonType.Rock, PokemonType.Ground],
-    "evolveFrom": [PokemonID.Geodude],
+    "evolveFrom": PokemonID.Geodude,
     "evolveTo": [
         {
             "id": PokemonID.Golem,
@@ -1811,7 +1811,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 662,
     "desc": "Its boulder-like body is extremely hard. It can easily withstand dynamite blases without damage.",
     "types": [PokemonType.Rock, PokemonType.Ground],
-    "evolveFrom": [PokemonID.Graveler],
+    "evolveFrom": PokemonID.Graveler,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_076_golem.png",
     "imgW": 47,
@@ -1851,7 +1851,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 209,
     "desc": "Very competitive, this POKéMON will chase anything that moves fast in the hopes of racing it.",
     "types": [PokemonType.Fire],
-    "evolveFrom": [PokemonID.Ponyta],
+    "evolveFrom": PokemonID.Ponyta,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_078_rapidash.png",
     "imgW": 55,
@@ -1891,7 +1891,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 173,
     "desc": "The SHELLDER that is latched onto SLOWPOKE's tail is said to feed on the host's left over scraps.",
     "types": [PokemonType.Water, PokemonType.Psychic],
-    "evolveFrom": [PokemonID.Slowpoke],
+    "evolveFrom": PokemonID.Slowpoke,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_080_slowbro.png",
     "imgW": 56,
@@ -1931,7 +1931,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 132,
     "desc": "Formed by several MAGNEMITEs linked together. They frequently appear when sinspots flare up.",
     "types": [PokemonType.Electric],
-    "evolveFrom": [PokemonID.Magnemite],
+    "evolveFrom": PokemonID.Magnemite,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_082_magneton.png",
     "imgW": 48,
@@ -1987,7 +1987,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 188,
     "desc": "Uses its three brains to execute complex plans. While two heads sleep, one head stays awake.",
     "types": [PokemonType.Normal, PokemonType.Flying],
-    "evolveFrom": [PokemonID.Doduo],
+    "evolveFrom": PokemonID.Doduo,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_085_dodrio.png",
     "imgW": 50,
@@ -2027,7 +2027,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 265,
     "desc": "Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters.",
     "types": [PokemonType.Water, PokemonType.Ice],
-    "evolveFrom": [PokemonID.Seel],
+    "evolveFrom": PokemonID.Seel,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_087_dewgong.png",
     "imgW": 47,
@@ -2067,7 +2067,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 66,
     "desc": "Thickly covered with a filthy, vile sludge. It is so toxic, even its footprints contain poison.",
     "types": [PokemonType.Poison],
-    "evolveFrom": [PokemonID.Grimer],
+    "evolveFrom": PokemonID.Grimer,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_089_muk.png",
     "imgW": 55,
@@ -2107,7 +2107,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 292,
     "desc": "When attacked, it launches its horns in quick volleys. Its innards have never been seen.",
     "types": [PokemonType.Water, PokemonType.Ice],
-    "evolveFrom": [PokemonID.Shellder],
+    "evolveFrom": PokemonID.Shellder,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_091_cloyster.png",
     "imgW": 53,
@@ -2147,7 +2147,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 0.2,
     "desc": "Because of its ability to slip through block walls, it is said to be from another dimension.",
     "types": [PokemonType.Ghost, PokemonType.Poison],
-    "evolveFrom": [PokemonID.Gastly],
+    "evolveFrom": PokemonID.Gastly,
     "evolveTo": [
         {
             "id": PokemonID.Gengar,
@@ -2170,7 +2170,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 89,
     "desc": "Under a full moon, this POKéMON likes to mimic the shadows of people and laugh at their fright.",
     "types": [PokemonType.Ghost, PokemonType.Poison],
-    "evolveFrom": [PokemonID.Haunter],
+    "evolveFrom": PokemonID.Haunter,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_094_gengar.png",
     "imgW": 47,
@@ -2226,7 +2226,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 167,
     "desc": "When it locks eyes with an enemy, it will use a mix of PSI moves such as HYPNOSIS and CONFUSION.",
     "types": [PokemonType.Psychic],
-    "evolveFrom": [PokemonID.Drowzee],
+    "evolveFrom": PokemonID.Drowzee,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_097_hypno.png",
     "imgW": 54,
@@ -2266,7 +2266,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 132,
     "desc": "The large pincer has 10000 hp of crushing power. However, its huge size makes it unwieldy to use.",
     "types": [PokemonType.Water],
-    "evolveFrom": [PokemonID.Krabby],
+    "evolveFrom": PokemonID.Krabby,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_099_kingler.png",
     "imgW": 56,
@@ -2306,7 +2306,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 147,
     "desc": "It stores electric energy under very high pressure. It often explodes with little or no provocation.",
     "types": [PokemonType.Electric],
-    "evolveFrom": [PokemonID.Voltorb],
+    "evolveFrom": PokemonID.Voltorb,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_101_electrode.png",
     "imgW": 36,
@@ -2346,7 +2346,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 265,
     "desc": "Legend has it that on rare occasions, one of its heads will drop off and continue on as an EXEGGCUTE.",
     "types": [PokemonType.Grass, PokemonType.Psychic],
-    "evolveFrom": [PokemonID.Exeggcute],
+    "evolveFrom": PokemonID.Exeggcute,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_103_exeggutor.png",
     "imgW": 56,
@@ -2386,7 +2386,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 99,
     "desc": "The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets.",
     "types": [PokemonType.Ground],
-    "evolveFrom": [PokemonID.Cubone],
+    "evolveFrom": PokemonID.Cubone,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_105_marowak.png",
     "imgW": 48,
@@ -2474,7 +2474,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 21,
     "desc": "Where two kinds of poison gases meet, 2 KOFFINGSs can fuse into a WEEZING over many years.",
     "types": [PokemonType.Poison],
-    "evolveFrom": [PokemonID.Koffing],
+    "evolveFrom": PokemonID.Koffing,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_110_weezing.png",
     "imgW": 54,
@@ -2514,7 +2514,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 265,
     "desc": "Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees.",
     "types": [PokemonType.Rock, PokemonType.Ground],
-    "evolveFrom": [PokemonID.Rhyhorn],
+    "evolveFrom": PokemonID.Rhyhorn,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_112_rhydon.png",
     "imgW": 55,
@@ -2602,7 +2602,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 55,
     "desc": "Capable of swimming backwards by rapidly flapping its wing-like pectoral fins and stout tail.",
     "types": [PokemonType.Water],
-    "evolveFrom": [PokemonID.Horsea],
+    "evolveFrom": PokemonID.Horsea,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_117_seadra.png",
     "imgW": 45,
@@ -2642,7 +2642,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 86,
     "desc": "In the autumn spawning season, they can be seen swimming powerfully up rivers and creeks.",
     "types": [PokemonType.Water],
-    "evolveFrom": [PokemonID.Goldeen],
+    "evolveFrom": PokemonID.Goldeen,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_119_seaking.png",
     "imgW": 56,
@@ -2682,7 +2682,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 176,
     "desc": "Its central core glows with the seven colors of the rainbow. Some people value the core as a gem.",
     "types": [PokemonType.Water, PokemonType.Psychic],
-    "evolveFrom": [PokemonID.Staryu],
+    "evolveFrom": PokemonID.Staryu,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_121_starmie.png",
     "imgW": 47,
@@ -2834,7 +2834,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 518.0,
     "desc": "Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage.",
     "types": [PokemonType.Water, PokemonType.Flying],
-    "evolveFrom": [PokemonID.Magikarp],
+    "evolveFrom": PokemonID.Magikarp,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_130_gyarados.png",
     "imgW": 56,
@@ -2892,7 +2892,7 @@ export const pokemonDB: Pokemon[] = [
         {
             "id": PokemonID.Jolteon,
             "type": PokemonEvolutionType.Item,
-            "item": ItemID.Thuderstone
+            "item": ItemID.Thuder_Stone
         },
         {
             "id": PokemonID.Flareon,
@@ -2916,7 +2916,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 64,
     "desc": "Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid's.",
     "types": [PokemonType.Water],
-    "evolveFrom": [PokemonID.Eevee],
+    "evolveFrom": PokemonID.Eevee,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_134_vaporeon.png",
     "imgW": 46,
@@ -2933,7 +2933,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 54,
     "desc": "It accumulates negative ions in the atmosphere to blast out 10000-volt lightning bolts.",
     "types": [PokemonType.Electric],
-    "evolveFrom": [PokemonID.Eevee],
+    "evolveFrom": PokemonID.Eevee,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_135_jolteon.png",
     "imgW": 48,
@@ -2950,7 +2950,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 55,
     "desc": "When storing thermal energy in its body, its temperature could soar to over 1600 degrees.",
     "types": [PokemonType.Fire],
-    "evolveFrom": [PokemonID.Eevee],
+    "evolveFrom": PokemonID.Eevee,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_136_flareon.png",
     "imgW": 47,
@@ -3006,7 +3006,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 77,
     "desc": "A prehistoric POKéMON that died out when its heavy shell made it impossible to catch prey.",
     "types": [PokemonType.Rock, PokemonType.Water],
-    "evolveFrom": [PokemonID.Omanyte],
+    "evolveFrom": PokemonID.Omanyte,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_139_omastar.png",
     "imgW": 47,
@@ -3046,7 +3046,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 89,
     "desc": "Its sleek shape is perfect for swimming. It slashes prey with its claws and drains the body of fluids.",
     "types": [PokemonType.Rock, PokemonType.Water],
-    "evolveFrom": [PokemonID.Kabuto],
+    "evolveFrom": PokemonID.Kabuto,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_141_kabutops.png",
     "imgW": 47,
@@ -3166,7 +3166,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 36,
     "desc": "A mystical POKéMON that exudes a gentle aura. Has the ability to change climate conditions.",
     "types": [PokemonType.Dragon],
-    "evolveFrom": [PokemonID.Dratini],
+    "evolveFrom": PokemonID.Dratini,
     "evolveTo": [
         {
             "id": PokemonID.Dragonite,
@@ -3190,7 +3190,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 463,
     "desc": "An extremely rarely seen marine POKéMON. Its intelligence is said to match that of humans.",
     "types": [PokemonType.Dragon, PokemonType.Flying],
-    "evolveFrom": [PokemonID.Dragonair],
+    "evolveFrom": PokemonID.Dragonair,
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_149_dragonite.png",
     "imgW": 52,
@@ -3237,4 +3237,13 @@ export function get_pokemon(pokemonID: number) {
   if (pokemonID < 0 || pokemonID >= pokemonDB.length)
     return undefined;
   return pokemonDB[pokemonID];
+}
+
+export function get_pokemon_base(pokemon: Pokemon) {
+  if (!pokemon.evolveFrom)
+    return pokemon;
+  const basePokemon = get_pokemon(pokemon.evolveFrom);
+  if (!basePokemon)
+    return pokemon;
+  return get_pokemon_base(basePokemon);
 }
