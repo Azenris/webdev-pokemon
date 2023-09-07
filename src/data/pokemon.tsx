@@ -1,3 +1,158 @@
+export enum PokemonID {
+  None,
+  Bulbasaur,
+  Ivysaur,
+  Venusaur,
+  Charmander,
+  Charmeleon,
+  Charizard,
+  Squirtle,
+  Wartortle,
+  Blastoise,
+  Caterpie,
+  Metapod,
+  Butterfree,
+  Weedle,
+  Kakuna,
+  Beedrill,
+  Pidgey,
+  Pidgeotto,
+  Pidgeot,
+  Rattata,
+  Raticate,
+  Spearow,
+  Fearow,
+  Ekans,
+  Arbok,
+  Pikachu,
+  Raichu,
+  Sandshrew,
+  Sandslash,
+  NidoranF,
+  Nidorina,
+  Nidoqueen,
+  NidoranM,
+  Nidorino,
+  Nidoking,
+  Clefairy,
+  Clefable,
+  Vulpix,
+  Ninetales,
+  Jigglypuff,
+  Wigglytuff,
+  Zubat,
+  Golbat,
+  Oddish,
+  Gloom,
+  Vileplume,
+  Paras,
+  Parasect,
+  Venonat,
+  Venomoth,
+  Diglett,
+  Dugtrio,
+  Meowth,
+  Persian,
+  Psyduck,
+  Golduck,
+  Mankey,
+  Primeape,
+  Growlithe,
+  Arcanine,
+  Poliwag,
+  Poliwhirl,
+  Poliwrath,
+  Abra,
+  Kadabra,
+  Alakazam,
+  Machop,
+  Machoke,
+  Machamp,
+  Bellsprout,
+  Weepinbell,
+  Victreebel,
+  Tentacool,
+  Tentacruel,
+  Geodude,
+  Graveler,
+  Golem,
+  Ponyta,
+  Rapidash,
+  Slowpoke,
+  Slowbro,
+  Magnemite,
+  Magneton,
+  Farfetchd,
+  Doduo,
+  Dodrio,
+  Seel,
+  Dewgong,
+  Grimer,
+  Muk,
+  Shellder,
+  Cloyster,
+  Gastly,
+  Haunter,
+  Gengar,
+  Onix,
+  Drowzee,
+  Hypno,
+  Krabby,
+  Kingler,
+  Voltorb,
+  Electrode,
+  Exeggcute,
+  Exeggutor,
+  Cubone,
+  Marowak,
+  Hitmonlee,
+  Hitmonchan,
+  Lickitung,
+  Koffing,
+  Weezing,
+  Rhyhorn,
+  Rhydon,
+  Chansey,
+  Tangela,
+  Kangaskhan,
+  Horsea,
+  Seadra,
+  Goldeen,
+  Seaking,
+  Staryu,
+  Starmie,
+  Mr_Mime,
+  Scyther,
+  Jynx,
+  Electabuzz,
+  Magmar,
+  Pinsir,
+  Tauros,
+  Magikarp,
+  Gyarados,
+  Lapras,
+  Ditto,
+  Eevee,
+  Vaporeon,
+  Jolteon,
+  Flareon,
+  Porygon,
+  Omanyte,
+  Omastar,
+  Kabuto,
+  Kabutops,
+  Aerodactyl,
+  Snorlax,
+  Articuno,
+  Zapdos,
+  Moltres,
+  Dratini,
+  Dragonair,
+  Dragonite,
+  Mewtwo,
+  Mew
+};
+
 export enum PokemonGameVersion {
   Red,
   Blue,
@@ -29,14 +184,14 @@ export enum PokemonEvolutionType {
 };
 
 export type EvolveTo = {
-  id: number;
+  id: PokemonID;
   type: PokemonEvolutionType;
   lvl?: number;
   item?: string;
 }
 
 export type Pokemon = {
-  id: number;
+  id: PokemonID;
   name: string;
   species: string;
   species_clean: string;
@@ -44,7 +199,7 @@ export type Pokemon = {
   weight: number;
   desc: string;
   types: PokemonType[];
-  evolveFrom?: number[];
+  evolveFrom?: PokemonID[];
   evolveTo?: EvolveTo[];
   available: PokemonGameVersion[];
   imgGBC: string;
@@ -85,7 +240,7 @@ export const PokemonTypeNames: string[] = [
 
 export const pokemonDB: Pokemon[] = [
   {
-    "id": 1,
+    "id": PokemonID.Bulbasaur,
     "name": "Bulbasaur",
     "species": "SEED",
     "species_clean": "Seed",
@@ -95,7 +250,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Grass, PokemonType.Poison],
     "evolveTo": [
         {
-            "id": 2,
+            "id": PokemonID.Ivysaur,
             "type": PokemonEvolutionType.Level,
             "lvl": 16
         }
@@ -111,7 +266,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 2,
+    "id": PokemonID.Ivysaur,
     "name": "Ivysaur",
     "species": "SEED",
     "species_clean": "Seed",
@@ -119,10 +274,10 @@ export const pokemonDB: Pokemon[] = [
     "weight": 29.0,
     "desc": "When the blub on its back grows large, it appears to lose the ability to stand on its hind legs.",
     "types": [PokemonType.Grass, PokemonType.Poison],
-    "evolveFrom": [1],
+    "evolveFrom": [PokemonID.Bulbasaur],
     "evolveTo": [
         {
-            "id": 3,
+            "id": PokemonID.Venusaur,
             "type": PokemonEvolutionType.Level,
             "lvl": 32
         }
@@ -135,7 +290,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 3,
+    "id": PokemonID.Venusaur,
     "name": "Venusaur",
     "species": "SEED",
     "species_clean": "Seed",
@@ -143,7 +298,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 221,
     "desc": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
     "types": [PokemonType.Grass, PokemonType.Poison],
-    "evolveFrom": [2],
+    "evolveFrom": [PokemonID.Ivysaur],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_003_venusaur.png",
     "imgW": 53,
@@ -152,7 +307,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 4,
+    "id": PokemonID.Charmander,
     "name": "Charmander",
     "species": "LIZARD",
     "species_clean": "Lizard",
@@ -162,7 +317,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Fire],
     "evolveTo": [
         {
-            "id": 5,
+            "id": PokemonID.Charmeleon,
             "type": PokemonEvolutionType.Level,
             "lvl": 16
         }
@@ -176,7 +331,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 5,
+    "id": PokemonID.Charmeleon,
     "name": "Charmeleon",
     "species": "FLAME",
     "species_clean": "Flame",
@@ -184,10 +339,10 @@ export const pokemonDB: Pokemon[] = [
     "weight": 42,
     "desc": "When it swings its burning tail, it elevates the temperature to unbearably high levels.",
     "types": [PokemonType.Fire],
-    "evolveFrom": [4],
+    "evolveFrom": [PokemonID.Charmander],
     "evolveTo": [
         {
-            "id": 6,
+            "id": PokemonID.Charizard,
             "type": PokemonEvolutionType.Level,
             "lvl": 36
         }
@@ -200,7 +355,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 6,
+    "id": PokemonID.Charizard,
     "name": "Charizard",
     "species": "FLAME",
     "species_clean": "Flame",
@@ -208,7 +363,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 200,
     "desc": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
     "types": [PokemonType.Fire, PokemonType.Flying],
-    "evolveFrom": [5],
+    "evolveFrom": [PokemonID.Charmeleon],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_006_charizard.png",
     "imgW": 55,
@@ -217,7 +372,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 7,
+    "id": PokemonID.Squirtle,
     "name": "Squirtle",
     "species": "TINYTURTLE",
     "species_clean": "Tiny Turtle",
@@ -227,7 +382,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Water],
     "evolveTo": [
         {
-            "id": 8,
+            "id": PokemonID.Wartortle,
             "type": PokemonEvolutionType.Level,
             "lvl": 16
         }
@@ -241,7 +396,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 8,
+    "id": PokemonID.Wartortle,
     "name": "Wartortle",
     "species": "TURTLE",
     "species_clean": "Turtle",
@@ -249,10 +404,10 @@ export const pokemonDB: Pokemon[] = [
     "weight": 50,
     "desc": "Often Hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance.",
     "types": [PokemonType.Water],
-    "evolveFrom": [7],
+    "evolveFrom": [PokemonID.Squirtle],
     "evolveTo": [
         {
-            "id": 9,
+            "id": PokemonID.Blastoise,
             "type": PokemonEvolutionType.Level,
             "lvl": 36
         }
@@ -265,7 +420,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 9,
+    "id": PokemonID.Blastoise,
     "name": "Blastoise",
     "species": "SHELLFISH",
     "species_clean": "Shellfish",
@@ -273,7 +428,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 189,
     "desc": "A brutal POKéMON with pressurized water jets on its shell. They are used for high speed tackles.",
     "types": [PokemonType.Water],
-    "evolveFrom": [8],
+    "evolveFrom": [PokemonID.Wartortle],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_009_blastoise.png",
     "imgW": 54,
@@ -282,7 +437,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 10,
+    "id": PokemonID.Caterpie,
     "name": "Caterpie",
     "species": "WORM",
     "species_clean": "Worm",
@@ -292,7 +447,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Bug],
     "evolveTo": [
         {
-            "id": 11,
+            "id": PokemonID.Metapod,
             "type": PokemonEvolutionType.Level,
             "lvl": 7
         }
@@ -305,7 +460,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 11,
+    "id": PokemonID.Metapod,
     "name": "Metapod",
     "species": "CACOON",
     "species_clean": "Cacoon",
@@ -313,10 +468,10 @@ export const pokemonDB: Pokemon[] = [
     "weight": 22,
     "desc": "This POKéMON is vulnerable to attack while its shell is soft, exposing its weak and tender body.",
     "types": [PokemonType.Bug],
-    "evolveFrom": [10],
+    "evolveFrom": [PokemonID.Caterpie],
     "evolveTo": [
         {
-            "id": 12,
+            "id": PokemonID.Butterfree,
             "type": PokemonEvolutionType.Level,
             "lvl": 10
         }
@@ -329,7 +484,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 12,
+    "id": PokemonID.Butterfree,
     "name": "Butterfree",
     "species": "BUTTERFLY",
     "species_clean": "Butterfly",
@@ -337,7 +492,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 71,
     "desc": "In battle, it flaps its wings at high speed to release highly toxic dust into the air.",
     "types": [PokemonType.Bug, PokemonType.Flying],
-    "evolveFrom": [11],
+    "evolveFrom": [PokemonID.Metapod],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_012_butterfree.png",
     "imgW": 54,
@@ -346,7 +501,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 13,
+    "id": PokemonID.Weedle,
     "name": "Weedle",
     "species": "HAIRY BUG",
     "species_clean": "Hairy Bug",
@@ -356,7 +511,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Bug, PokemonType.Poison],
     "evolveTo": [
         {
-            "id": 14,
+            "id": PokemonID.Kakuna,
             "type": PokemonEvolutionType.Level,
             "lvl": 7
         }
@@ -369,7 +524,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 14,
+    "id": PokemonID.Kakuna,
     "name": "Kakuna",
     "species": "CACOON",
     "species_clean": "Cacoon",
@@ -377,7 +532,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 22,
     "desc": "Almost incapable of moving, this POKéMON can only harden its shell to protect itself from predators.",
     "types": [PokemonType.Bug, PokemonType.Poison],
-    "evolveFrom": [13],
+    "evolveFrom": [PokemonID.Weedle],
     "evolveTo": [
         {
             "id": 15,
@@ -393,7 +548,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 15,
+    "id": PokemonID.Beedrill,
     "name": "Beedrill",
     "species": "POISON BEE",
     "species_clean": "Poison Bee",
@@ -401,7 +556,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 65,
     "desc": "Flies at high speed and attacks using its large venomous stingers on its forelegs and tail.",
     "types": [PokemonType.Bug, PokemonType.Poison],
-    "evolveFrom": [14],
+    "evolveFrom": [PokemonID.Kakuna],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_015_beedrill.png",
     "imgW": 52,
@@ -410,7 +565,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 16,
+    "id": PokemonID.Pidgey,
     "name": "Pidgey",
     "species": "TINY BIRD",
     "species_clean": "Tiny Bird",
@@ -420,7 +575,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Normal, PokemonType.Flying],
     "evolveTo": [
         {
-            "id": 17,
+            "id": PokemonID.Pidgeotto,
             "type": PokemonEvolutionType.Level,
             "lvl": 18
         }
@@ -433,7 +588,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 17,
+    "id": PokemonID.Pidgeotto,
     "name": "Pidgeotto",
     "species": "BIRD",
     "species_clean": "Bird",
@@ -441,10 +596,10 @@ export const pokemonDB: Pokemon[] = [
     "weight": 66,
     "desc": "Very protective of its sprawling territorial area, this POKéMON will fiercely peck at any intruder.",
     "types": [PokemonType.Normal, PokemonType.Flying],
-    "evolveFrom": [16],
+    "evolveFrom": [PokemonID.Pidgey],
     "evolveTo": [
         {
-            "id": 18,
+            "id": PokemonID.Pidgeot,
             "type": PokemonEvolutionType.Level,
             "lvl": 36
         }
@@ -457,7 +612,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 18,
+    "id": PokemonID.Pidgeot,
     "name": "Pidgeot",
     "species": "BIRD",
     "species_clean": "Bird",
@@ -465,7 +620,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 87,
     "desc": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP.",
     "types": [PokemonType.Normal, PokemonType.Flying],
-    "evolveFrom": [17],
+    "evolveFrom": [PokemonID.Pidgeotto],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_018_pidgeot.png",
     "imgW": 53,
@@ -474,7 +629,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 19,
+    "id": PokemonID.Rattata,
     "name": "Rattata",
     "species": "RAT",
     "species_clean": "Rat",
@@ -484,7 +639,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Normal],
     "evolveTo": [
         {
-            "id": 20,
+            "id": PokemonID.Raticate,
             "type": PokemonEvolutionType.Level,
             "lvl": 20
         }
@@ -497,7 +652,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 20,
+    "id": PokemonID.Raticate,
     "name": "Raticate",
     "species": "RAT",
     "species_clean": "Rat",
@@ -505,7 +660,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 41,
     "desc": "It uses its whiskers to maintain its balance. It apparently slows down if they are cut off.",
     "types": [PokemonType.Normal],
-    "evolveFrom": [19],
+    "evolveFrom": [PokemonID.Rattata],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_020_raticate.png",
     "imgW": 48,
@@ -514,7 +669,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 21,
+    "id": PokemonID.Spearow,
     "name": "Spearow",
     "species": "TINY BIRD",
     "species_clean": "Tiny Bird",
@@ -524,7 +679,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Normal, PokemonType.Flying],
     "evolveTo": [
         {
-            "id": 22,
+            "id": PokemonID.Fearow,
             "type": PokemonEvolutionType.Level,
             "lvl": 20
         }
@@ -537,7 +692,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 22,
+    "id": PokemonID.Fearow,
     "name": "Fearow",
     "species": "BEAK",
     "species_clean": "Beak",
@@ -545,7 +700,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 84,
     "desc": "With its huge and magnificent wings, it can keep aloft without ever having to land for rest.",
     "types": [PokemonType.Normal, PokemonType.Flying],
-    "evolveFrom": [21],
+    "evolveFrom": [PokemonID.Spearow],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_022_fearow.png",
     "imgW": 58,
@@ -554,7 +709,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 23,
+    "id": PokemonID.Ekans,
     "name": "Ekans",
     "species": "SNAKE",
     "species_clean": "Snake",
@@ -564,7 +719,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Poison],
     "evolveTo": [
         {
-            "id": 24,
+            "id": PokemonID.Arbok,
             "type": PokemonEvolutionType.Level,
             "lvl": 22
         }
@@ -577,7 +732,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 24,
+    "id": PokemonID.Arbok,
     "name": "Arbok",
     "species": "COBRA",
     "species_clean": "Cobra",
@@ -585,7 +740,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 143,
     "desc": "It is rumored that the ferocious warning markings on its belly differ from area to area.",
     "types": [PokemonType.Poison],
-    "evolveFrom": [23],
+    "evolveFrom": [PokemonID.Ekans],
     "available": [PokemonGameVersion.Red],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_024_arbok.png",
     "imgW": 55,
@@ -594,7 +749,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 25,
+    "id": PokemonID.Pikachu,
     "name": "Pikachu",
     "species": "MOUSE",
     "species_clean": "Mouse",
@@ -604,7 +759,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Electric],
     "evolveTo": [
         {
-            "id": 26,
+            "id": PokemonID.Raichu,
             "type": PokemonEvolutionType.Item,
             "item": "Thunderstone"
         }
@@ -617,7 +772,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 26,
+    "id": PokemonID.Raichu,
     "name": "Raichu",
     "species": "MOUSE",
     "species_clean": "Mouse",
@@ -625,7 +780,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 66,
     "desc": "Its long tail serves as a ground to protect itself from its own high voltage power.",
     "types": [PokemonType.Electric],
-    "evolveFrom": [25],
+    "evolveFrom": [PokemonID.Pikachu],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_026_raichu.png",
     "imgW": 54,
@@ -634,7 +789,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 27,
+    "id": PokemonID.Sandshrew,
     "name": "Sandshrew",
     "species": "MOUSE",
     "species_clean": "Mouse",
@@ -644,7 +799,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Ground],
     "evolveTo": [
         {
-            "id": 28,
+            "id": PokemonID.Sandslash,
             "type": PokemonEvolutionType.Level,
             "lvl": 22
         }
@@ -657,7 +812,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 28,
+    "id": PokemonID.Sandslash,
     "name": "Sandslash",
     "species": "MOUSE",
     "species_clean": "Mouse",
@@ -665,7 +820,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 65,
     "desc": "Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.",
     "types": [PokemonType.Ground],
-    "evolveFrom": [27],
+    "evolveFrom": [PokemonID.Sandshrew],
     "available": [PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_028_sandslash.png",
     "imgW": 47,
@@ -674,7 +829,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 29,
+    "id": PokemonID.NidoranF,
     "name": "Nidoran♀",
     "species": "POISON PIN",
     "species_clean": "Poison Pin",
@@ -684,7 +839,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Poison],
     "evolveTo": [
         {
-            "id": 30,
+            "id": PokemonID.Nidorina,
             "type": PokemonEvolutionType.Level,
             "lvl": 16
         }
@@ -697,7 +852,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 30,
+    "id": PokemonID.Nidorina,
     "name": "Nidorina",
     "species": "POISON PIN",
     "species_clean": "Poison Pin",
@@ -705,10 +860,10 @@ export const pokemonDB: Pokemon[] = [
     "weight": 44,
     "desc": "The female's horn develops slowly. Prefers physical attacks such as clawing and biting.",
     "types": [PokemonType.Poison],
-    "evolveFrom": [29],
+    "evolveFrom": [PokemonID.NidoranF],
     "evolveTo": [
         {
-            "id": 31,
+            "id": PokemonID.Nidoqueen,
             "type": PokemonEvolutionType.Item,
             "item": "Moon Stone"
         }
@@ -721,7 +876,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 31,
+    "id": PokemonID.Nidoqueen,
     "name": "Nidoqueen",
     "species": "DRILL",
     "species_clean": "Drill",
@@ -729,7 +884,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 132,
     "desc": "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves.",
     "types": [PokemonType.Poison, PokemonType.Ground],
-    "evolveFrom": [30],
+    "evolveFrom": [PokemonID.Nidorina],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_031_nidoqueen.png",
     "imgW": 56,
@@ -738,7 +893,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 32,
+    "id": PokemonID.NidoranM,
     "name": "Nidoran♂",
     "species": "POISON PIN",
     "species_clean": "Poison Pin",
@@ -748,7 +903,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Poison],
     "evolveTo": [
         {
-            "id": 33,
+            "id": PokemonID.Nidorino,
             "type": PokemonEvolutionType.Level,
             "lvl": 16
         }
@@ -761,7 +916,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 33,
+    "id": PokemonID.Nidorino,
     "name": "Nidorino",
     "species": "POISON PIN",
     "species_clean": "Poison Pin",
@@ -769,7 +924,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 43,
     "desc": "An aggressive POKéMON that is quick to attack. The horn on its head secretes a powerful venom.",
     "types": [PokemonType.Poison],
-    "evolveFrom": [32],
+    "evolveFrom": [PokemonID.NidoranM],
     "evolveTo": [
         {
             "id": 34,
@@ -785,7 +940,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 34,
+    "id": PokemonID.Nidoking,
     "name": "Nidoking",
     "species": "DRILL",
     "species_clean": "Drill",
@@ -793,7 +948,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 137,
     "desc": "It uses its powerful tail in battle to smash, constrict, then break the prey's bones.",
     "types": [PokemonType.Poison, PokemonType.Ground],
-    "evolveFrom": [33],
+    "evolveFrom": [PokemonID.Nidorino],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_034_nidoking.png",
     "imgW": 56,
@@ -802,7 +957,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 35,
+    "id": PokemonID.Clefairy,
     "name": "Clefairy",
     "species": "FAIRY",
     "species_clean": "Fairy",
@@ -812,7 +967,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Normal],
     "evolveTo": [
         {
-            "id": 36,
+            "id": PokemonID.Clefable,
             "type": PokemonEvolutionType.Item,
             "item": "Moon Stone"
         }
@@ -825,7 +980,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 36,
+    "id": PokemonID.Clefable,
     "name": "Clefable",
     "species": "FAIRY",
     "species_clean": "Fairy",
@@ -833,7 +988,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 88,
     "desc": "A timid fairy POKéMON that is rarely seen. It will run and hide the moment it senses people.",
     "types": [PokemonType.Normal],
-    "evolveFrom": [35],
+    "evolveFrom": [PokemonID.Clefairy],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_036_clefable.png",
     "imgW": 48,
@@ -842,7 +997,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 37,
+    "id": PokemonID.Vulpix,
     "name": "Vulpix",
     "species": "FOX",
     "species_clean": "Fox",
@@ -852,7 +1007,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Fire],
     "evolveTo": [
         {
-            "id": 38,
+            "id": PokemonID.Ninetales,
             "type": PokemonEvolutionType.Item,
             "item": "Fire Stone"
         }
@@ -865,7 +1020,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 38,
+    "id": PokemonID.Ninetales,
     "name": "Ninetales",
     "species": "FOX",
     "species_clean": "Fox",
@@ -873,7 +1028,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 44,
     "desc": "Very smart and very vengeful. Grabbing one of its many tails could result in a 1000-year curse.",
     "types": [PokemonType.Fire],
-    "evolveFrom": [37],
+    "evolveFrom": [PokemonID.Vulpix],
     "available": [PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_038_ninetales.png",
     "imgW": 56,
@@ -882,7 +1037,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 39,
+    "id": PokemonID.Jigglypuff,
     "name": "Jigglypuff",
     "species": "BALLOON",
     "species_clean": "Balloon",
@@ -892,7 +1047,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Normal],
     "evolveTo": [
         {
-            "id": 40,
+            "id": PokemonID.Wigglytuff,
             "type": PokemonEvolutionType.Level,
             "item": "Moon Stone"
         }
@@ -905,7 +1060,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 40,
+    "id": PokemonID.Wigglytuff,
     "name": "Wigglytuff",
     "species": "BALLOON",
     "species_clean": "Balloon",
@@ -913,7 +1068,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 26,
     "desc": "The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size",
     "types": [PokemonType.Normal],
-    "evolveFrom": [39],
+    "evolveFrom": [PokemonID.Jigglypuff],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_040_wigglytuff.png",
     "imgW": 47,
@@ -922,7 +1077,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 41,
+    "id": PokemonID.Zubat,
     "name": "Zubat",
     "species": "BAT",
     "species_clean": "Bat",
@@ -932,7 +1087,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Poison, PokemonType.Flying],
     "evolveTo": [
         {
-            "id": 42,
+            "id": PokemonID.Golbat,
             "type": PokemonEvolutionType.Level,
             "lvl": 22
         }
@@ -945,7 +1100,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 42,
+    "id": PokemonID.Golbat,
     "name": "Golbat",
     "species": "BAT",
     "species_clean": "Bat",
@@ -953,7 +1108,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 121,
     "desc": "Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly.",
     "types": [PokemonType.Poison, PokemonType.Flying],
-    "evolveFrom": [41],
+    "evolveFrom": [PokemonID.Zubat],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_042_golbat.png",
     "imgW": 56,
@@ -962,7 +1117,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 43,
+    "id": PokemonID.Oddish,
     "name": "Oddish",
     "species": "WEED",
     "species_clean": "Weed",
@@ -972,7 +1127,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Grass, PokemonType.Poison],
     "evolveTo": [
         {
-            "id": 44,
+            "id": PokemonID.Gloom,
             "type": PokemonEvolutionType.Level,
             "lvl": 32
         }
@@ -985,7 +1140,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 44,
+    "id": PokemonID.Gloom,
     "name": "Gloom",
     "species": "WEED",
     "species_clean": "Weed",
@@ -993,10 +1148,10 @@ export const pokemonDB: Pokemon[] = [
     "weight": 19,
     "desc": "The fluid that oozes from its mouth isn't drool. It is a nectar that is used to attract prey.",
     "types": [PokemonType.Grass, PokemonType.Poison],
-    "evolveFrom": [43],
+    "evolveFrom": [PokemonID.Oddish],
     "evolveTo": [
         {
-            "id": 45,
+            "id": PokemonID.Vileplume,
             "type": PokemonEvolutionType.Item,
             "item": "Leaf Stone"
         }
@@ -1009,7 +1164,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 45,
+    "id": PokemonID.Vileplume,
     "name": "Vileplume",
     "species": "FLOWER",
     "species_clean": "Flower",
@@ -1017,7 +1172,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 41,
     "desc": "The larger its petals, the more toxic pollen it contains. Its big head is heavy and hard to hold up.",
     "types": [PokemonType.Grass, PokemonType.Poison],
-    "evolveFrom": [44],
+    "evolveFrom": [PokemonID.Gloom],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_045_vileplume.png",
     "imgW": 48,
@@ -1026,7 +1181,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 46,
+    "id": PokemonID.Paras,
     "name": "Paras",
     "species": "MUSHROOM",
     "species_clean": "Mushroom",
@@ -1036,7 +1191,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Bug, PokemonType.Grass],
     "evolveTo": [
         {
-            "id": 47,
+            "id": PokemonID.Parasect,
             "type": PokemonEvolutionType.Level,
             "lvl": 24
         }
@@ -1049,7 +1204,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 47,
+    "id": PokemonID.Parasect,
     "name": "Parasect",
     "species": "MUSHROOM",
     "species_clean": "Mushroom",
@@ -1057,7 +1212,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 65,
     "desc": "A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places.",
     "types": [PokemonType.Bug, PokemonType.Grass],
-    "evolveFrom": [46],
+    "evolveFrom": [PokemonID.Paras],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_047_parasect.png",
     "imgW": 56,
@@ -1066,7 +1221,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 48,
+    "id": PokemonID.Venonat,
     "name": "Venonat",
     "species": "INSECT",
     "species_clean": "Insect",
@@ -1076,7 +1231,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Bug, PokemonType.Poison],
     "evolveTo": [
         {
-            "id": 49,
+            "id": PokemonID.Venomoth,
             "type": PokemonEvolutionType.Level,
             "lvl": 31
         }
@@ -1089,7 +1244,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 49,
+    "id": PokemonID.Venomoth,
     "name": "Venomoth",
     "species": "POISONMOTH",
     "species_clean": "Poison Moth",
@@ -1097,7 +1252,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 28,
     "desc": "The dust-like scales covering its wings are color coded to indicate the kinds of poison it has.",
     "types": [PokemonType.Bug, PokemonType.Poison],
-    "evolveFrom": [48],
+    "evolveFrom": [PokemonID.Venonat],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_049_venomoth.png",
     "imgW": 50,
@@ -1106,7 +1261,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 50,
+    "id": PokemonID.Diglett,
     "name": "Diglett",
     "species": "MOLE",
     "species_clean": "Mole",
@@ -1116,7 +1271,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Ground],
     "evolveTo": [
         {
-            "id": 51,
+            "id": PokemonID.Dugtrio,
             "type": PokemonEvolutionType.Level,
             "lvl": 26
         }
@@ -1129,7 +1284,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 51,
+    "id": PokemonID.Dugtrio,
     "name": "Dugtrio",
     "species": "MOLE",
     "species_clean": "Mole",
@@ -1137,7 +1292,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 73,
     "desc": "A team of DIGLETT triplets. It triggers huge earthquakes by burrowing 60 miles underground.",
     "types": [PokemonType.Ground],
-    "evolveFrom": [50],
+    "evolveFrom": [PokemonID.Diglett],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_051_dugtrio.png",
     "imgW": 48,
@@ -1146,7 +1301,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 52,
+    "id": PokemonID.Meowth,
     "name": "Meowth",
     "species": "SCRATCHCAT",
     "species_clean": "Scratch Cat",
@@ -1156,7 +1311,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Normal],
     "evolveTo": [
         {
-            "id": 53,
+            "id": PokemonID.Persian,
             "type": PokemonEvolutionType.Level,
             "lvl": 28
         }
@@ -1169,7 +1324,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 53,
+    "id": PokemonID.Persian,
     "name": "Persian",
     "species": "CLASSY CAT",
     "species_clean": "Classy Cat",
@@ -1177,7 +1332,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 71,
     "desc": "Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness.",
     "types": [PokemonType.Normal],
-    "evolveFrom": [52],
+    "evolveFrom": [PokemonID.Meowth],
     "available": [PokemonGameVersion.Blue],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_053_persian.png",
     "imgW": 53,
@@ -1186,7 +1341,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 54,
+    "id": PokemonID.Psyduck,
     "name": "Psyduck",
     "species": "DUCK",
     "species_clean": "Duck",
@@ -1196,7 +1351,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Water],
     "evolveTo": [
         {
-            "id": 55,
+            "id": PokemonID.Golduck,
             "type": PokemonEvolutionType.Level,
             "lvl": 33
         }
@@ -1209,7 +1364,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 55,
+    "id": PokemonID.Golduck,
     "name": "Golduck",
     "species": "DUCK",
     "species_clean": "Duck",
@@ -1217,7 +1372,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 169,
     "desc": "Often seen swimming elegantly by lake shores. It is often mistaken for the Japanese monster, Kappa.",
     "types": [PokemonType.Water],
-    "evolveFrom": [54],
+    "evolveFrom": [PokemonID.Psyduck],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_055_golduck.png",
     "imgW": 52,
@@ -1226,7 +1381,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 56,
+    "id": PokemonID.Mankey,
     "name": "Mankey",
     "species": "PIG MONKEY",
     "species_clean": "Pig Monkey",
@@ -1236,7 +1391,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Fighting],
     "evolveTo": [
         {
-            "id": 57,
+            "id": PokemonID.Primeape,
             "type": PokemonEvolutionType.Level,
             "lvl": 28
         }
@@ -1249,7 +1404,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 57,
+    "id": PokemonID.Primeape,
     "name": "Primeape",
     "species": "PIG MONKEY",
     "species_clean": "Pig Monkey",
@@ -1257,7 +1412,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 71.0,
     "desc": "Always furious and tenacious to boot. It will not abandon chasing its quarry until it is caught.",
     "types": [PokemonType.Fighting],
-    "evolveFrom": [56],
+    "evolveFrom": [PokemonID.Mankey],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_057_primeape.png",
     "imgW": 49,
@@ -1266,7 +1421,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 58,
+    "id": PokemonID.Growlithe,
     "name": "Growlithe",
     "species": "PUPPY",
     "species_clean": "Puppy",
@@ -1276,7 +1431,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Fire],
     "evolveTo": [
         {
-            "id": 59,
+            "id": PokemonID.Arcanine,
             "type": PokemonEvolutionType.Item,
             "item": "Fire Stone"
         }
@@ -1289,7 +1444,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 59,
+    "id": PokemonID.Arcanine,
     "name": "Arcanine",
     "species": "LEGENDARY",
     "species_clean": "Legendary",
@@ -1297,7 +1452,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 342,
     "desc": "A POKéMON that has been admired since the past for its beauty. It runs agilely as if on wings.",
     "types": [PokemonType.Fire],
-    "evolveFrom": [58],
+    "evolveFrom": [PokemonID.Growlithe],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_059_arcanine.png",
     "imgW": 53,
@@ -1306,7 +1461,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 60,
+    "id": PokemonID.Poliwag,
     "name": "Poliwag",
     "species": "TADPOLE",
     "species_clean": "Tadpole",
@@ -1316,7 +1471,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Water],
     "evolveTo": [
         {
-            "id": 61,
+            "id": PokemonID.Poliwhirl,
             "type": PokemonEvolutionType.Level,
             "lvl": 25
         }
@@ -1329,7 +1484,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 61,
+    "id": PokemonID.Poliwhirl,
     "name": "Poliwhirl",
     "species": "TADPOLE",
     "species_clean": "Tadpole",
@@ -1337,10 +1492,10 @@ export const pokemonDB: Pokemon[] = [
     "weight": 44,
     "desc": "Capab;e of living in or out of water. When out of water, it sweats to keep its body slimy.",
     "types": [PokemonType.Water],
-    "evolveFrom": [60],
+    "evolveFrom": [PokemonID.Poliwag],
     "evolveTo": [
         {
-            "id": 62,
+            "id": PokemonID.Poliwrath,
             "type": PokemonEvolutionType.Item,
             "item": "Water Stone"
         }
@@ -1353,7 +1508,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 62,
+    "id": PokemonID.Poliwrath,
     "name": "Poliwrath",
     "species": "TADPOLE",
     "species_clean": "Tadpole",
@@ -1361,7 +1516,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 119,
     "desc": "An adept swimmer at both the front crawl and breast stroke. Easily overtakes the best human swimmers.",
     "types": [PokemonType.Water, PokemonType.Fighting],
-    "evolveFrom": [61],
+    "evolveFrom": [PokemonID.Poliwhirl],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_062_poliwrath.png",
     "imgW": 52,
@@ -1370,7 +1525,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 63,
+    "id": PokemonID.Abra,
     "name": "Abra",
     "species": "PSI",
     "species_clean": "Psi",
@@ -1380,7 +1535,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Psychic],
     "evolveTo": [
         {
-            "id": 64,
+            "id": PokemonID.Kadabra,
             "type": PokemonEvolutionType.Level,
             "lvl": 16
         }
@@ -1393,7 +1548,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 64,
+    "id": PokemonID.Kadabra,
     "name": "Kadabra",
     "species": "PSI",
     "species_clean": "Psi",
@@ -1401,10 +1556,10 @@ export const pokemonDB: Pokemon[] = [
     "weight": 125,
     "desc": "It emits special alpha waves from its body that induce headaches just by being close by.",
     "types": [PokemonType.Psychic],
-    "evolveFrom": [63],
+    "evolveFrom": [PokemonID.Abra],
     "evolveTo": [
         {
-            "id": 65,
+            "id": PokemonID.Alakazam,
             "type": PokemonEvolutionType.Trading
         }
     ],
@@ -1416,7 +1571,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 65,
+    "id": PokemonID.Alakazam,
     "name": "Alakazam",
     "species": "PSI",
     "species_clean": "Psi",
@@ -1424,7 +1579,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 106,
     "desc": "Its brain can outperform a supercomputer. Its intelligence quotient is said to be 5,000.",
     "types": [PokemonType.Psychic],
-    "evolveFrom": [64],
+    "evolveFrom": [PokemonID.Kadabra],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_065_alakazam.png",
     "imgW": 54,
@@ -1433,7 +1588,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 66,
+    "id": PokemonID.Machop,
     "name": "Machop",
     "species": "SUPERPOWER",
     "species_clean": "Superpower",
@@ -1443,7 +1598,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Fighting],
     "evolveTo": [
         {
-            "id": 67,
+            "id": PokemonID.Machoke,
             "type": PokemonEvolutionType.Level,
             "lvl": 28
         }
@@ -1456,7 +1611,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 67,
+    "id": PokemonID.Machoke,
     "name": "Machoke",
     "species": "SUPERPOWER",
     "species_clean": "Superpower",
@@ -1464,10 +1619,10 @@ export const pokemonDB: Pokemon[] = [
     "weight": 155,
     "desc": "Its muscular body is so powerful, it mist wear a power save belt to be able to regulate its motions.",
     "types": [PokemonType.Fighting],
-    "evolveFrom": [66],
+    "evolveFrom": [PokemonID.Machop],
     "evolveTo": [
         {
-            "id": 68,
+            "id": PokemonID.Machamp,
             "type": PokemonEvolutionType.Trading
         }
     ],
@@ -1479,7 +1634,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 68,
+    "id": PokemonID.Machamp,
     "name": "Machamp",
     "species": "SUPERPOWER",
     "species_clean": "Superpower",
@@ -1487,7 +1642,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 287,
     "desc": "Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon.",
     "types": [PokemonType.Fighting],
-    "evolveFrom": [67],
+    "evolveFrom": [PokemonID.Machoke],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_068_machamp.png",
     "imgW": 56,
@@ -1496,7 +1651,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 69,
+    "id": PokemonID.Bellsprout,
     "name": "Bellsprout",
     "species": "FLOWER",
     "species_clean": "Flower",
@@ -1506,7 +1661,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Grass, PokemonType.Poison],
     "evolveTo": [
         {
-            "id": 70,
+            "id": PokemonID.Weepinbell,
             "type": PokemonEvolutionType.Level,
             "lvl": 21
         }
@@ -1519,7 +1674,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 70,
+    "id": PokemonID.Weepinbell,
     "name": "Weepinbell",
     "species": "FLYCATCHER",
     "species_clean": "Fly Catcher",
@@ -1527,10 +1682,10 @@ export const pokemonDB: Pokemon[] = [
     "weight": 14,
     "desc": "It spits out POISONPOWDER to immobilize the enemy and then finishes it with a spray of ACID.",
     "types": [PokemonType.Grass, PokemonType.Poison],
-    "evolveFrom": [69],
+    "evolveFrom": [PokemonID.Bellsprout],
     "evolveTo": [
         {
-            "id": 71,
+            "id": PokemonID.Victreebel,
             "type": PokemonEvolutionType.Item,
             "item": "Leaf Stone"
         }
@@ -1543,7 +1698,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 71,
+    "id": PokemonID.Victreebel,
     "name": "Victreebel",
     "species": "FLYCATCHER",
     "species_clean": "Fly Catcher",
@@ -1551,7 +1706,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 34,
     "desc": "Said to live in huge colonies deep in jungles, although no one has ever returned from there.",
     "types": [PokemonType.Grass, PokemonType.Poison],
-    "evolveFrom": [70],
+    "evolveFrom": [PokemonID.Weepinbell],
     "available": [PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_071_victreebel.png",
     "imgW": 50,
@@ -1560,7 +1715,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 72,
+    "id": PokemonID.Tentacool,
     "name": "Tentacool",
     "species": "JELLYFISH",
     "species_clean": "Jellyfish",
@@ -1570,7 +1725,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Water, PokemonType.Poison],
     "evolveTo": [
         {
-            "id": 73,
+            "id": PokemonID.Tentacruel,
             "type": PokemonEvolutionType.Level,
             "lvl": 30
         }
@@ -1583,7 +1738,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 73,
+    "id": PokemonID.Tentacruel,
     "name": "Tentacruel",
     "species": "JELLYFISH",
     "species_clean": "Jellyfish",
@@ -1591,7 +1746,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 121,
     "desc": "The tentacles are normally kept short. On hunts, they are extended to ensnare and immobilize prey.",
     "types": [PokemonType.Water, PokemonType.Poison],
-    "evolveFrom": [72],
+    "evolveFrom": [PokemonID.Tentacool],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_073_tentacruel.png",
     "imgW": 47,
@@ -1600,7 +1755,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 74,
+    "id": PokemonID.Geodude,
     "name": "Geodude",
     "species": "ROCK",
     "species_clean": "Rock",
@@ -1610,7 +1765,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Rock, PokemonType.Ground],
     "evolveTo": [
         {
-            "id": 75,
+            "id": PokemonID.Graveler,
             "type": PokemonEvolutionType.Level,
             "lvl": 25
         }
@@ -1623,7 +1778,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 75,
+    "id": PokemonID.Graveler,
     "name": "Graveler",
     "species": "ROCK",
     "species_clean": "Rock",
@@ -1631,10 +1786,10 @@ export const pokemonDB: Pokemon[] = [
     "weight": 232,
     "desc": "Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction.",
     "types": [PokemonType.Rock, PokemonType.Ground],
-    "evolveFrom": [74],
+    "evolveFrom": [PokemonID.Geodude],
     "evolveTo": [
         {
-            "id": 76,
+            "id": PokemonID.Golem,
             "type": PokemonEvolutionType.Trading
         }
     ],
@@ -1646,7 +1801,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 76,
+    "id": PokemonID.Golem,
     "name": "Golem",
     "species": "MEGATON",
     "species_clean": "Megaton",
@@ -1654,7 +1809,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 662,
     "desc": "Its boulder-like body is extremely hard. It can easily withstand dynamite blases without damage.",
     "types": [PokemonType.Rock, PokemonType.Ground],
-    "evolveFrom": [75],
+    "evolveFrom": [PokemonID.Graveler],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_076_golem.png",
     "imgW": 47,
@@ -1663,7 +1818,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 77,
+    "id": PokemonID.Ponyta,
     "name": "Ponyta",
     "species": "FIRE HORSE",
     "species_clean": "Fire Horse",
@@ -1673,7 +1828,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Fire],
     "evolveTo": [
         {
-            "id": 78,
+            "id": PokemonID.Rapidash,
             "type": PokemonEvolutionType.Level,
             "lvl": 40
         }
@@ -1686,7 +1841,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 78,
+    "id": PokemonID.Rapidash,
     "name": "Rapidash",
     "species": "FIRE HORSE",
     "species_clean": "Fire Horse",
@@ -1694,7 +1849,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 209,
     "desc": "Very competitive, this POKéMON will chase anything that moves fast in the hopes of racing it.",
     "types": [PokemonType.Fire],
-    "evolveFrom": [77],
+    "evolveFrom": [PokemonID.Ponyta],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_078_rapidash.png",
     "imgW": 55,
@@ -1703,7 +1858,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 79,
+    "id": PokemonID.Slowpoke,
     "name": "Slowpoke",
     "species": "DOPEY",
     "species_clean": "Dopey",
@@ -1713,7 +1868,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Water, PokemonType.Psychic],
     "evolveTo": [
         {
-            "id": 80,
+            "id": PokemonID.Slowbro,
             "type": PokemonEvolutionType.Level,
             "lvl": 37
         }
@@ -1726,7 +1881,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 80,
+    "id": PokemonID.Slowbro,
     "name": "Slowbro",
     "species": "HERMITCRAB",
     "species_clean": "Hermit Crab",
@@ -1734,7 +1889,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 173,
     "desc": "The SHELLDER that is latched onto SLOWPOKE's tail is said to feed on the host's left over scraps.",
     "types": [PokemonType.Water, PokemonType.Psychic],
-    "evolveFrom": [79],
+    "evolveFrom": [PokemonID.Slowpoke],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_080_slowbro.png",
     "imgW": 56,
@@ -1743,7 +1898,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 81,
+    "id": PokemonID.Magnemite,
     "name": "Magnemite",
     "species": "MAGNET",
     "species_clean": "Magnet",
@@ -1753,7 +1908,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Electric],
     "evolveTo": [
         {
-            "id": 82,
+            "id": PokemonID.Magneton,
             "type": PokemonEvolutionType.Level,
             "lvl": 30
         }
@@ -1766,7 +1921,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 82,
+    "id": PokemonID.Magneton,
     "name": "Magneton",
     "species": "MAGNET",
     "species_clean": "Magnet",
@@ -1774,7 +1929,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 132,
     "desc": "Formed by several MAGNEMITEs linked together. They frequently appear when sinspots flare up.",
     "types": [PokemonType.Electric],
-    "evolveFrom": [81],
+    "evolveFrom": [PokemonID.Magnemite],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_082_magneton.png",
     "imgW": 48,
@@ -1783,7 +1938,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 83,
+    "id": PokemonID.Farfetchd,
     "name": "Farfetch'd",
     "species": "WILD DUCK",
     "species_clean": "Wild Duck",
@@ -1799,7 +1954,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 84,
+    "id": PokemonID.Doduo,
     "name": "Doduo",
     "species": "TWIN BIRD",
     "species_clean": "Twin Bird",
@@ -1809,7 +1964,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Normal, PokemonType.Flying],
     "evolveTo": [
         {
-            "id": 85,
+            "id": PokemonID.Dodrio,
             "type": PokemonEvolutionType.Level,
             "lvl": 31
         }
@@ -1822,7 +1977,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 85,
+    "id": PokemonID.Dodrio,
     "name": "Dodrio",
     "species": "TRIPLEBIRD",
     "species_clean": "Triple Bird",
@@ -1830,7 +1985,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 188,
     "desc": "Uses its three brains to execute complex plans. While two heads sleep, one head stays awake.",
     "types": [PokemonType.Normal, PokemonType.Flying],
-    "evolveFrom": [84],
+    "evolveFrom": [PokemonID.Doduo],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_085_dodrio.png",
     "imgW": 50,
@@ -1839,7 +1994,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 86,
+    "id": PokemonID.Seel,
     "name": "Seel",
     "species": "SEA LION",
     "species_clean": "Sea Lion",
@@ -1849,7 +2004,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Water],
     "evolveTo": [
         {
-            "id": 87,
+            "id": PokemonID.Dewgong,
             "type": PokemonEvolutionType.Level,
             "lvl": 34
         }
@@ -1862,7 +2017,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 87,
+    "id": PokemonID.Dewgong,
     "name": "Dewgong",
     "species": "SEA LION",
     "species_clean": "Sea Lion",
@@ -1870,7 +2025,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 265,
     "desc": "Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters.",
     "types": [PokemonType.Water, PokemonType.Ice],
-    "evolveFrom": [86],
+    "evolveFrom": [PokemonID.Seel],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_087_dewgong.png",
     "imgW": 47,
@@ -1879,7 +2034,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 88,
+    "id": PokemonID.Grimer,
     "name": "Grimer",
     "species": "SLUDGE",
     "species_clean": "Sludge",
@@ -1889,7 +2044,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Poison],
     "evolveTo": [
         {
-            "id": 89,
+            "id": PokemonID.Muk,
             "type": PokemonEvolutionType.Level,
             "lvl": 38
         }
@@ -1902,7 +2057,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 89,
+    "id": PokemonID.Muk,
     "name": "Muk",
     "species": "SLUDGE",
     "species_clean": "Sludge",
@@ -1910,7 +2065,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 66,
     "desc": "Thickly covered with a filthy, vile sludge. It is so toxic, even its footprints contain poison.",
     "types": [PokemonType.Poison],
-    "evolveFrom": [88],
+    "evolveFrom": [PokemonID.Grimer],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_089_muk.png",
     "imgW": 55,
@@ -1919,7 +2074,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 90,
+    "id": PokemonID.Shellder,
     "name": "Shellder",
     "species": "BIVALVE",
     "species_clean": "Bivalve",
@@ -1929,7 +2084,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Water],
     "evolveTo": [
         {
-            "id": 91,
+            "id": PokemonID.Cloyster,
             "type": PokemonEvolutionType.Item,
             "item": "Water Stone"
         }
@@ -1942,7 +2097,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 91,
+    "id": PokemonID.Cloyster,
     "name": "Cloyster",
     "species": "BIVALVE",
     "species_clean": "Bivalve",
@@ -1950,7 +2105,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 292,
     "desc": "When attacked, it launches its horns in quick volleys. Its innards have never been seen.",
     "types": [PokemonType.Water, PokemonType.Ice],
-    "evolveFrom": [90],
+    "evolveFrom": [PokemonID.Shellder],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_091_cloyster.png",
     "imgW": 53,
@@ -1959,7 +2114,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 92,
+    "id": PokemonID.Gastly,
     "name": "Gastly",
     "species": "GAS",
     "species_clean": "Gas",
@@ -1969,7 +2124,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Ghost, PokemonType.Poison],
     "evolveTo": [
         {
-            "id": 93,
+            "id": PokemonID.Haunter,
             "type": PokemonEvolutionType.Level,
             "lvl": 25
         }
@@ -1982,7 +2137,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 93,
+    "id": PokemonID.Haunter,
     "name": "Haunter",
     "species": "GAS",
     "species_clean": "Gas",
@@ -1990,10 +2145,10 @@ export const pokemonDB: Pokemon[] = [
     "weight": 0.2,
     "desc": "Because of its ability to slip through block wallsm it is said to be from another dimension.",
     "types": [PokemonType.Ghost, PokemonType.Poison],
-    "evolveFrom": [92],
+    "evolveFrom": [PokemonID.Gastly],
     "evolveTo": [
         {
-            "id": 94,
+            "id": PokemonID.Gengar,
             "type": PokemonEvolutionType.Trading
         }
     ],
@@ -2005,7 +2160,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 94,
+    "id": PokemonID.Gengar,
     "name": "Gengar",
     "species": "SHADOW",
     "species_clean": "Shadow",
@@ -2013,7 +2168,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 89,
     "desc": "Under a full moon, this POKéMON likes to mimic the shadows of people and laugh at their fright.",
     "types": [PokemonType.Ghost, PokemonType.Poison],
-    "evolveFrom": [39],
+    "evolveFrom": [PokemonID.Haunter],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_094_gengar.png",
     "imgW": 47,
@@ -2022,7 +2177,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 95,
+    "id": PokemonID.Onix,
     "name": "Onix",
     "species": "ROCK SNAKE",
     "species_clean": "Rock Snake",
@@ -2038,7 +2193,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 96,
+    "id": PokemonID.Drowzee,
     "name": "Drowzee",
     "species": "HYPNOSIS",
     "species_clean": "Hypnosis",
@@ -2048,7 +2203,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Psychic],
     "evolveTo": [
         {
-            "id": 97,
+            "id": PokemonID.Hypno,
             "type": PokemonEvolutionType.Level,
             "lvl": 26
         }
@@ -2061,7 +2216,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 97,
+    "id": PokemonID.Hypno,
     "name": "Hypno",
     "species": "HYPNOSIS",
     "species_clean": "Hypnosis",
@@ -2069,7 +2224,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 167,
     "desc": "When it locks eyes with an enemy, it will use a mix of PSI moves such as HYPNOSIS and CONFUSION.",
     "types": [PokemonType.Psychic],
-    "evolveFrom": [96],
+    "evolveFrom": [PokemonID.Drowzee],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_097_hypno.png",
     "imgW": 54,
@@ -2078,7 +2233,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 98,
+    "id": PokemonID.Krabby,
     "name": "Krabby",
     "species": "RIVER CRAB",
     "species_clean": "River Crab",
@@ -2088,7 +2243,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Water],
     "evolveTo": [
         {
-            "id": 99,
+            "id": PokemonID.Kingler,
             "type": PokemonEvolutionType.Level,
             "lvl": 28
         }
@@ -2101,7 +2256,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 99,
+    "id": PokemonID.Kingler,
     "name": "Kingler",
     "species": "PINCER",
     "species_clean": "Pincer",
@@ -2109,7 +2264,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 132,
     "desc": "The large pincer has 10000 hp of crushing power. However, its huge size makes it unwieldy to use.",
     "types": [PokemonType.Water],
-    "evolveFrom": [98],
+    "evolveFrom": [PokemonID.Krabby],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_099_kingler.png",
     "imgW": 56,
@@ -2118,7 +2273,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 100,
+    "id": PokemonID.Voltorb,
     "name": "Voltorb",
     "species": "BALL",
     "species_clean": "Ball",
@@ -2128,7 +2283,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Electric],
     "evolveTo": [
         {
-            "id": 101,
+            "id": PokemonID.Electrode,
             "type": PokemonEvolutionType.Level,
             "lvl": 30
         }
@@ -2141,7 +2296,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 101,
+    "id": PokemonID.Electrode,
     "name": "Electrode",
     "species": "BALL",
     "species_clean": "Ball",
@@ -2149,7 +2304,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 147,
     "desc": "It stores electric energy under very high pressure. It often explodes with little or no provocation.",
     "types": [PokemonType.Electric],
-    "evolveFrom": [100],
+    "evolveFrom": [PokemonID.Voltorb],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_101_electrode.png",
     "imgW": 36,
@@ -2158,7 +2313,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 102,
+    "id": PokemonID.Exeggcute,
     "name": "Exeggcute",
     "species": "EGG",
     "species_clean": "Egg",
@@ -2168,7 +2323,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Grass, PokemonType.Psychic],
     "evolveTo": [
         {
-            "id": 103,
+            "id": PokemonID.Exeggutor,
             "type": PokemonEvolutionType.Item,
             "item": "Leaf Stone"
         }
@@ -2181,7 +2336,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 103,
+    "id": PokemonID.Exeggutor,
     "name": "Exeggutor",
     "species": "COCONUT",
     "species_clean": "Coconut",
@@ -2189,7 +2344,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 265,
     "desc": "Legend has it that on rare occasions, one of its heads will drop off and continue on as an EXEGGCUTE.",
     "types": [PokemonType.Grass, PokemonType.Psychic],
-    "evolveFrom": [102],
+    "evolveFrom": [PokemonID.Exeggcute],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_103_exeggutor.png",
     "imgW": 56,
@@ -2198,7 +2353,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 104,
+    "id": PokemonID.Cubone,
     "name": "Cubone",
     "species": "LONELY",
     "species_clean": "Lonely",
@@ -2208,7 +2363,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Ground],
     "evolveTo": [
         {
-            "id": 105,
+            "id": PokemonID.Marowak,
             "type": PokemonEvolutionType.Level,
             "lvl": 28
         }
@@ -2221,7 +2376,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 105,
+    "id": PokemonID.Marowak,
     "name": "Marowak",
     "species": "BONEKEEPER",
     "species_clean": "Bone Keeper",
@@ -2229,7 +2384,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 99,
     "desc": "The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets.",
     "types": [PokemonType.Ground],
-    "evolveFrom": [104],
+    "evolveFrom": [PokemonID.Cubone],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_105_marowak.png",
     "imgW": 48,
@@ -2238,7 +2393,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 106,
+    "id": PokemonID.Hitmonlee,
     "name": "Hitmonlee",
     "species": "KICKING",
     "species_clean": "Kicking",
@@ -2254,7 +2409,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 107,
+    "id": PokemonID.Hitmonchan,
     "name": "Hitmonchan",
     "species": "PUNCHING",
     "species_clean": "Punching",
@@ -2270,7 +2425,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 108,
+    "id": PokemonID.Lickitung,
     "name": "Lickitung",
     "species": "LICKING",
     "species_clean": "Licking",
@@ -2286,7 +2441,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 109,
+    "id": PokemonID.Koffing,
     "name": "Koffing",
     "species": "POISON GAS",
     "species_clean": "Poison Gas",
@@ -2296,7 +2451,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Poison],
     "evolveTo": [
         {
-            "id": 110,
+            "id": PokemonID.Weezing,
             "type": PokemonEvolutionType.Level,
             "lvl": 35
         }
@@ -2309,7 +2464,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 110,
+    "id": PokemonID.Weezing,
     "name": "Weezing",
     "species": "POISON GAS",
     "species_clean": "Poison Gas",
@@ -2317,7 +2472,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 21,
     "desc": "Where two kinds of poison gases meet, 2 KOFFINGSs can fuse into a WEEZING over many years.",
     "types": [PokemonType.Poison],
-    "evolveFrom": [109],
+    "evolveFrom": [PokemonID.Koffing],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_110_weezing.png",
     "imgW": 54,
@@ -2326,7 +2481,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 111,
+    "id": PokemonID.Rhyhorn,
     "name": "Rhyhorn",
     "species": "SPIKES",
     "species_clean": "Spikes",
@@ -2336,7 +2491,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Rock, PokemonType.Ground],
     "evolveTo": [
         {
-            "id": 112,
+            "id": PokemonID.Rhydon,
             "type": PokemonEvolutionType.Level,
             "lvl": 42
         }
@@ -2349,7 +2504,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 112,
+    "id": PokemonID.Rhydon,
     "name": "Rhydon",
     "species": "DRILL",
     "species_clean": "Drill",
@@ -2357,7 +2512,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 265,
     "desc": "Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees.",
     "types": [PokemonType.Rock, PokemonType.Ground],
-    "evolveFrom": [111],
+    "evolveFrom": [PokemonID.Rhyhorn],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_112_rhydon.png",
     "imgW": 55,
@@ -2366,7 +2521,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 113,
+    "id": PokemonID.Chansey,
     "name": "Chansey",
     "species": "EGG",
     "species_clean": "Egg",
@@ -2382,7 +2537,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 114,
+    "id": PokemonID.Tangela,
     "name": "Tangela",
     "species": "VINE",
     "species_clean": "Vine",
@@ -2398,7 +2553,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 115,
+    "id": PokemonID.Kangaskhan,
     "name": "Kangaskhan",
     "species": "PARENT",
     "species_clean": "Parent",
@@ -2414,7 +2569,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 116,
+    "id": PokemonID.Horsea,
     "name": "Horsea",
     "species": "DRAGON",
     "species_clean": "Dragon",
@@ -2424,7 +2579,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Water],
     "evolveTo": [
         {
-            "id": 117,
+            "id": PokemonID.Seadra,
             "type": PokemonEvolutionType.Level,
             "lvl": 32
         }
@@ -2437,7 +2592,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 117,
+    "id": PokemonID.Seadra,
     "name": "Seadra",
     "species": "DRAGON",
     "species_clean": "Dragon",
@@ -2445,7 +2600,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 55,
     "desc": "Capable of swimming backwards by rapidly flapping its wing-like pectoral fins and stout tail.",
     "types": [PokemonType.Water],
-    "evolveFrom": [116],
+    "evolveFrom": [PokemonID.Horsea],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_117_seadra.png",
     "imgW": 45,
@@ -2454,7 +2609,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 118,
+    "id": PokemonID.Goldeen,
     "name": "Goldeen",
     "species": "GOLDFISH",
     "species_clean": "Goldfish",
@@ -2464,7 +2619,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Water],
     "evolveTo": [
         {
-            "id": 119,
+            "id": PokemonID.Seaking,
             "type": PokemonEvolutionType.Level,
             "lvl": 33
         }
@@ -2477,7 +2632,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 119,
+    "id": PokemonID.Seaking,
     "name": "Seaking",
     "species": "GOLDFISH",
     "species_clean": "Goldfish",
@@ -2485,7 +2640,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 86,
     "desc": "In the autumn spawning season, they can be seen swimming powerfully up rivers and creeks.",
     "types": [PokemonType.Water],
-    "evolveFrom": [118],
+    "evolveFrom": [PokemonID.Goldeen],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_119_seaking.png",
     "imgW": 56,
@@ -2494,7 +2649,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 120,
+    "id": PokemonID.Staryu,
     "name": "Staryu",
     "species": "STARSHAPE",
     "species_clean": "Star Shape",
@@ -2504,7 +2659,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Water],
     "evolveTo": [
         {
-            "id": 121,
+            "id": PokemonID.Starmie,
             "type": PokemonEvolutionType.Item,
             "item": "Water Stone"
         }
@@ -2517,7 +2672,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 121,
+    "id": PokemonID.Starmie,
     "name": "Starmie",
     "species": "MYSTERIOUS",
     "species_clean": "Mysterious",
@@ -2525,7 +2680,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 176,
     "desc": "Its central core glows with the seven colors of the rainbow. Some people value the core as a gem.",
     "types": [PokemonType.Water, PokemonType.Psychic],
-    "evolveFrom": [120],
+    "evolveFrom": [PokemonID.Staryu],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_121_starmie.png",
     "imgW": 47,
@@ -2534,7 +2689,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 122,
+    "id": PokemonID.Mr_Mime,
     "name": "Mr. Mime",
     "species": "BARRIER",
     "species_clean": "Barrier",
@@ -2550,7 +2705,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 123,
+    "id": PokemonID.Scyther,
     "name": "Scyther",
     "species": "MANTIS",
     "species_clean": "Mantis",
@@ -2566,7 +2721,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 124,
+    "id": PokemonID.Jynx,
     "name": "Jynx",
     "species": "HUMANSHAPE",
     "species_clean": "Human Shape",
@@ -2582,7 +2737,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 125,
+    "id": PokemonID.Electabuzz,
     "name": "Electabuzz",
     "species": "ELECTRIC",
     "species_clean": "Electric",
@@ -2598,7 +2753,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 126,
+    "id": PokemonID.Magmar,
     "name": "Magmar",
     "species": "SPITFIRE",
     "species_clean": "Spit Fire",
@@ -2614,7 +2769,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 127,
+    "id": PokemonID.Pinsir,
     "name": "Pinsir",
     "species": "STAGBEETLE",
     "species_clean": "Stag Beetle",
@@ -2630,7 +2785,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 128,
+    "id": PokemonID.Tauros,
     "name": "Tauros",
     "species": "WILD BULL",
     "species_clean": "Wild Bull",
@@ -2646,7 +2801,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 129,
+    "id": PokemonID.Magikarp,
     "name": "Magikarp",
     "species": "FISH",
     "species_clean": "Fish",
@@ -2656,7 +2811,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Water],
     "evolveTo": [
         {
-            "id": 130,
+            "id": PokemonID.Gyarados,
             "type": PokemonEvolutionType.Level,
             "lvl": 20
         }
@@ -2669,7 +2824,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 130,
+    "id": PokemonID.Gyarados,
     "name": "Gyarados",
     "species": "ATROCIOUS",
     "species_clean": "Atrocious",
@@ -2677,7 +2832,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 518.0,
     "desc": "Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage.",
     "types": [PokemonType.Water, PokemonType.Flying],
-    "evolveFrom": [129],
+    "evolveFrom": [PokemonID.Magikarp],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_130_gyarados.png",
     "imgW": 56,
@@ -2686,7 +2841,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 131,
+    "id": PokemonID.Lapras,
     "name": "Lapras",
     "species": "TRANSPORT",
     "species_clean": "Transport",
@@ -2702,7 +2857,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 132,
+    "id": PokemonID.Ditto,
     "name": "Ditto",
     "species": "TRANSFORM",
     "species_clean": "Transform",
@@ -2718,7 +2873,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 133,
+    "id": PokemonID.Eevee,
     "name": "Eevee",
     "species": "EVOLUTION",
     "species_clean": "Evolution",
@@ -2728,17 +2883,17 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Normal],
     "evolveTo": [
         {
-            "id": 134,
+            "id": PokemonID.Vaporeon,
             "type": PokemonEvolutionType.Item,
             "item": "Water Stone"
         },
         {
-            "id": 135,
+            "id": PokemonID.Jolteon,
             "type": PokemonEvolutionType.Item,
             "item": "Thunderstone"
         },
         {
-            "id": 136,
+            "id": PokemonID.Flareon,
             "type": PokemonEvolutionType.Item,
             "item": "Fire Stone"
         }
@@ -2751,7 +2906,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 134,
+    "id": PokemonID.Vaporeon,
     "name": "Vaporeon",
     "species": "BUBBLE JET",
     "species_clean": "Bubble Jet",
@@ -2759,7 +2914,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 64,
     "desc": "Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid's.",
     "types": [PokemonType.Water],
-    "evolveFrom": [133],
+    "evolveFrom": [PokemonID.Eevee],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_134_vaporeon.png",
     "imgW": 46,
@@ -2768,7 +2923,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 135,
+    "id": PokemonID.Jolteon,
     "name": "Jolteon",
     "species": "LIGHTNING",
     "species_clean": "Lightning",
@@ -2776,7 +2931,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 54,
     "desc": "It accumulates negative ions in the atmosphere to blast out 10000-volt lightning bolts.",
     "types": [PokemonType.Electric],
-    "evolveFrom": [133],
+    "evolveFrom": [PokemonID.Eevee],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_135_jolteon.png",
     "imgW": 48,
@@ -2785,7 +2940,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 136,
+    "id": PokemonID.Flareon,
     "name": "Flareon",
     "species": "FLAME",
     "species_clean": "Flame",
@@ -2793,7 +2948,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 55,
     "desc": "When storing thermal energy in its body, its temperature could soar to over 1600 degrees.",
     "types": [PokemonType.Fire],
-    "evolveFrom": [133],
+    "evolveFrom": [PokemonID.Eevee],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_136_flareon.png",
     "imgW": 47,
@@ -2802,7 +2957,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 137,
+    "id": PokemonID.Porygon,
     "name": "Porygon",
     "species": "VIRTUAL",
     "species_clean": "Virtual",
@@ -2818,7 +2973,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 138,
+    "id": PokemonID.Omanyte,
     "name": "Omanyte",
     "species": "SPIRAL",
     "species_clean": "Spiral",
@@ -2828,7 +2983,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Rock, PokemonType.Water],
     "evolveTo": [
         {
-            "id": 139,
+            "id": PokemonID.Omastar,
             "type": PokemonEvolutionType.Level,
             "lvl": 40
         }
@@ -2841,7 +2996,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 139,
+    "id": PokemonID.Omastar,
     "name": "Omastar",
     "species": "SPIRAL",
     "species_clean": "Spiral",
@@ -2849,7 +3004,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 77,
     "desc": "A prehistoric POKéMON that died out when its heavy shell made it impossible to catch prey.",
     "types": [PokemonType.Rock, PokemonType.Water],
-    "evolveFrom": [138],
+    "evolveFrom": [PokemonID.Omanyte],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_139_omastar.png",
     "imgW": 47,
@@ -2858,7 +3013,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 140,
+    "id": PokemonID.Kabuto,
     "name": "Kabuto",
     "species": "SHELLFISH",
     "species_clean": "Shellfish",
@@ -2868,7 +3023,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Rock, PokemonType.Water],
     "evolveTo": [
         {
-            "id": 141,
+            "id": PokemonID.Kabutops,
             "type": PokemonEvolutionType.Level,
             "lvl": 40
         }
@@ -2881,7 +3036,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 141,
+    "id": PokemonID.Kabutops,
     "name": "Kabutops",
     "species": "SHELLFISH",
     "species_clean": "Shellfish",
@@ -2889,7 +3044,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 89,
     "desc": "Its sleek shape is perfect for swimming. It slashes prey with its claws and drains the body of fluids.",
     "types": [PokemonType.Rock, PokemonType.Water],
-    "evolveFrom": [140],
+    "evolveFrom": [PokemonID.Kabuto],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_141_kabutops.png",
     "imgW": 47,
@@ -2898,7 +3053,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 142,
+    "id": PokemonID.Aerodactyl,
     "name": "Aerodactyl",
     "species": "FOSSIL",
     "species_clean": "Fossil",
@@ -2914,7 +3069,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 143,
+    "id": PokemonID.Snorlax,
     "name": "Snorlax",
     "species": "SLEEPING",
     "species_clean": "Sleeping",
@@ -2930,7 +3085,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 144,
+    "id": PokemonID.Articuno,
     "name": "Articuno",
     "species": "FREEZE",
     "species_clean": "Freeze",
@@ -2946,7 +3101,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 145,
+    "id": PokemonID.Zapdos,
     "name": "Zapdos",
     "species": "ELECTRIC",
     "species_clean": "Electric",
@@ -2962,7 +3117,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 146,
+    "id": PokemonID.Moltres,
     "name": "Moltres",
     "species": "FLAME",
     "species_clean": "Flame",
@@ -2978,7 +3133,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 147,
+    "id": PokemonID.Dratini,
     "name": "Dratini",
     "species": "DRAGON",
     "species_clean": "Dragon",
@@ -2988,7 +3143,7 @@ export const pokemonDB: Pokemon[] = [
     "types": [PokemonType.Dragon],
     "evolveTo": [
         {
-            "id": 148,
+            "id": PokemonID.Dragonair,
             "type": PokemonEvolutionType.Level,
             "lvl": 30
         }
@@ -3001,7 +3156,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 148,
+    "id": PokemonID.Dragonair,
     "name": "Dragonair",
     "species": "DRAGON",
     "species_clean": "Dragon",
@@ -3009,10 +3164,10 @@ export const pokemonDB: Pokemon[] = [
     "weight": 36,
     "desc": "A mystical POKéMON that exudes a gentle aura. Has the ability to change climate conditions.",
     "types": [PokemonType.Dragon],
-    "evolveFrom": [147],
+    "evolveFrom": [PokemonID.Dratini],
     "evolveTo": [
         {
-            "id": 149,
+            "id": PokemonID.Dragonite,
             "type": PokemonEvolutionType.Level,
             "lvl": 55
         }
@@ -3025,7 +3180,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 149,
+    "id": PokemonID.Dragonite,
     "name": "Dragonite",
     "species": "DRAGON",
     "species_clean": "Dragon",
@@ -3033,7 +3188,7 @@ export const pokemonDB: Pokemon[] = [
     "weight": 463,
     "desc": "An extremely rarely seen marine POKéMON. Its intelligence is said to match that of humans.",
     "types": [PokemonType.Dragon, PokemonType.Flying],
-    "evolveFrom": [148],
+    "evolveFrom": [PokemonID.Dragonair],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
     "imgGBC": "/imgs/pokemon/gbc/pokemon_149_dragonite.png",
     "imgW": 52,
@@ -3042,7 +3197,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 150,
+    "id": PokemonID.Mewtwo,
     "name": "Mewtwo",
     "species": "GENETIC",
     "species_clean": "Genetic",
@@ -3058,7 +3213,7 @@ export const pokemonDB: Pokemon[] = [
     ]
   },
   {
-    "id": 151,
+    "id": PokemonID.Mew,
     "name": "Mew",
     "species": "NEW SPECIE",
     "species_clean": "New Species",
@@ -3074,3 +3229,10 @@ export const pokemonDB: Pokemon[] = [
     ]
   }
 ];
+
+export function get_pokemon(pokemonID: number) {
+  --pokemonID;
+  if (pokemonID < 0 || pokemonID >= pokemonDB.length)
+    return undefined;
+  return pokemonDB[pokemonID];
+}
