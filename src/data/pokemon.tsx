@@ -1,3 +1,5 @@
+import { ItemID } from "./item";
+
 export enum PokemonID {
   None,
   Bulbasaur,
@@ -187,7 +189,7 @@ export type EvolveTo = {
   id: PokemonID;
   type: PokemonEvolutionType;
   lvl?: number;
-  item?: string;
+  item?: ItemID;
 }
 
 export type Pokemon = {
@@ -761,7 +763,7 @@ export const pokemonDB: Pokemon[] = [
         {
             "id": PokemonID.Raichu,
             "type": PokemonEvolutionType.Item,
-            "item": "Thunderstone"
+            "item": ItemID.Thuderstone
         }
     ],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
@@ -865,7 +867,7 @@ export const pokemonDB: Pokemon[] = [
         {
             "id": PokemonID.Nidoqueen,
             "type": PokemonEvolutionType.Item,
-            "item": "Moon Stone"
+            "item": ItemID.Moon_Stone
         }
     ],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
@@ -929,7 +931,7 @@ export const pokemonDB: Pokemon[] = [
         {
             "id": 34,
             "type": PokemonEvolutionType.Item,
-            "item": "Moon Stone"
+            "item": ItemID.Moon_Stone
         }
     ],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
@@ -969,7 +971,7 @@ export const pokemonDB: Pokemon[] = [
         {
             "id": PokemonID.Clefable,
             "type": PokemonEvolutionType.Item,
-            "item": "Moon Stone"
+            "item": ItemID.Moon_Stone
         }
     ],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
@@ -1009,7 +1011,7 @@ export const pokemonDB: Pokemon[] = [
         {
             "id": PokemonID.Ninetales,
             "type": PokemonEvolutionType.Item,
-            "item": "Fire Stone"
+            "item": ItemID.Fire_Stone
         }
     ],
     "available": [PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
@@ -1049,7 +1051,7 @@ export const pokemonDB: Pokemon[] = [
         {
             "id": PokemonID.Wigglytuff,
             "type": PokemonEvolutionType.Level,
-            "item": "Moon Stone"
+            "item": ItemID.Moon_Stone
         }
     ],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
@@ -1153,7 +1155,7 @@ export const pokemonDB: Pokemon[] = [
         {
             "id": PokemonID.Vileplume,
             "type": PokemonEvolutionType.Item,
-            "item": "Leaf Stone"
+            "item": ItemID.Leaf_Stone
         }
     ],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Yellow],
@@ -1433,7 +1435,7 @@ export const pokemonDB: Pokemon[] = [
         {
             "id": PokemonID.Arcanine,
             "type": PokemonEvolutionType.Item,
-            "item": "Fire Stone"
+            "item": ItemID.Fire_Stone
         }
     ],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Yellow],
@@ -1497,7 +1499,7 @@ export const pokemonDB: Pokemon[] = [
         {
             "id": PokemonID.Poliwrath,
             "type": PokemonEvolutionType.Item,
-            "item": "Water Stone"
+            "item": ItemID.Water_Stone
         }
     ],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
@@ -1687,7 +1689,7 @@ export const pokemonDB: Pokemon[] = [
         {
             "id": PokemonID.Victreebel,
             "type": PokemonEvolutionType.Item,
-            "item": "Leaf Stone"
+            "item": ItemID.Leaf_Stone
         }
     ],
     "available": [PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
@@ -2086,7 +2088,7 @@ export const pokemonDB: Pokemon[] = [
         {
             "id": PokemonID.Cloyster,
             "type": PokemonEvolutionType.Item,
-            "item": "Water Stone"
+            "item": ItemID.Water_Stone
         }
     ],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
@@ -2325,7 +2327,7 @@ export const pokemonDB: Pokemon[] = [
         {
             "id": PokemonID.Exeggutor,
             "type": PokemonEvolutionType.Item,
-            "item": "Leaf Stone"
+            "item": ItemID.Leaf_Stone
         }
     ],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
@@ -2661,7 +2663,7 @@ export const pokemonDB: Pokemon[] = [
         {
             "id": PokemonID.Starmie,
             "type": PokemonEvolutionType.Item,
-            "item": "Water Stone"
+            "item": ItemID.Water_Stone
         }
     ],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
@@ -2885,17 +2887,17 @@ export const pokemonDB: Pokemon[] = [
         {
             "id": PokemonID.Vaporeon,
             "type": PokemonEvolutionType.Item,
-            "item": "Water Stone"
+            "item": ItemID.Water_Stone
         },
         {
             "id": PokemonID.Jolteon,
             "type": PokemonEvolutionType.Item,
-            "item": "Thunderstone"
+            "item": ItemID.Thuderstone
         },
         {
             "id": PokemonID.Flareon,
             "type": PokemonEvolutionType.Item,
-            "item": "Fire Stone"
+            "item": ItemID.Fire_Stone
         }
     ],
     "available": [PokemonGameVersion.Red, PokemonGameVersion.Blue, PokemonGameVersion.Yellow],
