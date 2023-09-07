@@ -1,5 +1,5 @@
-import { Pokemon } from "../data/pokemon";
-import { PokemonElementsSoft } from "../components/PokemonElement";
+import { Pokemon } from "../../data/pokemon";
+import { PokemonElementsSoft } from "../PokemonElement";
 
 export type PokedexTitleProps = {
   pokemon: Pokemon;

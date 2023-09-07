@@ -1,5 +1,6 @@
-import { Pokemon, get_pokemon } from "../data/pokemon";
+import { Pokemon, get_pokemon } from "../..//data/pokemon";
 import { PokedexEvolutionPokemon } from "./PokedexEvolutionPokemon";
+import { PokedexEvolutionRequirement } from "./PokedexEvolutionRequirement";
 
 export type PokedexEvolutionsProps = {
   pokemon: Pokemon;
@@ -26,29 +27,36 @@ export function PokedexEvolutions({ pokemon }: PokedexEvolutionsProps) {
                 <table className="pokedex-evolution">
                   <tbody>
                     <tr>
-                      <td>
-                        {pokemon.evolveFrom && pokemon.evolveFrom.map((evolveFrom) => {
-                          const evolutionPokemon = (evolveFrom ? get_pokemon(evolveFrom) : undefined);
-                          if (evolutionPokemon)
-                            return (
-                              <PokedexEvolutionPokemon key={evolveFrom} pokemon={evolutionPokemon} />
-                            );
-                          else
+                      {pokemon.evolveFrom && pokemon.evolveFrom.map((evolveFrom) => {
+                        const evolutionPokemon = (evolveFrom ? get_pokemon(evolveFrom) : undefined);
+                        if (evolutionPokemon) {
+                          const requirement = evolutionPokemon.evolveTo?.find((evolve) => evolve.id == pokemon.id);
+                          if (!requirement) {
                             return null;
-                        })}
-                      </td>
+                          }
+                          return (
+                            <td key={evolveFrom}>
+                              <PokedexEvolutionPokemon pokemon={evolutionPokemon} />
+                              <PokedexEvolutionRequirement requirement={requirement} />
+                            </td>
+                          );
+                        } else {
+                          return null;
+                        }
+                      })}
                       <td>
                         <PokedexEvolutionPokemon pokemon={pokemon} />
                       </td>
                       <td>
                         {pokemon.evolveTo && pokemon.evolveTo.map((evolveTo) => {
                           const evolutionPokemon = (evolveTo ? get_pokemon(evolveTo.id) : undefined);
-                          if (evolutionPokemon)
+                          if (evolutionPokemon) {
                             return (
                               <PokedexEvolutionPokemon key={evolveTo.id} pokemon={evolutionPokemon} />
                             );
-                          else
-                          return null;
+                          } else{
+                            return null;
+                          }
                         })}
                       </td>
                     </tr>

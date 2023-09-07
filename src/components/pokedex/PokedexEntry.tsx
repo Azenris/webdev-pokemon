@@ -1,13 +1,13 @@
-import { Pokemon } from "../data/pokemon";
-import { PokedexEvolutions } from "../components/PokedexEvolutions";
-import { PokedexTrivia } from "../components/PokedexTrivia";
-import { PokedexDescription } from "../components/PokedexDescription";
-import { PokedexGameAvailability } from "../components/PokedexGameAvailability";
-import { PokedexInformation } from "../components/PokedexInformation";
-import { PokedexSpecies } from "../components/PokedexSpecies";
-import { PokedexTypes } from "../components/PokedexTypes";
-import { PokedexPicture } from "../components/PokedexPicture";
-import { PokedexTitle } from "../components/PokedexTitle";
+import { Pokemon } from "../../data/pokemon";
+import { PokedexEvolutions } from "./PokedexEvolutions";
+import { PokedexTrivia } from "./PokedexTrivia";
+import { PokedexDescription } from "./PokedexDescription";
+import { PokedexGameAvailability } from "./PokedexGameAvailability";
+import { PokedexInformation } from "./PokedexInformation";
+import { PokedexSpecies } from "./PokedexSpecies";
+import { PokedexTypes } from "./PokedexTypes";
+import { PokedexPicture } from "./PokedexPicture";
+import { PokedexTitle } from "./PokedexTitle";
 
 export type PokedexEntryProps = {
   pokemon: Pokemon;

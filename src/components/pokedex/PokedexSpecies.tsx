@@ -1,4 +1,4 @@
-import { Pokemon } from "../data/pokemon";
+import { Pokemon } from "../../data/pokemon";
 
 export type PokedexSpeciesProps = {
   pokemon: Pokemon;

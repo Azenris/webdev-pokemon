@@ -1,8 +1,8 @@
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { useNavigate, useParams } from "react-router-dom";
-import { get_pokemon, pokemonDB } from "../data/pokemon";
-import { PokedexEntry } from "../components/PokedexEntry";
+import { get_pokemon } from "../data/pokemon";
+import { PokedexEntry } from "../components/pokedex/PokedexEntry";
 
 export function PokemonPage() {
 

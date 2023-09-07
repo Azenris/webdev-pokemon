@@ -1,4 +1,4 @@
-import { Pokemon, PokemonAvailableGameVersionNames, PokemonGameVersionNames } from "../data/pokemon";
+import { Pokemon, PokemonAvailableGameVersionNames, PokemonGameVersionNames } from "../../data/pokemon";
 
 export type PokedexGameAvailabilityProps = {
   pokemon: Pokemon;
