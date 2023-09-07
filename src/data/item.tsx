@@ -61,3 +61,18 @@ export const itemDB: Item[] = [
 export function get_item(itemID: ItemID) {
   return itemDB[itemID];
 }
+
+export function get_item_name_span(item: Item) {
+  return (
+    <span>
+      {item.name}
+    </span>
+  );
+}
+
+export function get_item_id_name_span(itemID: ItemID) {
+  const item = get_item(itemID);
+  if (item)
+    return null;
+  return get_item_name_span(item);
+}

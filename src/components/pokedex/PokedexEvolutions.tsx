@@ -1,5 +1,5 @@
-import { EvolveTo, Pokemon, PokemonEvolutionType, get_pokemon, get_pokemon_base } from "../..//data/pokemon";
-import { get_item } from "../../data/item";
+import { EvolveTo, Pokemon, PokemonEvolutionType, get_pokemon, get_pokemon_base, get_pokemon_evolution_index, get_pokemon_name_span } from "../..//data/pokemon";
+import { get_item, get_item_id_name_span, get_item_name_span } from "../../data/item";
 
 type PokedexEvolutionPokemonProps = {
   pokemon: Pokemon;
@@ -120,7 +120,7 @@ function PokedexEvolutionRequirement({ pokemon, requirement }: PokedexEvolutionR
             </tr>
             <tr>
               <td>
-                {item.name}
+                {get_item_name_span(item)}
               </td>
             </tr>
           </tbody>
@@ -185,6 +185,80 @@ function PokedexEvolutionForward({ pokemon }: PokedexEvolutionForwardProps) {
   );
 }
 
+export type PokedexEvolutionBreakdownProps = {
+  pokemon: Pokemon;
+};
+
+function evolution_procedure(evolvedTo: EvolveTo) {
+  return (
+    <>
+      {evolvedTo.type == PokemonEvolutionType.Level && (
+        <>when leveling to <span className="pokedex-evolution-breakdown-emphasis">{evolvedTo.lvl}</span>.</>
+      )}
+
+      {evolvedTo.type == PokemonEvolutionType.Item && (
+        <>
+          when using item{' '}
+          {evolvedTo.item ? get_item_id_name_span(evolvedTo.item) : ""}
+          {' '}on it.
+        </>
+      )}
+
+      {evolvedTo.type == PokemonEvolutionType.Trading && (
+        <>when <span className="pokedex-evolution-breakdown-emphasis">trading</span> it with another player.</>
+      )}
+    </>
+  );
+}
+
+function PokedexEvolutionBreakdown({ pokemon }: PokedexEvolutionBreakdownProps) {
+  const subsequentStages = (pokemon.evolveTo ? pokemon.evolveTo.length : 0);
+  const stage = get_pokemon_evolution_index(pokemon);
+  const evolvedFromPokemon = (pokemon.evolveFrom ? get_pokemon(pokemon.evolveFrom) : undefined);
+  const evolvedFromPokemonEvoleTo = (evolvedFromPokemon ? evolvedFromPokemon.evolveTo?.find((i) => i.id == pokemon.id) : undefined);
+
+  return (
+    <div className="pokedex-evolution-breakdown">
+      <ul>
+        {pokemon.evolveTo?.map((evolvedTo, index) =>{
+          const evolvedToPokemon = get_pokemon(evolvedTo.id);
+          if (!evolvedToPokemon)
+            return null;
+          return (
+            <li key={index}>
+              {get_pokemon_name_span(pokemon)} evolves into {get_pokemon_name_span(evolvedToPokemon)}{' '}
+              {evolution_procedure(evolvedTo)}
+            </li>
+          );
+        })}
+
+        {(evolvedFromPokemon && evolvedFromPokemonEvoleTo) && (
+          <li>
+            {get_pokemon_name_span(pokemon)} evolves from {get_pokemon_name_span(evolvedFromPokemon)}{' '}
+            {evolution_procedure(evolvedFromPokemonEvoleTo)}
+          </li>
+        )}
+
+        {(stage > 1) && (
+          <li>{get_pokemon_name_span(pokemon)} has {stage - 1} prior stages.</li>
+        )}
+
+        {(stage != -1) && (
+          <li>{get_pokemon_name_span(pokemon)} is stage {stage} of its evolution line.</li>
+        )}
+
+        {subsequentStages > 1 && (
+          <li>{get_pokemon_name_span(pokemon)} can evolve into {subsequentStages} different POKéMON.</li>
+        )}
+
+        {(pokemon.evolveFrom && !pokemon.evolveTo) && (
+          <li>{get_pokemon_name_span(pokemon)} is the final form.</li>
+        )}
+      </ul>
+    </div>
+  );
+}
+
 export type PokedexEvolutionsProps = {
   pokemon: Pokemon;
 };
@@ -215,6 +289,11 @@ export function PokedexEvolutions({ pokemon }: PokedexEvolutionsProps) {
                     <PokedexEvolutionForward pokemon={basePokemon} />
                   </div>
                 </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <PokedexEvolutionBreakdown pokemon={pokemon} />
               </td>
             </tr>
           </tbody>
@@ -252,6 +331,11 @@ export function PokedexEvolutionLine({ pokemon }: PokedexEvolutionLineProps) {
                   <PokedexEvolutionPokemon pokemon={pokemon} />
                   <PokedexEvolutionForward pokemon={pokemon} />
                 </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <PokedexEvolutionBreakdown pokemon={pokemon} />
               </td>
             </tr>
           </tbody>

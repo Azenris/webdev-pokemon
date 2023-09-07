@@ -3247,3 +3247,29 @@ export function get_pokemon_base(pokemon: Pokemon) {
     return pokemon;
   return get_pokemon_base(basePokemon);
 }
+
+export function get_pokemon_evolution_index(pokemon: Pokemon) {
+  if (!pokemon.evolveFrom)
+    return pokemon.evolveTo ? 1 : -1;
+
+  var currentID = 1;
+  var basePokemon = get_pokemon(pokemon.evolveFrom);
+
+  while (basePokemon)
+  {
+    ++currentID;
+    if (!basePokemon.evolveFrom)
+      return currentID;
+    basePokemon = get_pokemon(basePokemon.evolveFrom);
+  }
+
+  return currentID;
+}
+
+export function get_pokemon_name_span(pokemon: Pokemon) {
+  return (
+    <span className="pokemon-name-span">
+      {pokemon.name}
+    </span>
+  );
+}

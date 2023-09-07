@@ -488,6 +488,14 @@ a {
   font-weight: bold;
 }
 
+.pokedex-evolution-breakdown {
+  text-align: left;
+}
+
+.pokedex-evolution-breakdown-emphasis {
+  color: var(--theme-light-color);
+}
+
 .pokedex-trivia {
   color: var(--theme-most-light-color);
   text-align: left;
@@ -496,6 +504,14 @@ a {
 .pokedex-info-value {
   color: yellowgreen;
   font-weight: bold;
+}
+
+.pokedex-desc {
+  color: var(--theme-most-light-color);
+}
+
+.pokedex-trivia {
+  color: var(--theme-most-light-color);
 }
 
 .pokemon-image-header {
@@ -534,10 +550,7 @@ a {
   cursor: cell;
 }
 
-.pokedex-desc {
-  color: var(--theme-most-light-color);
-}
-
-.pokedex-trivia {
-  color: var(--theme-most-light-color);
+.pokemon-name-span {
+  color: var(--theme-light-color);
+  font-weight: bold;
 }
