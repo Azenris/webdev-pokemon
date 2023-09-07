@@ -2145,7 +2145,7 @@ export const pokemonDB: Pokemon[] = [
     "species_clean": "Gas",
     "height": "5′03″",
     "weight": 0.2,
-    "desc": "Because of its ability to slip through block wallsm it is said to be from another dimension.",
+    "desc": "Because of its ability to slip through block walls, it is said to be from another dimension.",
     "types": [PokemonType.Ghost, PokemonType.Poison],
     "evolveFrom": [PokemonID.Gastly],
     "evolveTo": [
