@@ -422,6 +422,11 @@ a {
   padding: 4px;
 }
 
+.pokedex-game-availability {
+  display: flex;
+  align-items: center;
+}
+
 .pokedex-evolution {
   display: flex;
   justify-content: center;

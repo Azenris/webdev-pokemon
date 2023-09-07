@@ -24,15 +24,17 @@ export function PokedexGameAvailability({ pokemon }: PokedexGameAvailabilityProp
               return (
                 <tr key={game}>
                   <td>
-                    <img
-                      className="poke-card-ball"
-                      src={`/imgs/pokeball-${game}.png`}
-                      alt={PokemonGameVersionNames[game]}
-                      title={PokemonAvailableGameVersionNames[game]}
-                      width="24"
-                      height="24"
-                    />
-                    {PokemonGameVersionNames[game]}
+                    <div className="pokedex-game-availability">
+                      <img
+                        className="poke-card-ball"
+                        src={`/imgs/pokeball-${game}.png`}
+                        alt={PokemonGameVersionNames[game]}
+                        title={PokemonAvailableGameVersionNames[game]}
+                        width="24"
+                        height="24"
+                      />
+                      {PokemonGameVersionNames[game]}
+                    </div>
                   </td>
                 </tr>
               );
