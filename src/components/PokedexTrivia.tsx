@@ -7,9 +7,7 @@ export type PokedexTriviaProps = {
 export function PokedexTrivia({ pokemon }: PokedexTriviaProps) {
 
   if (pokemon.trivia == undefined || pokemon.trivia.length == 0) {
-    return (
-      <></>
-    );
+    return null;
   }
 
   return (
@@ -25,9 +23,9 @@ export function PokedexTrivia({ pokemon }: PokedexTriviaProps) {
             <tr>
               <td>
                 <ul className="pokedex-trivia">
-                  {pokemon.trivia.map((trivia) => {
+                  {pokemon.trivia.map((trivia, index) => {
                     return (
-                      <li>
+                      <li key={index}>
                         {trivia}
                       </li>
                     );

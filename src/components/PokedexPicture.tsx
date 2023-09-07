@@ -7,9 +7,7 @@ export type PokedexPictureProps = {
 export function PokedexPicture({ pokemon }: PokedexPictureProps) {
 
   if (pokemon.imgGBC == undefined) {
-    return (
-      <></>
-    );
+    return null;
   }
 
   return (

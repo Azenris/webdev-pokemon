@@ -16,9 +16,7 @@ export type PokedexEntryProps = {
 export function PokedexEntry({ pokemon }: PokedexEntryProps) {
 
   if (pokemon.desc == undefined) {
-    return (
-      <></>
-    );
+    return null;
   }
 
   return (

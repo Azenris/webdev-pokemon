@@ -1,7 +1,7 @@
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { useNavigate, useParams } from "react-router-dom";
-import { pokemonDB } from "../data/pokemon";
+import { get_pokemon, pokemonDB } from "../data/pokemon";
 import { PokedexEntry } from "../components/PokedexEntry";
 
 export function PokemonPage() {
@@ -12,18 +12,14 @@ export function PokemonPage() {
 
   if (isNaN(pokemonID)) {
     navigate("/");
-    return (
-      <></>
-    );
+    return null;
   }
 
-  const pokemon = pokemonDB.find(i => i.id === pokemonID);
+  const pokemon = get_pokemon(pokemonID);
 
   if (!pokemon) {
     navigate("/");
-    return (
-      <></>
-    );
+    return null;
   }
 
   return (

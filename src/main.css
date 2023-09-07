@@ -422,6 +422,27 @@ a {
   padding: 4px;
 }
 
+.pokedex-evolution {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.pokedex-evolution-image {
+  background-color: var(--gb-background-color);
+  padding: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
+  border: 2px solid black;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .pokedex-trivia {
   color: var(--theme-most-light-color);
   text-align: left;

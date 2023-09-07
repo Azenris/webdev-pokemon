@@ -1,5 +1,5 @@
 import { PokemonElements } from "./PokemonElement";
-import { pokemonDB, PokemonGameVersionNames, PokemonAvailableGameVersionNames } from "../data/pokemon";
+import { pokemonDB, PokemonGameVersionNames, PokemonAvailableGameVersionNames, get_pokemon } from "../data/pokemon";
 
 export type PokemonSelectionProps = {
   pokemonID: number;
@@ -10,7 +10,7 @@ export type PokemonSelectionProps = {
 
 export function PokemonCard({ pokemonID, active, forceInPokeball, clicked }: PokemonSelectionProps) {
 
-  const pokemon = pokemonDB.find(i => i.id === pokemonID);
+  const pokemon = get_pokemon(pokemonID);
 
   if (pokemon)
   {
@@ -22,6 +22,7 @@ export function PokemonCard({ pokemonID, active, forceInPokeball, clicked }: Pok
           {pokemon.available.map((game) => {
             return (
               <img
+                key={game}
                 className="poke-card-ball"
                 src={`/imgs/pokeball-${game}.png`}
                 alt={PokemonGameVersionNames[game]}

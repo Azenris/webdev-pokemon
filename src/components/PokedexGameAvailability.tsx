@@ -7,9 +7,7 @@ export type PokedexGameAvailabilityProps = {
 export function PokedexGameAvailability({ pokemon }: PokedexGameAvailabilityProps) {
 
   if (pokemon.available == undefined || pokemon.available.length == 0) {
-    return (
-      <></>
-    );
+    return null;
   }
 
   return (
@@ -17,11 +15,15 @@ export function PokedexGameAvailability({ pokemon }: PokedexGameAvailabilityProp
       <td>
         <table>
           <tbody>
-            <td>
-              <tr>Available in versions:</tr>
-              {pokemon.available.map((game) => {
-                return (
-                  <tr>
+            <tr>
+              <td>
+                Available in versions:
+              </td>
+            </tr>
+            {pokemon.available.map((game) => {
+              return (
+                <tr key={game}>
+                  <td>
                     <img
                       className="poke-card-ball"
                       src={`/imgs/pokeball-${game}.png`}
@@ -31,10 +33,10 @@ export function PokedexGameAvailability({ pokemon }: PokedexGameAvailabilityProp
                       height="24"
                     />
                     {PokemonGameVersionNames[game]}
-                  </tr>
-                );
-              })}
-          </td>
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </td>
