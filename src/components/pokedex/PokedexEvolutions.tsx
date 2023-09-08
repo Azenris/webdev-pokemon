@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { EvolveTo, Pokemon, PokemonEvolutionType, get_pokemon, get_pokemon_base, get_pokemon_evolution_index, get_pokemon_name_span } from "../..//data/pokemon";
 import { get_item, get_item_id_name_span, get_item_name_span } from "../../data/item";
 
@@ -11,7 +12,7 @@ function PokedexEvolutionPokemon({ pokemon }: PokedexEvolutionPokemonProps) {
       <tbody>
         <tr>
           <td>
-            <div className="pokedex-evolution-image">
+            <Link to={`/pokemon/${pokemon.id}`} className="pokedex-evolution-image">
               <img
                 className="pokemon-image"
                 src={pokemon.imgGBC}
@@ -19,12 +20,12 @@ function PokedexEvolutionPokemon({ pokemon }: PokedexEvolutionPokemonProps) {
                 width={pokemon.imgW}
                 height={pokemon.imgH}
               />
-            </div>
+            </Link>
           </td>
         </tr>
         <tr>
-          <td className="pokedex-evolution-pokemon-name">
-            {pokemon.name}
+          <td>
+            {get_pokemon_name_span(pokemon)}
           </td>
         </tr>
       </tbody>
@@ -109,13 +110,15 @@ function PokedexEvolutionRequirement({ pokemon, requirement }: PokedexEvolutionR
           <tbody>
             <tr>
               <td>
-                <img
-                  src={item.img}
-                  alt={item.name}
-                  width={item.imgW}
-                  height={item.imgH}
-                  title={`Use the item ${item.name} on ${pokemon.name} to evolve it into ${evovledPokemon.name}.`}
-                />
+                <Link to={`/item/${item.id}`}>
+                  <img
+                    src={item.img}
+                    alt={item.name}
+                    width={item.imgW}
+                    height={item.imgH}
+                    title={`Use the item ${item.name} on ${pokemon.name} to evolve it into ${evovledPokemon.name}.`}
+                  />
+                </Link>
               </td>
             </tr>
             <tr>

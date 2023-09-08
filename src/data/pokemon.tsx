@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ItemID } from "./item";
 
 export enum PokemonID {
@@ -3268,8 +3269,8 @@ export function get_pokemon_evolution_index(pokemon: Pokemon) {
 
 export function get_pokemon_name_span(pokemon: Pokemon) {
   return (
-    <span className="pokemon-name-span">
-      {pokemon.name}
-    </span>
+    <Link to={`/pokemon/${pokemon.id}`} className="pokemon-name-link">
+        {pokemon.name}
+    </Link>
   );
 }

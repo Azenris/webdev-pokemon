@@ -1,5 +1,6 @@
 
 :root {
+  --theme-link-color: rgb(167, 212, 174);
   --theme-light-color: rgb(212, 167, 167);
   --theme-most-light-color: rgb(229, 215, 215);
   --theme-color: rgb(168,0,31);
@@ -484,10 +485,6 @@ a {
   }
 }
 
-.pokedex-evolution-pokemon-name {
-  font-weight: bold;
-}
-
 .pokedex-evolution-breakdown {
   text-align: left;
 }
@@ -550,7 +547,14 @@ a {
   cursor: cell;
 }
 
-.pokemon-name-span {
-  color: var(--theme-light-color);
+.pokemon-name-link {
+  color: var(--theme-link-color);
   font-weight: bold;
+  text-decoration: none;
+}
+
+.item-name-link {
+  color: var(--theme-link-color);
+  font-weight: bold;
+  text-decoration: none;
 }

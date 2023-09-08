@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export enum ItemID {
   Moon_Stone,
   Water_Stone,
@@ -64,15 +66,16 @@ export function get_item(itemID: ItemID) {
 
 export function get_item_name_span(item: Item) {
   return (
-    <span>
-      {item.name}
-    </span>
+    <Link to={`/item/${item.id}`} className="item-name-link">
+        {item.name}
+    </Link>
   );
 }
 
 export function get_item_id_name_span(itemID: ItemID) {
   const item = get_item(itemID);
-  if (item)
+  if (!item) {
     return null;
+  }
   return get_item_name_span(item);
 }
