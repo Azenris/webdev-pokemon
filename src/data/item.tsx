@@ -23,7 +23,7 @@ export const itemDB: Item[] = [
     id: ItemID.Moon_Stone,
     name: "Moon Stone",
     desc: "This item can evolve some POKéMON.",
-    img: "/imgs/item/item_fire_stone.png",
+    img: "/imgs/item/item_moon_stone.png",
     imgW: 24,
     imgH: 24,
     trivia: [
