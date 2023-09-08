@@ -15,48 +15,66 @@ export type Item = {
   img: string;
   imgW: number;
   imgH: number;
+  trivia: string[];
 };
 
 export const itemDB: Item[] = [
   {
     id: ItemID.Moon_Stone,
     name: "Moon Stone",
-    desc: "",
+    desc: "This item can evolve some POKéMON.",
     img: "/imgs/item/item_fire_stone.png",
     imgW: 24,
-    imgH: 24
+    imgH: 24,
+    trivia: [
+      "One of the five evolution stones."
+    ]
   },
   {
     id: ItemID.Water_Stone,
     name: "Water Stone",
-    desc: "",
+    desc: "This item can evolve some POKéMON.",
     img: "/imgs/item/item_water_stone.png",
     imgW: 24,
-    imgH: 24
+    imgH: 24,
+    trivia: [
+      "One of the five evolution stones."
+    ]
   },
   {
     id: ItemID.Fire_Stone,
     name: "Fire Stone",
-    desc: "",
+    desc: "This item can evolve some POKéMON.",
     img: "/imgs/item/item_fire_stone.png",
     imgW: 24,
-    imgH: 24
+    imgH: 24,
+    trivia: [
+      "One of the five evolution stones."
+    ]
   },
   {
     id: ItemID.Leaf_Stone,
     name: "Leaf Stone",
-    desc: "",
+    desc: "This item can evolve some POKéMON.",
     img: "/imgs/item/item_leaf_stone.png",
     imgW: 24,
-    imgH: 24
+    imgH: 24,
+    trivia: [
+      "One of the five evolution stones."
+    ]
   },
   {
     id: ItemID.Thuder_Stone,
     name: "Thunder Stone",
-    desc: "While writen as Thunder Stone on this website its actual name on the game is Thunderstone.",
+    desc: "This item can evolve some POKéMON.",
     img: "/imgs/item/item_thunder_stone.png",
     imgW: 24,
-    imgH: 24
+    imgH: 24,
+    trivia: [
+      "One of the five evolution stones.",
+      "While writen as Thunder Stone on this website its actual name in the game is Thunderstone.",
+      "Written as Thunderstone, it is the odd one out among the other evolution items."
+    ]
   }
 ];
 

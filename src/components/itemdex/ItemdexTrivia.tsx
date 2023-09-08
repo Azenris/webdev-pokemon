@@ -1,29 +1,29 @@
-import { Pokemon } from "../../data/pokemon";
+import { Item } from "../../data/item";
 
-export type PokedexTriviaProps = {
-  pokemon: Pokemon;
+export type ItemdexTriviaProps = {
+  item: Item;
 };
 
-export function PokedexTrivia({ pokemon }: PokedexTriviaProps) {
+export function ItemdexTrivia({ item }: ItemdexTriviaProps) {
 
-  if (pokemon.trivia == undefined || pokemon.trivia.length == 0) {
+  if (item.trivia == undefined || item.trivia.length == 0) {
     return null;
   }
 
   return (
     <tr>
       <td>
-        <table className="pokedex-trivia-table">
+        <table className="itemdex-trivia-table">
           <tbody>
             <tr>
-              <td className="pokedex-trivia-title">
+              <td className="itemdex-trivia-title">
                 Trivia
               </td>
             </tr>
             <tr>
               <td>
-                <ul className="pokedex-trivia-list">
-                  {pokemon.trivia.map((trivia, index) => {
+                <ul className="itemdex-trivia-list">
+                  {item.trivia.map((trivia, index) => {
                     return (
                       <li key={index}>
                         {trivia}

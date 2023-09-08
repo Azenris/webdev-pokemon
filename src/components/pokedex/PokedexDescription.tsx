@@ -11,7 +11,7 @@ export function PokedexDescription({ pokemon }: PokedexDescriptionProps) {
   }
 
   return (
-    <tr className="pokedex-desc">
+    <tr>
       <td>
         <table className="pokedex-desc-table">
           <tbody>

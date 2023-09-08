@@ -8,6 +8,8 @@ import { PokemonLocationsPage } from "./pages/PokemonLocationsPage";
 import { PokemonCollectionPage } from "./pages/PokemonCollectionPage";
 import { DisclaimerPage } from "./pages/DisclaimerPage";
 import { CopyrightPage } from "./pages/CopyrightPage";
+import { ItemPage } from "./pages/ItemPage";
+import { ItemMenuPage } from "./pages/ItemMenuPage";
 
 function App() {
   return (
@@ -21,6 +23,10 @@ function App() {
         </Route>
         <Route path="/pokemon" element={<PokemonMenuPage />} />
         <Route path="/collection" element={<PokemonCollectionPage />} />
+        <Route path="/item/:id">
+          <Route index element={<ItemPage />} />
+        </Route>
+        <Route path="/item" element={<ItemMenuPage />} />
         <Route path="/disclaimer" element={<DisclaimerPage />} />
         <Route path="/copyright" element={<CopyrightPage />} />
         <Route path="*" element={<Navigate to="/" />} />

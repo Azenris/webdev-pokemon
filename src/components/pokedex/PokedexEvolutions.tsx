@@ -222,7 +222,7 @@ function PokedexEvolutionBreakdown({ pokemon }: PokedexEvolutionBreakdownProps) 
 
   return (
     <div className="pokedex-evolution-breakdown">
-      <ul>
+      <ul className="pokedex-evolution-breakdown-list">
         {pokemon.evolveTo?.map((evolvedTo, index) =>{
           const evolvedToPokemon = get_pokemon(evolvedTo.id);
           if (!evolvedToPokemon)

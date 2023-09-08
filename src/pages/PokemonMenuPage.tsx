@@ -14,8 +14,8 @@ export function PokemonMenuPage() {
       <div className="main-content">
         <h1>POKéMON</h1>
         <h2>{collectionTotal}</h2>
-        <div className="poke-page-content">
-          <div className="poke-cards-layout">
+        <div className="card-page-content">
+          <div className="card-page-layout">
             {pokemonDB.map((pokemon) => {
               function viewPokemon() {
                 navigate(`/pokemon/${pokemon.id}`);

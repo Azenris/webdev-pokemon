@@ -1,6 +1,7 @@
 
 :root {
-  --theme-link-color: rgb(167, 212, 174);
+  --theme-pokemon-link-color: rgb(167, 212, 174);
+  --theme-item-link-color: rgb(179, 167, 212);
   --theme-light-color: rgb(212, 167, 167);
   --theme-most-light-color: rgb(229, 215, 215);
   --theme-color: rgb(168,0,31);
@@ -140,13 +141,13 @@ a {
   color: white;
 }
 
-.poke-page-content {
+.card-page-content {
   text-align: center;
   padding: 10px;
   padding-top: 0px;
 }
 
-.poke-cards-layout {
+.card-page-layout {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
@@ -154,7 +155,8 @@ a {
   border-radius: 9px;
 }
 
-.poke-card-box {
+.poke-card-box,
+.item-card-box {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0;
@@ -182,18 +184,21 @@ a {
   image-rendering: pixelated;
 }
 
-.poke-card-name {
+.poke-card-name,
+.item-card-name {
   font-family: 'Verdana', 'Arial', 'Tahoma', sans-serif;
   color: var(--theme-color);
   font-size: 1.2rem;
 }
 
-.poke-card-dexno {
+.poke-card-id,
+.item-card-id {
   color: grey;
   font-weight: bold;
 }
 
-.poke-card-image-block {
+.poke-card-image-block,
+.item-card-image-block {
   background-color: rgb(248,232,248);
   justify-self: center;
   display: flex;
@@ -215,7 +220,8 @@ a {
   border-radius: 100%;
 }
 
-.poke-card-image {
+.poke-card-image,
+.item-card-image {
   image-rendering: auto;
   image-rendering: crisp-edges;
   image-rendering: pixelated;
@@ -339,35 +345,40 @@ a {
   color: hsl(228, 71%, 61%);
 }
 
-.pokedex-page {
+.pokedex-page,
+.itemdex-page {
   display: flex;
   justify-content: left;
   margin: 10px;
   padding: 10px;
 }
 
-.pokedex-table {
+.pokedex-table,
+.itemdex-table {
   border: 10px solid var(--theme-dark-color);
   border-radius: 10px;
   padding: 10px;
   margin: auto;
 }
 
-.pokedex-table > tbody > tr > th, .pokedex-table > tbody > tr > td {
+.pokedex-table > tbody > tr > th, .pokedex-table > tbody > tr > td,
+.itemdex-table > tbody > tr > th, .itemdex-table > tbody > tr > td {
   border: 3px solid rgb(51, 24, 24);
   background-color: var(--theme-background-color);
   border-radius: 6px;
   padding: 10px;
 }
 
-.pokedex-name {
+.pokedex-name,
+.itemdex-name {
   color: var(--theme-light-color);
   text-align: center;
   font-weight: bolder;
   font-size: 2.5em;
 }
 
-.pokedex-subscript {
+.pokedex-subscript,
+.itemdex-subscript {
   color: var(--theme-light-color);
   text-align: center;
   font-weight: bold;
@@ -385,7 +396,9 @@ a {
 .pokedex-info-table,
 .pokedex-desc-table,
 .pokedex-evolution-table,
-.pokedex-trivia-table {
+.pokedex-trivia-table,
+.itemdex-desc-table,
+.itemdex-trivia-table {
   width: 100%;
 }
 
@@ -394,7 +407,9 @@ a {
 .pokedex-info-table > tbody > tr > th, .pokedex-info-table > tbody > tr > td,
 .pokedex-desc-table > tbody > tr > th, .pokedex-desc-table > tbody > tr > td,
 .pokedex-trivia-table > tbody > tr > th, .pokedex-trivia-table > tbody > tr > td,
-.pokedex-evolution-table > tbody > tr > th, .pokedex-evolution-table > tbody > tr > td {
+.pokedex-evolution-table > tbody > tr > th, .pokedex-evolution-table > tbody > tr > td,
+.itemdex-desc-table > tbody > tr > th, .itemdex-desc-table > tbody > tr > td,
+.itemdex-trivia-table > tbody > tr > th, .itemdex-trivia-table > tbody > tr > td {
   background-color: var(--theme-dark-color);
   padding: 2px;
   padding-left: 6px;
@@ -408,7 +423,9 @@ a {
 .pokedex-info-title,
 .pokedex-desc-title,
 .pokedex-trivia-title,
-.pokedex-evolution-title {
+.pokedex-evolution-title,
+.itemdex-desc-title,
+.itemdex-trivia-title {
   color: lightseagreen;
   font-weight: bold;
 }
@@ -417,7 +434,8 @@ a {
   color: var(--theme-most-light-color);
 }
 
-.pokedex-desc {
+.pokedex-desc,
+.itemdex-desc {
   color: var(--theme-most-light-color);
   text-align: left;
   padding: 4px;
@@ -489,13 +507,28 @@ a {
   text-align: left;
 }
 
+.pokedex-evolution-breakdown-list {
+  padding-left: 15px;
+}
+
+.pokedex-evolution-breakdown-list > li:not(:last-of-type) {
+  padding-bottom: 10px;
+}
+
 .pokedex-evolution-breakdown-emphasis {
   color: var(--theme-light-color);
 }
 
-.pokedex-trivia {
+.pokedex-trivia-list,
+.itemdex-trivia-list {
   color: var(--theme-most-light-color);
   text-align: left;
+  padding-left: 15px;
+}
+
+.pokedex-trivia-list > li:not(:last-of-type),
+.itemdex-trivia-list > li:not(:last-of-type) {
+  padding-bottom: 10px;
 }
 
 .pokedex-info-value {
@@ -503,22 +536,16 @@ a {
   font-weight: bold;
 }
 
-.pokedex-desc {
-  color: var(--theme-most-light-color);
-}
-
-.pokedex-trivia {
-  color: var(--theme-most-light-color);
-}
-
-.pokemon-image-header {
+.pokemon-image-header,
+.item-image-header {
   padding: 10px;
   margin-right: 10px;
   display: flex;
   align-items: center;
 }
 
-.pokemon-image-block, .pokemon-image-block-big {
+.pokemon-image-block, .pokemon-image-block-big,
+.item-image-block, .item-image-block-big {
   background-color: var(--gb-background-color);
   justify-self: center;
   display: flex;
@@ -531,30 +558,33 @@ a {
   height: 60px;
 }
 
-.pokemon-image-block-big {
+.pokemon-image-block-big,
+.item-image-block-big {
   width: 180px;
   height: 180px;
   margin: auto;
 }
 
-.pokemon-image, .pokemon-image-big {
+.pokemon-image, .pokemon-image-big,
+.item-image, .item-image-big {
   image-rendering: auto;
   image-rendering: crisp-edges;
   image-rendering: pixelated;
 }
 
+.pokemon-image,
 .pokemon-image {
   cursor: cell;
 }
 
 .pokemon-name-link {
-  color: var(--theme-link-color);
+  color: var(--theme-pokemon-link-color);
   font-weight: bold;
   text-decoration: none;
 }
 
 .item-name-link {
-  color: var(--theme-link-color);
+  color: var(--theme-item-link-color);
   font-weight: bold;
   text-decoration: none;
 }

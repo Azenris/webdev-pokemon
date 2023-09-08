@@ -1,6 +1,7 @@
 import { ReactNode, createContext, useContext } from "react";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 import { pokemonDB } from "../data/pokemon";
+import { itemDB } from "../data/item";
 
 type PokemonContextProviderData = {
   children: ReactNode
@@ -15,9 +16,10 @@ export type PokemonContext = {
   collection: PokemonCollection[];
   collectionCount: number;
   collectionTotal: number;
-
   isInCollection: (id:number) => boolean;
   setInCollection: (id:number, set:boolean) => void;
+
+  itemsTotal: number;
 };
 
 const PokemonContext = createContext({} as PokemonContext);
@@ -32,6 +34,7 @@ export function PokemonContextProvider({ children }: PokemonContextProviderData)
 
   const collectionCount = collection.reduce((quantity, pok) => quantity = quantity + (pok.collected?1:0), 0);
   const collectionTotal = pokemonDB.length;
+  const itemsTotal = itemDB.length;
 
   function isInCollection(id:number) {
     id -= 1;
@@ -83,6 +86,7 @@ export function PokemonContextProvider({ children }: PokemonContextProviderData)
     collectionTotal,
     isInCollection,
     setInCollection,
+    itemsTotal,
   };
 
   return (

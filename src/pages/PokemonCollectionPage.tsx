@@ -13,8 +13,8 @@ export function PokemonCollectionPage() {
       <div className="main-content">
         <h1>POKéMON Collection</h1>
         <h2>{collectionCount}/{collectionTotal}</h2>
-        <div className="poke-page-content">
-          <div className="poke-cards-layout">
+        <div className="card-page-content">
+          <div className="card-page-layout">
           {pokemonDB.map((pokemon) => {
             const inCollection = pokemon ? isInCollection(pokemon.id) : false;
 
