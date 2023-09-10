@@ -206,24 +206,6 @@ export const PokemonAvailableGameVersionNames: string[] = [
   "Available in Yellow Version",
 ];
 
-export const PokemonTypeNames: string[] = [
-  "Bug",
-  "Dragon",
-  "Electric",
-  "Fighting",
-  "Fire",
-  "Flying",
-  "Ghost",
-  "Grass",
-  "Ground",
-  "Ice",
-  "Normal",
-  "Poison",
-  "Psychic",
-  "Rock",
-  "Water",
-];
-
 export const pokemonDB: Pokemon[] = [
   {
     "id": PokemonID.Bulbasaur,

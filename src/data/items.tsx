@@ -656,14 +656,13 @@ export const itemDB: Item[] = [
   {
     id: ItemID.Thunder_Stone,
     tags: [ItemTag.Normal, ItemTag.Evolution_Stone],
-    name: "Thunder Stone",
+    name: "Thunderstone",
     desc: "This item can evolve some POKéMON.",
     img: "/imgs/item/item_thunder_stone.png",
     imgW: 24,
     imgH: 24,
     trivia: [
       "One of the five evolution stones.",
-      "While writen as Thunder Stone on this website its actual name in the game is Thunderstone.",
       "Written as Thunderstone, it is the odd one out among the other evolution items."
     ]
   },
@@ -2454,57 +2453,62 @@ export const itemDB: Item[] = [
   {
     id: ItemID.HM01,
     tags: [ItemTag.HM],
-    name: "HM01 (Cut)",
-    desc: "Used to teach the move Cut to a POKéMON.",
+    name: "HM01",
+    desc: "",
     img: "/imgs/item/item_default_pic.png",
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Cut,
   },
   {
     id: ItemID.HM02,
     tags: [ItemTag.HM],
-    name: "HM02 (Fly)",
-    desc: "Used to teach the move Fly to a POKéMON.",
+    name: "HM02",
+    desc: "",
     img: "/imgs/item/item_default_pic.png",
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Fly,
   },
   {
     id: ItemID.HM03,
     tags: [ItemTag.HM],
-    name: "HM03 (Surf)",
-    desc: "Used to teach the move Surf to a POKéMON.",
+    name: "HM03",
+    desc: "",
     img: "/imgs/item/item_default_pic.png",
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Surf,
   },
   {
     id: ItemID.HM04,
     tags: [ItemTag.HM],
-    name: "HM04 (Strength)",
-    desc: "Used to teach the move Strength to a POKéMON.",
+    name: "HM04",
+    desc: "",
     img: "/imgs/item/item_default_pic.png",
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Strength,
   },
   {
     id: ItemID.HM05,
     tags: [ItemTag.HM],
-    name: "HM05 (Flash)",
-    desc: "Used to teach the move Flash to a POKéMON.",
+    name: "HM05",
+    desc: "",
     img: "/imgs/item/item_default_pic.png",
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Flash,
   },
   {
     id: ItemID.TM01,

@@ -15,3 +15,21 @@ export enum ElementTypeID {
   Rock,
   Water,
 };
+
+export const ElementNames: string[] = [
+  "Bug",
+  "Dragon",
+  "Electric",
+  "Fighting",
+  "Fire",
+  "Flying",
+  "Ghost",
+  "Grass",
+  "Ground",
+  "Ice",
+  "Normal",
+  "Poison",
+  "Psychic",
+  "Rock",
+  "Water",
+];

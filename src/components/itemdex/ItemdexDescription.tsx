@@ -6,7 +6,7 @@ export type ItemdexDescriptionProps = {
 
 export function ItemdexDescription({ item }: ItemdexDescriptionProps) {
 
-  if (item.desc == undefined) {
+  if (item.desc == undefined || item.desc == "") {
     return null;
   }
 

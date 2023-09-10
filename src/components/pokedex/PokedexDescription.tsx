@@ -6,7 +6,7 @@ export type PokedexDescriptionProps = {
 
 export function PokedexDescription({ pokemon }: PokedexDescriptionProps) {
 
-  if (pokemon.desc == undefined) {
+  if (pokemon.desc == undefined || pokemon.desc == "") {
     return null;
   }
 

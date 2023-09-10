@@ -1,6 +1,7 @@
-import { Item } from "../../data/items";
+import { Item, ItemTag } from "../../data/items";
 import { ItemdexDescription } from "./ItemdexDescription";
 import { ItemdexPicture } from "./ItemdexPicture";
+import { ItemdexTeachMove } from "./ItemdexTeachMove";
 import { ItemdexTitle } from "./ItemdexTitle";
 import { ItemdexTrivia } from "./ItemdexTrivia";
 
@@ -20,6 +21,7 @@ export function ItemdexEntry({ item }: ItemdexEntryProps) {
         <tbody>
           <ItemdexTitle item={item} />
           <ItemdexPicture item={item} />
+          {item.tags.filter((tag) => tag == ItemTag.HM || tag == ItemTag.TM).length > 0 && <ItemdexTeachMove item={item} />}
           <ItemdexDescription item={item} />
           <ItemdexTrivia item={item} />
         </tbody>

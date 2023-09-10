@@ -1,4 +1,4 @@
-import { ElementTypeID, PokemonTypeNames } from "../data/pokemon";
+import { ElementTypeID, ElementNames } from "../data/elements";
 
 export type ElementTypeProps = {
   type: ElementTypeID;
@@ -6,8 +6,8 @@ export type ElementTypeProps = {
 
 export function PokemonElement({ type }: ElementTypeProps) {
   return (
-    <span className={`element-name element-${PokemonTypeNames[type]}`}>
-      {PokemonTypeNames[type]}
+    <span className={`element-name element-${ElementNames[type]}`}>
+      {ElementNames[type]}
     </span>
   );
 }
@@ -38,8 +38,8 @@ export function PokemonElementsSoft({ types }: PokemonElementProps) {
         return (
           <span key={index}>
             {index != 0 && ' / '}
-            <span className={`element-name-soft element-${PokemonTypeNames[type]}-soft`}>
-              {PokemonTypeNames[type]}
+            <span className={`element-name-soft element-${ElementNames[type]}-soft`}>
+              {ElementNames[type]}
             </span>
           </span>
         );
