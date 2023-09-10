@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { EvolveTo, Pokemon, PokemonEvolutionType, get_pokemon, get_pokemon_base, get_pokemon_evolution_index, get_pokemon_name_span } from "../..//data/pokemon";
-import { get_item, get_item_id_name_span, get_item_name_span } from "../../data/item";
+import { get_item, get_item_id_name_span, get_item_name_span } from "../../data/items";
 
 type PokedexEvolutionPokemonProps = {
   pokemon: Pokemon;

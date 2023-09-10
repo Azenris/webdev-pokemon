@@ -1,7 +1,7 @@
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { useNavigate, useParams } from "react-router-dom";
-import { get_item } from "../data/item";
+import { get_item } from "../data/items";
 import { ItemdexEntry } from "../components/itemdex/ItemdexEntry";
 
 export function ItemPage() {

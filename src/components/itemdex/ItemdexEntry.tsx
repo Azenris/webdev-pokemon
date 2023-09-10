@@ -1,4 +1,4 @@
-import { Item } from "../../data/item";
+import { Item } from "../../data/items";
 import { ItemdexDescription } from "./ItemdexDescription";
 import { ItemdexPicture } from "./ItemdexPicture";
 import { ItemdexTitle } from "./ItemdexTitle";

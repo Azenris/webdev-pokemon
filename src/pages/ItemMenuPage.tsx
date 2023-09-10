@@ -2,7 +2,7 @@ import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { usePokemonContext } from "../context/PokemonContext";
 import { useNavigate } from "react-router-dom";
-import { itemDB } from "../data/item";
+import { itemDB } from "../data/items";
 import { ItemCard } from "../components/ItemCard";
 
 export function ItemMenuPage() {

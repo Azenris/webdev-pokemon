@@ -1,7 +1,7 @@
-import { PokemonType, PokemonTypeNames } from "../data/pokemon";
+import { ElementTypeID, PokemonTypeNames } from "../data/pokemon";
 
 export type ElementTypeProps = {
-  type: PokemonType;
+  type: ElementTypeID;
 };
 
 export function PokemonElement({ type }: ElementTypeProps) {
@@ -13,7 +13,7 @@ export function PokemonElement({ type }: ElementTypeProps) {
 }
 
 export type PokemonElementProps = {
-  types: PokemonType[];
+  types: ElementTypeID[];
 };
 
 export function PokemonElements({ types }: PokemonElementProps) {

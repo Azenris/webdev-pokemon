@@ -1,4 +1,4 @@
-import { get_item } from "../data/item";
+import { get_item } from "../data/items";
 
 export type ItemCardProps = {
   itemID: number;

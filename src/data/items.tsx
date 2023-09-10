@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { MoveID } from "./moves";
 
 export enum ItemID {
   Unused_0,
@@ -284,12 +285,13 @@ export type Item = {
   imgW: number;
   imgH: number;
   trivia: string[];
+  move?: MoveID;
 };
 
 export const itemDB: Item[] = [
   {
     id: ItemID.Unused_0,
-    tags: [ItemTag.Normal],
+    tags: [ItemTag.Invalid],
     name: "Unused_0",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2507,13 +2509,14 @@ export const itemDB: Item[] = [
   {
     id: ItemID.TM01,
     tags: [ItemTag.Normal, ItemTag.TM],
-    name: "TM01 (Mega Punch)",
-    desc: "Used to teach the move Mega Punch to a POKéMON.",
+    name: "TM01",
+    desc: "",
     img: "/imgs/item/item_default_pic.png",
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Mega_Punch,
   },
   {
     id: ItemID.TM02,
@@ -2524,7 +2527,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Razor_Wind,
   },
   {
     id: ItemID.TM03,
@@ -2535,7 +2539,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Swords_Dance,
   },
   {
     id: ItemID.TM04,
@@ -2546,7 +2551,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Whirlwind,
   },
   {
     id: ItemID.TM05,
@@ -2557,7 +2563,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Mega_Kick,
   },
   {
     id: ItemID.TM06,
@@ -2568,7 +2575,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Toxic,
   },
   {
     id: ItemID.TM07,
@@ -2579,7 +2587,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Horn_Drill,
   },
   {
     id: ItemID.TM08,
@@ -2590,7 +2599,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Body_Slam,
   },
   {
     id: ItemID.TM09,
@@ -2601,7 +2611,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Take_Down,
   },
   {
     id: ItemID.TM10,
@@ -2612,7 +2623,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Double_Edge,
   },
   {
     id: ItemID.TM11,
@@ -2623,7 +2635,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Bubblebeam,
   },
   {
     id: ItemID.TM12,
@@ -2634,7 +2647,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Water_Gun,
   },
   {
     id: ItemID.TM13,
@@ -2645,7 +2659,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Ice_Beam,
   },
   {
     id: ItemID.TM14,
@@ -2656,7 +2671,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Blizzard,
   },
   {
     id: ItemID.TM15,
@@ -2667,7 +2683,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Hyper_Beam,
   },
   {
     id: ItemID.TM16,
@@ -2678,7 +2695,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Pay_Day,
   },
   {
     id: ItemID.TM17,
@@ -2689,7 +2707,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Submission,
   },
   {
     id: ItemID.TM18,
@@ -2700,7 +2719,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Counter,
   },
   {
     id: ItemID.TM19,
@@ -2711,7 +2731,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Seismic_Toss,
   },
   {
     id: ItemID.TM20,
@@ -2722,7 +2743,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Rage,
   },
   {
     id: ItemID.TM21,
@@ -2733,7 +2755,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Mega_Drain,
   },
   {
     id: ItemID.TM22,
@@ -2744,7 +2767,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Solarbeam,
   },
   {
     id: ItemID.TM23,
@@ -2755,7 +2779,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Dragon_Rage,
   },
   {
     id: ItemID.TM24,
@@ -2766,7 +2791,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Thunderbolt,
   },
   {
     id: ItemID.TM25,
@@ -2777,7 +2803,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Thunder,
   },
   {
     id: ItemID.TM26,
@@ -2788,7 +2815,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Earthquake,
   },
   {
     id: ItemID.TM27,
@@ -2799,7 +2827,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Fissure,
   },
   {
     id: ItemID.TM28,
@@ -2810,7 +2839,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Dig,
   },
   {
     id: ItemID.TM29,
@@ -2821,7 +2851,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Psychic,
   },
   {
     id: ItemID.TM30,
@@ -2832,7 +2863,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Teleport,
   },
   {
     id: ItemID.TM31,
@@ -2843,7 +2875,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Mimic,
   },
   {
     id: ItemID.TM32,
@@ -2854,7 +2887,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Double_Team,
   },
   {
     id: ItemID.TM33,
@@ -2865,7 +2899,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Reflect,
   },
   {
     id: ItemID.TM34,
@@ -2876,7 +2911,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Bide,
   },
   {
     id: ItemID.TM35,
@@ -2887,7 +2923,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Metronome,
   },
   {
     id: ItemID.TM36,
@@ -2898,7 +2935,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Selfdestruct,
   },
   {
     id: ItemID.TM37,
@@ -2909,7 +2947,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Egg_Bomb,
   },
   {
     id: ItemID.TM38,
@@ -2920,7 +2959,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Fire_Blast,
   },
   {
     id: ItemID.TM39,
@@ -2931,7 +2971,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Swift,
   },
   {
     id: ItemID.TM40,
@@ -2942,7 +2983,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Skull_Bash,
   },
   {
     id: ItemID.TM41,
@@ -2953,7 +2995,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Softboiled,
   },
   {
     id: ItemID.TM42,
@@ -2964,7 +3007,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Dream_Eater,
   },
   {
     id: ItemID.TM43,
@@ -2975,7 +3019,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Sky_Attack,
   },
   {
     id: ItemID.TM44,
@@ -2986,7 +3031,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Rest,
   },
   {
     id: ItemID.TM45,
@@ -2997,7 +3043,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Thunder_Wave,
   },
   {
     id: ItemID.TM46,
@@ -3008,7 +3055,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Psywave,
   },
   {
     id: ItemID.TM47,
@@ -3019,7 +3067,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Explosion,
   },
   {
     id: ItemID.TM48,
@@ -3030,7 +3079,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Rock_Slide,
   },
   {
     id: ItemID.TM49,
@@ -3041,7 +3091,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Tri_Attack,
   },
   {
     id: ItemID.TM50,
@@ -3052,7 +3103,8 @@ export const itemDB: Item[] = [
     imgW: 24,
     imgH: 24,
     trivia: [
-    ]
+    ],
+    move: MoveID.Substitute,
   },
   {
     id: ItemID.Unused_116,
