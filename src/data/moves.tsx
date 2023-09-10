@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ElementTypeID } from "./elements";
 
 export enum MoveID {
@@ -179,7 +180,7 @@ export type Move = {
   type: ElementTypeID;
 };
 
-export const moveBD: Move[] = [
+export const moveDB: Move[] = [
   {
     id: MoveID.Absorb,
     name: "Absorb",
@@ -1017,3 +1018,23 @@ export const moveBD: Move[] = [
     type: ElementTypeID.Normal,
   },
 ];
+
+export function get_move(moveID: MoveID) {
+  return moveDB[moveID];
+}
+
+export function get_move_name_span(move: Move) {
+  return (
+    <Link to={`/move/${move.id}`} className="move-name-link">
+        {move.name}
+    </Link>
+  );
+}
+
+export function get_item_id_name_span(moveID: MoveID) {
+  const move = get_move(moveID);
+  if (!move) {
+    return null;
+  }
+  return get_move_name_span(move);
+}

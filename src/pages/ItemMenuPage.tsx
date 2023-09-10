@@ -1,25 +1,34 @@
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
-import { usePokemonContext } from "../context/PokemonContext";
 import { useNavigate } from "react-router-dom";
-import { itemDB } from "../data/items";
+import { ItemID, get_item } from "../data/items";
 import { ItemCard } from "../components/ItemCard";
 
-export function ItemMenuPage() {
-  const { itemsTotal } = usePokemonContext();
+export type ItemMenuPageProps = {
+  title: string;
+  items: ItemID[];
+};
+
+export function ItemMenuPage({ title, items }: ItemMenuPageProps) {
   const navigate = useNavigate();
   return (
     <>
       <Navbar />
       <div className="main-content">
-        <h1>Items</h1>
-        <h2>{itemsTotal}</h2>
+        <h1>{title}</h1>
+        <h2>{items.length}</h2>
         <div className="card-page-content">
           <div className="card-page-layout">
-            {itemDB.map((item) => {
+            {items.map((itemID) => {
+              const item = get_item(itemID);
+              if (!item) {
+                return null;
+              }
+
               function viewItem() {
                 navigate(`/item/${item.id}`);
               }
+
               return (
                 <ItemCard
                   key={item.id}

@@ -2453,7 +2453,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.HM01,
-    tags: [ItemTag.Normal, ItemTag.HM],
+    tags: [ItemTag.HM],
     name: "HM01 (Cut)",
     desc: "Used to teach the move Cut to a POKéMON.",
     img: "/imgs/item/item_default_pic.png",
@@ -2464,7 +2464,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.HM02,
-    tags: [ItemTag.Normal, ItemTag.HM],
+    tags: [ItemTag.HM],
     name: "HM02 (Fly)",
     desc: "Used to teach the move Fly to a POKéMON.",
     img: "/imgs/item/item_default_pic.png",
@@ -2475,7 +2475,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.HM03,
-    tags: [ItemTag.Normal, ItemTag.HM],
+    tags: [ItemTag.HM],
     name: "HM03 (Surf)",
     desc: "Used to teach the move Surf to a POKéMON.",
     img: "/imgs/item/item_default_pic.png",
@@ -2486,7 +2486,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.HM04,
-    tags: [ItemTag.Normal, ItemTag.HM],
+    tags: [ItemTag.HM],
     name: "HM04 (Strength)",
     desc: "Used to teach the move Strength to a POKéMON.",
     img: "/imgs/item/item_default_pic.png",
@@ -2497,7 +2497,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.HM05,
-    tags: [ItemTag.Normal, ItemTag.HM],
+    tags: [ItemTag.HM],
     name: "HM05 (Flash)",
     desc: "Used to teach the move Flash to a POKéMON.",
     img: "/imgs/item/item_default_pic.png",
@@ -2508,7 +2508,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM01,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM01",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2520,7 +2520,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM02,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM02",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2532,7 +2532,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM03,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM03",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2544,7 +2544,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM04,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM04",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2556,7 +2556,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM05,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM05",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2568,7 +2568,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM06,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM06",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2580,7 +2580,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM07,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM07",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2592,7 +2592,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM08,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM08",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2604,7 +2604,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM09,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM09",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2616,7 +2616,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM10,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM10",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2628,7 +2628,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM11,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM11",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2640,7 +2640,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM12,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM12",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2652,7 +2652,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM13,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM13",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2664,7 +2664,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM14,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM14",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2676,7 +2676,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM15,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM15",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2688,7 +2688,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM16,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM16",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2700,7 +2700,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM17,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM17",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2712,7 +2712,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM18,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM18",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2724,7 +2724,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM19,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM19",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2736,7 +2736,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM20,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM20",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2748,7 +2748,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM21,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM21",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2760,7 +2760,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM22,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM22",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2772,7 +2772,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM23,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM23",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2784,7 +2784,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM24,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM24",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2796,7 +2796,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM25,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM25",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2808,7 +2808,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM26,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM26",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2820,7 +2820,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM27,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM27",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2832,7 +2832,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM28,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM28",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2844,7 +2844,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM29,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM29",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2856,7 +2856,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM30,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM30",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2868,7 +2868,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM31,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM31",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2880,7 +2880,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM32,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM32",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2892,7 +2892,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM33,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM33",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2904,7 +2904,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM34,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM34",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2916,7 +2916,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM35,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM35",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2928,7 +2928,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM36,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM36",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2940,7 +2940,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM37,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM37",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2952,7 +2952,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM38,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM38",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2964,7 +2964,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM39,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM39",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2976,7 +2976,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM40,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM40",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -2988,7 +2988,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM41,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM41",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -3000,7 +3000,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM42,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM42",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -3012,7 +3012,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM43,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM43",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -3024,7 +3024,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM44,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM44",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -3036,7 +3036,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM45,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM45",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -3048,7 +3048,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM46,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM46",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -3060,7 +3060,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM47,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM47",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -3072,7 +3072,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM48,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM48",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -3084,7 +3084,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM49,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM49",
     desc: "",
     img: "/imgs/item/item_default_pic.png",
@@ -3096,7 +3096,7 @@ export const itemDB: Item[] = [
   },
   {
     id: ItemID.TM50,
-    tags: [ItemTag.Normal, ItemTag.TM],
+    tags: [ItemTag.TM],
     name: "TM50",
     desc: "",
     img: "/imgs/item/item_default_pic.png",

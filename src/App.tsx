@@ -10,8 +10,12 @@ import { DisclaimerPage } from "./pages/DisclaimerPage";
 import { CopyrightPage } from "./pages/CopyrightPage";
 import { ItemPage } from "./pages/ItemPage";
 import { ItemMenuPage } from "./pages/ItemMenuPage";
+import { ItemTag, itemDB } from "./data/items";
 
 function App() {
+  const items = itemDB.filter((item) => item.tags.includes(ItemTag.Normal)).map((item) => item.id);
+  const HMTMs = itemDB.filter((item) => item.tags.filter((tag) => tag == ItemTag.HM || tag == ItemTag.TM).length).map((item) => item.id);
+
   return (
     <PokemonContextProvider>
       <Routes>
@@ -26,7 +30,8 @@ function App() {
         <Route path="/item/:id">
           <Route index element={<ItemPage />} />
         </Route>
-        <Route path="/item" element={<ItemMenuPage />} />
+        <Route path="/item" element={<ItemMenuPage title="Items" items={items} />} />
+        <Route path="/tm" element={<ItemMenuPage title ="Hidden/Technical Machines" items={HMTMs} />} />
         <Route path="/disclaimer" element={<DisclaimerPage />} />
         <Route path="/copyright" element={<CopyrightPage />} />
         <Route path="*" element={<Navigate to="/" />} />
