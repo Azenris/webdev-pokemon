@@ -27,7 +27,7 @@ export function ItemCard({ itemID, clicked }: ItemCardProps) {
         {move && (
           
           <div className={`item-card-name-move element-${ElementNames[move.type]}-soft`}>
-            {' '}({move.name})
+            {' '}{move.name}
           </div>
         )}
       </div>

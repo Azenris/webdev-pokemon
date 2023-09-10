@@ -10,11 +10,6 @@ export type ItemdexEntryProps = {
 };
 
 export function ItemdexEntry({ item }: ItemdexEntryProps) {
-
-  if (item.desc == undefined) {
-    return null;
-  }
-
   return (
     <div className="itemdex-page">
       <table className="itemdex-table">

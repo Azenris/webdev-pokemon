@@ -33,6 +33,11 @@ const menuItems: MenuItem[] = [
     icon: "/imgs/pokeball-0.png"
   },
   {
+    path: "/move",
+    name: "Moves",
+    icon: "/imgs/pokeball-0.png"
+  },
+  {
     path: "/about",
     name: "About",
     icon: "/imgs/pokeball-0.png"

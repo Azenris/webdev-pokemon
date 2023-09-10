@@ -11,6 +11,8 @@ import { CopyrightPage } from "./pages/CopyrightPage";
 import { ItemPage } from "./pages/ItemPage";
 import { ItemMenuPage } from "./pages/ItemMenuPage";
 import { ItemTag, itemDB } from "./data/items";
+import { MoveMenuPage } from "./pages/MoveMenuPage";
+import { MovePage } from "./pages/MovePage";
 
 function App() {
   const items = itemDB.filter((item) => item.tags.includes(ItemTag.Normal)).map((item) => item.id);
@@ -32,6 +34,10 @@ function App() {
         </Route>
         <Route path="/item" element={<ItemMenuPage title="Items" items={items} />} />
         <Route path="/tm" element={<ItemMenuPage title ="Hidden/Technical Machines" items={HMTMs} />} />
+        <Route path="/move/:id">
+          <Route index element={<MovePage />} />
+        </Route>
+        <Route path="/move" element={<MoveMenuPage />} />
         <Route path="/disclaimer" element={<DisclaimerPage />} />
         <Route path="/copyright" element={<CopyrightPage />} />
         <Route path="*" element={<Navigate to="/" />} />

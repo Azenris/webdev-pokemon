@@ -294,7 +294,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_0",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -305,7 +305,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.Pokeball],
     name: "Master Ball",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -316,7 +316,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.Pokeball],
     name: "Ultra Ball",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -327,7 +327,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.Pokeball],
     name: "Great Ball",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -338,7 +338,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.Pokeball],
     name: "Pokeball",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -349,7 +349,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.KeyItem],
     name: "Town Map",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -360,7 +360,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.KeyItem],
     name: "Bicycle",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -371,7 +371,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_1",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -382,7 +382,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Safari Ball",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -393,7 +393,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Pokedex",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -415,7 +415,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Antidote",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -426,7 +426,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Burn Heal",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -437,7 +437,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Ice Heal",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -448,7 +448,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Awakening",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -459,7 +459,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Paralyze Heal",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -470,7 +470,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Full Restore",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -481,7 +481,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Max Potion",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -492,7 +492,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Hyper Potion",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -503,7 +503,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Super Potion",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -514,7 +514,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Potion",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -525,7 +525,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.GymBadge],
     name: "Boulder Badge",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -536,7 +536,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.GymBadge],
     name: "Cascade Badge",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -547,7 +547,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.GymBadge],
     name: "Thunder Badge",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -558,7 +558,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.GymBadge],
     name: "Rainbow Badge",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -569,7 +569,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.GymBadge],
     name: "Soul Badge",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -580,7 +580,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.GymBadge],
     name: "Marsh Badge",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -591,7 +591,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.GymBadge],
     name: "Volcano Badge",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -602,7 +602,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.GymBadge],
     name: "Earth Badge",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -613,7 +613,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Escape Rope",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -624,7 +624,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Repel",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -635,7 +635,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.Fossil],
     name: "Old Amber",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -683,7 +683,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.Vitamin],
     name: "HP Up",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -694,7 +694,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.Vitamin],
     name: "Protein",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -705,7 +705,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.Vitamin],
     name: "Iron",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -716,7 +716,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.Vitamin],
     name: "Carbos",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -727,7 +727,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.Vitamin],
     name: "Calcium",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -738,7 +738,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Rare Candy",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -749,7 +749,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.Fossil],
     name: "Dome Fossil",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -760,7 +760,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.Fossil],
     name: "Helix Fossil",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -771,7 +771,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.KeyItem],
     name: "Secret Key",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -782,7 +782,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_2",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -793,7 +793,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.KeyItem],
     name: "Bike Voucher",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -804,7 +804,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.CombatItem, ItemTag.X_Item],
     name: "X Accuracy",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -827,7 +827,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.KeyItem],
     name: "Card_Key",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -838,7 +838,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Nugget",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -849,7 +849,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_3",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -860,7 +860,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Pokedoll",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -871,7 +871,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Full Heal",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -882,7 +882,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Revive",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -893,7 +893,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Max Revive",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -904,7 +904,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.CombatItem],
     name: "Guard Spec",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -915,7 +915,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Super Repel",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -926,7 +926,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Max Repel",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -937,7 +937,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.CombatItem],
     name: "Dire Hit",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -948,7 +948,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Coin",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -959,7 +959,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Fresh Water",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -970,7 +970,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Soda Pop",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -981,7 +981,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Lemonade",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -992,7 +992,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.KeyItem],
     name: "SS Ticket",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1003,7 +1003,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Gold Teeth",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1014,7 +1014,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.CombatItem, ItemTag.X_Item],
     name: "X Attack",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1025,7 +1025,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.CombatItem, ItemTag.X_Item],
     name: "X Defend",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1036,7 +1036,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.CombatItem, ItemTag.X_Item],
     name: "X Speed",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1047,7 +1047,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.CombatItem, ItemTag.X_Item],
     name: "X Special",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1058,7 +1058,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.KeyItem],
     name: "Coin Case",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1069,7 +1069,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.KeyItem],
     name: "Oaks Parcel",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1080,7 +1080,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Item Finder",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1091,7 +1091,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.KeyItem],
     name: "Silph Scope",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1102,7 +1102,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Pokeflute",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1113,7 +1113,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Lift Key",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1124,7 +1124,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Exp All",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1135,7 +1135,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.FishingRod],
     name: "Old Rod",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1146,7 +1146,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.FishingRod],
     name: "Good Rod",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1157,7 +1157,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.FishingRod],
     name: "Super Rod",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1168,7 +1168,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal, ItemTag.Vitamin],
     name: "PP Up",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1179,7 +1179,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Ether",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1190,7 +1190,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Max Ether",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1201,7 +1201,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Elixer",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1212,7 +1212,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Normal],
     name: "Max Elixer",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1223,7 +1223,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_4",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1234,7 +1234,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_5",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1245,7 +1245,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_6",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1256,7 +1256,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_7",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1267,7 +1267,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_8",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1278,7 +1278,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_9",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1289,7 +1289,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_10",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1300,7 +1300,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_11",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1311,7 +1311,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_12",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1322,7 +1322,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_13",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1333,7 +1333,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_14",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1344,7 +1344,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_15",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1355,7 +1355,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_16",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1366,7 +1366,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_17",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1377,7 +1377,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_18",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1388,7 +1388,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_19",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1399,7 +1399,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_20",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1410,7 +1410,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_21",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1421,7 +1421,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_22",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1432,7 +1432,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_23",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1443,7 +1443,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_24",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1454,7 +1454,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_25",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1465,7 +1465,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_26",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1476,7 +1476,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_27",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1487,7 +1487,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_28",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1498,7 +1498,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_29",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1509,7 +1509,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_30",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1520,7 +1520,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_31",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1531,7 +1531,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_32",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1542,7 +1542,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_33",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1553,7 +1553,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_34",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1564,7 +1564,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_35",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1575,7 +1575,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_36",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1586,7 +1586,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_37",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1597,7 +1597,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_38",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1608,7 +1608,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_39",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1619,7 +1619,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_40",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1630,7 +1630,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_41",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1641,7 +1641,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_42",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1652,7 +1652,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_43",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1663,7 +1663,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_44",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1674,7 +1674,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_45",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1685,7 +1685,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_46",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1696,7 +1696,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_47",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1707,7 +1707,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_48",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1718,7 +1718,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_49",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1729,7 +1729,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_50",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1740,7 +1740,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_51",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1751,7 +1751,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_52",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1762,7 +1762,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_53",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1773,7 +1773,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_54",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1784,7 +1784,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_55",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1795,7 +1795,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_56",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1806,7 +1806,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_57",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1817,7 +1817,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_58",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1828,7 +1828,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_59",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1839,7 +1839,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_60",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1850,7 +1850,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_61",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1861,7 +1861,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_62",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1872,7 +1872,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_63",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1883,7 +1883,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_64",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1894,7 +1894,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_65",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1905,7 +1905,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_66",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1916,7 +1916,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_67",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1927,7 +1927,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_68",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1938,7 +1938,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_69",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1949,7 +1949,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_70",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1960,7 +1960,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_71",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1971,7 +1971,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_72",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1982,7 +1982,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_73",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -1993,7 +1993,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_74",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2004,7 +2004,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_75",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2015,7 +2015,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_76",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2026,7 +2026,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_77",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2037,7 +2037,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_78",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2048,7 +2048,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_79",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2059,7 +2059,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_80",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2070,7 +2070,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_81",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2081,7 +2081,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_82",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2092,7 +2092,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_83",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2103,7 +2103,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_84",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2114,7 +2114,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_85",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2125,7 +2125,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_86",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2136,7 +2136,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_87",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2147,7 +2147,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_88",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2158,7 +2158,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_89",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2169,7 +2169,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_90",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2180,7 +2180,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_91",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2191,7 +2191,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_92",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2202,7 +2202,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_93",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2213,7 +2213,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_94",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2224,7 +2224,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_95",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2235,7 +2235,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_96",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2246,7 +2246,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_97",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2257,7 +2257,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_98",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2268,7 +2268,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_99",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2279,7 +2279,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_100",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2290,7 +2290,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_101",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2301,7 +2301,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_102",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2312,7 +2312,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_103",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2323,7 +2323,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_104",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2334,7 +2334,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_105",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2345,7 +2345,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_106",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2356,7 +2356,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_107",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2367,7 +2367,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_108",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2378,7 +2378,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_109",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2389,7 +2389,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_110",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2400,7 +2400,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_111",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2411,7 +2411,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_112",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2422,7 +2422,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_113",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2433,7 +2433,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_114",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2444,7 +2444,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_115",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2455,7 +2455,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.HM],
     name: "HM01",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2467,7 +2467,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.HM],
     name: "HM02",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2479,7 +2479,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.HM],
     name: "HM03",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2491,7 +2491,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.HM],
     name: "HM04",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2503,7 +2503,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.HM],
     name: "HM05",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2515,7 +2515,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM01",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2527,7 +2527,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM02",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2539,7 +2539,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM03",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2551,7 +2551,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM04",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2563,7 +2563,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM05",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2575,7 +2575,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM06",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2587,7 +2587,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM07",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2599,7 +2599,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM08",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2611,7 +2611,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM09",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2623,7 +2623,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM10",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2635,7 +2635,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM11",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2647,7 +2647,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM12",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2659,7 +2659,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM13",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2671,7 +2671,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM14",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2683,7 +2683,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM15",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2695,7 +2695,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM16",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2707,7 +2707,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM17",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2719,7 +2719,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM18",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2731,7 +2731,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM19",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2743,7 +2743,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM20",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2755,7 +2755,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM21",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2767,7 +2767,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM22",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2779,7 +2779,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM23",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2791,7 +2791,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM24",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2803,7 +2803,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM25",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2815,7 +2815,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM26",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2827,7 +2827,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM27",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2839,7 +2839,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM28",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2851,7 +2851,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM29",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2863,7 +2863,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM30",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2875,7 +2875,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM31",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2887,7 +2887,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM32",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2899,7 +2899,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM33",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2911,7 +2911,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM34",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2923,7 +2923,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM35",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2935,7 +2935,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM36",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2947,7 +2947,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM37",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2959,7 +2959,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM38",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2971,7 +2971,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM39",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2983,7 +2983,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM40",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -2995,7 +2995,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM41",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -3007,7 +3007,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM42",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -3019,7 +3019,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM43",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -3031,7 +3031,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM44",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -3043,7 +3043,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM45",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -3055,7 +3055,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM46",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -3067,7 +3067,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM47",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -3079,7 +3079,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM48",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -3091,7 +3091,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM49",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -3103,7 +3103,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.TM],
     name: "TM50",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -3115,7 +3115,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_116",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -3126,7 +3126,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_117",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -3137,7 +3137,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_118",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -3148,7 +3148,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_119",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
@@ -3159,7 +3159,7 @@ export const itemDB: Item[] = [
     tags: [ItemTag.Invalid],
     name: "Unused_120",
     desc: "",
-    img: "/imgs/item/item_default_pic.png",
+    img: "/imgs/item/item_default.png",
     imgW: 24,
     imgH: 24,
     trivia: [
