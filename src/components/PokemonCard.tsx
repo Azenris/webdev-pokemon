@@ -34,6 +34,7 @@ export function PokemonCard({ pokemonID, active, forceInPokeball, clicked }: Pok
               title={PokemonAvailableGameVersionNames[game]}
               width="24"
               height="24"
+              loading="lazy"
             />
           );
         })}

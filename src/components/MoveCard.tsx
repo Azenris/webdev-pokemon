@@ -30,7 +30,14 @@ export function MoveCard({ moveID, clicked }: MoveCardProps) {
         )}
       </div>
       <div className="move-card-image-block">
-        <img className="move-card-image" src={move.img} alt={move.name} width={move.imgW * 2} height={move.imgH * 2} />
+        <img
+          className="move-card-image"
+          src={move.img}
+          alt={move.name}
+          width={move.imgW * 2}
+          height={move.imgH * 2}
+          loading="lazy"
+        />
       </div>
       <div className="move-card-id">#{move.id}</div>
     </div>

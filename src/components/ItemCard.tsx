@@ -32,7 +32,14 @@ export function ItemCard({ itemID, clicked }: ItemCardProps) {
         )}
       </div>
       <div className="item-card-image-block">
-        <img className="item-card-image" src={item.img} alt={item.name} width={item.imgW * 2} height={item.imgH * 2} />
+        <img
+          className="item-card-image"
+          src={item.img}
+          alt={item.name}
+          width={item.imgW * 2}
+          height={item.imgH * 2}
+          loading="lazy"
+        />
       </div>
       <div className="item-card-id">#{item.id}</div>
     </div>
