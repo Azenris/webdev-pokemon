@@ -403,11 +403,12 @@ export const itemDB: Item[] = [
     id: ItemID.Moon_Stone,
     tags: [ItemTag.Normal, ItemTag.Evolution_Stone],
     name: "Moon Stone",
-    desc: "",
+    desc: "This item can evolve some POKéMON.",
     img: "/imgs/item/item_moon_stone.png",
     imgW: 24,
     imgH: 24,
     trivia: [
+      "One of the five evolution stones."
     ]
   },
   {
