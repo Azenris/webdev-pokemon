@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { EvolveTo, Pokemon, PokemonEvolutionType, get_pokemon, get_pokemon_base, get_pokemon_evolution_index, get_pokemon_name_span } from "../..//data/pokemon";
 import { get_item, get_item_id_name_span, get_item_name_span } from "../../data/items";
+import { Image } from "../Image";
 
 type PokedexEvolutionPokemonProps = {
   pokemon: Pokemon;
@@ -13,7 +14,7 @@ function PokedexEvolutionPokemon({ pokemon }: PokedexEvolutionPokemonProps) {
         <tr>
           <td>
             <Link to={`/pokemon/${pokemon.id}`} className="pokedex-evolution-image">
-              <img
+              <Image
                 className="pokemon-image"
                 src={pokemon.imgGBC}
                 alt={pokemon.name}
@@ -35,7 +36,7 @@ function PokedexEvolutionPokemon({ pokemon }: PokedexEvolutionPokemonProps) {
 
 function PokedexEvolutionArrow() {
   return (
-    <img
+    <Image
       className="pokedex-evolution-requirement-arrow"
       src="/imgs/evolution_arrow.png"
       alt="→"
@@ -66,7 +67,7 @@ function PokedexEvolutionRequirement({ pokemon, requirement }: PokedexEvolutionR
             <tbody>
               <tr>
                 <td>
-                  <img
+                  <Image
                     src="/imgs/evolution_trade.png"
                     alt="Trade"
                     width={26}
@@ -88,7 +89,7 @@ function PokedexEvolutionRequirement({ pokemon, requirement }: PokedexEvolutionR
             <tbody>
               <tr>
                 <td>
-                  <img
+                  <Image
                     src="/imgs/evolution_levelup.png"
                     alt="LevelUp"
                     width={26}
@@ -111,7 +112,7 @@ function PokedexEvolutionRequirement({ pokemon, requirement }: PokedexEvolutionR
             <tr>
               <td>
                 <Link to={`/item/${item.id}`}>
-                  <img
+                  <Image
                     src={item.img}
                     alt={item.name}
                     width={item.imgW}

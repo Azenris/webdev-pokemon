@@ -1,5 +1,6 @@
 import { itemDB } from "../data/items";
 import { get_move } from "../data/moves";
+import { Image } from "./Image";
 
 export type MoveCardProps = {
   moveID: number;
@@ -30,7 +31,7 @@ export function MoveCard({ moveID, clicked }: MoveCardProps) {
         )}
       </div>
       <div className="move-card-image-block">
-        <img
+        <Image
           className="move-card-image"
           src={move.img}
           alt={move.name}

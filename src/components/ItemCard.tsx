@@ -1,6 +1,7 @@
 import { ElementNames } from "../data/elements";
 import { get_item } from "../data/items";
 import { get_move } from "../data/moves";
+import { Image } from "./Image";
 
 export type ItemCardProps = {
   itemID: number;
@@ -32,7 +33,7 @@ export function ItemCard({ itemID, clicked }: ItemCardProps) {
         )}
       </div>
       <div className="item-card-image-block">
-        <img
+        <Image
           className="item-card-image"
           src={item.img}
           alt={item.name}

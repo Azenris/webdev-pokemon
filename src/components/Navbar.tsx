@@ -1,4 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
+import { Image } from "./Image";
 
 type MenuItem = {
   path: string;
@@ -10,37 +11,37 @@ const menuItems: MenuItem[] = [
   {
     path: "/",
     name: "Home",
-    icon: `${import.meta.env.BASE_URL}/imgs/pokeball-0.png`
+    icon: "/imgs/pokeball-0.png"
   },
   {
     path: "/pokemon",
     name: "POKéMON",
-    icon: `${import.meta.env.BASE_URL}/imgs/pokeball-0.png`
+    icon: "/imgs/pokeball-0.png"
   },
   {
     path: "/collection",
     name: "Collection",
-    icon: `${import.meta.env.BASE_URL}/imgs/pokeball-0.png`
+    icon: "/imgs/pokeball-0.png"
   },
   {
     path: "/item",
     name: "Items",
-    icon: `${import.meta.env.BASE_URL}/imgs/pokeball-0.png`
+    icon: "/imgs/pokeball-0.png"
   },
   {
     path: "/tm",
     name: "HMs / TMs",
-    icon: `${import.meta.env.BASE_URL}/imgs/pokeball-0.png`
+    icon: "/imgs/pokeball-0.png"
   },
   {
     path: "/move",
     name: "Moves",
-    icon: `${import.meta.env.BASE_URL}/imgs/pokeball-0.png`
+    icon: "/imgs/pokeball-0.png"
   },
   {
     path: "/about",
     name: "About",
-    icon: `${import.meta.env.BASE_URL}/imgs/pokeball-0.png`
+    icon: "/imgs/pokeball-0.png"
   }
 ];
 
@@ -54,7 +55,7 @@ export function Navbar() {
           return (
             <li key={menu.path} className={location == menu.path ? "active" : ""}>
               <NavLink to={menu.path}>
-                <img src={menu.icon} alt={menu.name}></img>
+                <Image src={menu.icon} alt={menu.name} width={12} height={12} />
                 {' '}
                 {menu.name}
               </NavLink>

@@ -1,4 +1,5 @@
 import { Pokemon, PokemonAvailableGameVersionNames, PokemonGameVersionNames } from "../../data/pokemon";
+import { Image } from "../Image";
 
 export type PokedexGameAvailabilityProps = {
   pokemon: Pokemon;
@@ -25,13 +26,13 @@ export function PokedexGameAvailability({ pokemon }: PokedexGameAvailabilityProp
                 <tr key={game}>
                   <td>
                     <div className="pokedex-game-availability">
-                      <img
+                      <Image
                         className="poke-card-ball"
                         src={`/imgs/pokeball-${game}.png`}
                         alt={PokemonGameVersionNames[game]}
                         title={PokemonAvailableGameVersionNames[game]}
-                        width="24"
-                        height="24"
+                        width={24}
+                        height={24}
                       />
                       {PokemonGameVersionNames[game]}
                     </div>

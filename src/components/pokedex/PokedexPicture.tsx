@@ -1,4 +1,5 @@
 import { Pokemon } from "../../data/pokemon";
+import { Image } from "../Image";
 
 export type PokedexPictureProps = {
   pokemon: Pokemon;
@@ -15,7 +16,7 @@ export function PokedexPicture({ pokemon }: PokedexPictureProps) {
       <td>
         <div className="pokemon-image-header">
           <div className="pokemon-image-block-big">
-              <img
+              <Image
                 className="pokemon-image-big"
                 src={pokemon.imgGBC}
                 alt={pokemon.name}
