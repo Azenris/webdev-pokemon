@@ -1,8 +1,8 @@
 {
   "name": "webdev-pokemon",
-  "homepage": "https://Azenris.github.io/webdev-pokemon/",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
+  "homepage": "https://azenris.github.io/webdev-pokemon/",
   "type": "module",
   "scripts": {
     "dev": "vite",
