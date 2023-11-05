@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
-import { BrowserRouter, useLocation } from 'react-router-dom';
+import { HashRouter , useLocation } from 'react-router-dom';
 import "./main.css";
 
 function ScrollToTop() {
@@ -16,9 +16,9 @@ function ScrollToTop() {
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <App />
-    </BrowserRouter>
+    </HashRouter >
   </React.StrictMode>
 );
