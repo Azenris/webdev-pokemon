@@ -1,7 +1,6 @@
 import { ReactNode, createContext, useContext } from "react";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 import { pokemonDB } from "../data/pokemon";
-import { ItemTag, itemDB } from "../data/items";
 
 type PokemonContextProviderData = {
   children: ReactNode
