@@ -10,37 +10,37 @@ const menuItems: MenuItem[] = [
   {
     path: "/",
     name: "Home",
-    icon: "/imgs/pokeball-0.png"
+    icon: "./imgs/pokeball-0.png"
   },
   {
     path: "/pokemon",
     name: "POKéMON",
-    icon: "/imgs/pokeball-0.png"
+    icon: "./imgs/pokeball-0.png"
   },
   {
     path: "/collection",
     name: "Collection",
-    icon: "/imgs/pokeball-0.png"
+    icon: "./imgs/pokeball-0.png"
   },
   {
     path: "/item",
     name: "Items",
-    icon: "/imgs/pokeball-0.png"
+    icon: "./imgs/pokeball-0.png"
   },
   {
     path: "/tm",
     name: "HMs / TMs",
-    icon: "/imgs/pokeball-0.png"
+    icon: "./imgs/pokeball-0.png"
   },
   {
     path: "/move",
     name: "Moves",
-    icon: "/imgs/pokeball-0.png"
+    icon: "./imgs/pokeball-0.png"
   },
   {
     path: "/about",
     name: "About",
-    icon: "/imgs/pokeball-0.png"
+    icon: "./imgs/pokeball-0.png"
   }
 ];
 
