@@ -1,6 +1,6 @@
 
 export type ImageProps = {
-  key?: string;
+  key?: string | number;
   className?: string;
   src: string;
   alt: string;
