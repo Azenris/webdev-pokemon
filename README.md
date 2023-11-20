@@ -1,3 +1,5 @@
+# Status
+![Deploy](https://github.com/Azenris/webdev-pokemon/actions/workflows/build-deploy.yml/badge.svg)
 
 # This Site
 This is a fan website for the original 3 Pokémon games, Pokémon Red/Blue/Yellow.
