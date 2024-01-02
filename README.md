@@ -7,5 +7,5 @@ This site was made by Azenris and was just a simple test to try some typescript,
 I also wanted to test the github actions and use the github-pages.
 
 ### Disclaimer
-Pokémon © 2002-2023 Pokémon. © 1995-2023 Nintendo/Creatures Inc./GAME FREAK inc. TM, ® and Pokémon character names are trademarks of Nintendo.
+Pokémon © 2002-2024 Pokémon. © 1995-2024 Nintendo/Creatures Inc./GAME FREAK inc. TM, ® and Pokémon character names are trademarks of Nintendo.
 No copyright or trademark infringement is intended.

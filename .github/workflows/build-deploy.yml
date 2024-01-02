@@ -3,7 +3,7 @@
 # Build & Deploy Workflow
 #
 
-name: Build & deploy
+name: Build & Deploy
 
 run-name: ${{ github.actor }} started a build & deploy.
 
