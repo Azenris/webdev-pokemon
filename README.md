@@ -1,3 +1,6 @@
+# Status
+![Deploy](../../../actions/workflows/build-deploy.yml/badge.svg)
+
 # This Site
 This is a fan website for the original 3 Pokémon games, Pokémon Red/Blue/Yellow.
 This site was made by Azenris and was just a simple test to try some typescript, react and webdev out.
